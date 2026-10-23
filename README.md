@@ -37,15 +37,19 @@ phylogap/
 ├── RESEARCH_PLAN.md               # Master research plan v0.1 (detailed blueprint)
 ├── docs/                          # Detailed research documentation & notes
 │   ├── DETAILED_EXECUTION_PLAN.md # Phase-by-phase execution protocol & Done Criteria
+│   ├── literature_review_synthesis.md # Systematic survey & mathematical problem formulation
 │   ├── literature_matrix.md       # SOTA comparison & literature audit (7 dimensions)
 │   └── data_manifest.md           # Accessions, species list, quality metrics & gap stats
 ├── data/                          # Datasets (gitignored large files)
 │   └── benchmarks/dentist_pilot/  # Pilot benchmark assemblies & ground truth BED/JSON
 ├── scripts/                       # Automated data download, evaluation & audit scripts
+│   ├── evaluate_metrics.py        # Independent metric computation (Acc, FCR, AU-RC)
 │   ├── download_dentist_metadata.py
 │   ├── download_pilot_assemblies.py
 │   ├── audit_gap_distribution.py
 │   └── analyze_gap_sequences.py   # Biological EDA & GC/repeat analysis
+├── tests/                         # Unit tests for evaluation logic & algorithms
+│   └── test_evaluate_metrics.py   # 6 unit tests validating accuracy, FCR, AU-RC
 └── src/                           # Custom algorithm codebase (conditional on Gates 4-5)
 ```
 
