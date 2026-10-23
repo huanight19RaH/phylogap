@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment
+.env
+.env.local
+
+# Bioinformatics large data files
+data/raw/
+data/processed/
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.fa.gz
+*.fasta.gz
+*.fai
+*.tar
+*.tar.gz
+*.zip
+
+# Experiment checkpoints & heavy artifacts
+experiments/logs/*.log
+checkpoints/
+models/weights/
