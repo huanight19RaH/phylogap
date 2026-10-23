@@ -1,0 +1,36 @@
+projects:
+- name: phylogap
+  repo_url: https://github.com/huanight19RaH/phylogap.git
+  branch: main
+  local_path: d:/THStudy/UniversityStudy/Research/phylogap
+  machine_shape: NvidiaTeslaT4
+  dataset_sources: []
+  commands:
+    setup:
+    - python -m pip install -q -r requirements.txt
+    run:
+    - python -m unittest discover tests
+    - python scripts/benchmark_baseline_evaluator.py
+    - python scripts/simulate_lm_gap_filling.py
+    - python scripts/query_b10k_metadata.py
+  jobs:
+  - name: benchmark-sota-eval
+    account_id: account1
+    description: "Run full unit test suite (14/14 tests) and extract SOTA baseline benchmarks on Drosophila and Calypte anna"
+    commands:
+      run:
+      - python -m unittest discover tests
+      - python scripts/benchmark_baseline_evaluator.py
+  - name: autoregressive-decay-sim
+    account_id: account2
+    description: "Empirical simulation of nucleotide autoregressive error propagation across gap length buckets (10bp to 1000bp)"
+    commands:
+      run:
+      - python scripts/simulate_lm_gap_filling.py
+  - name: b10k-clade-curation-eval
+    account_id: account3
+    description: "Query NCBI Datasets API for 4-tier avian clades and compute independent verification metrics"
+    commands:
+      run:
+      - python scripts/query_b10k_metadata.py
+      - python scripts/evaluate_metrics.py

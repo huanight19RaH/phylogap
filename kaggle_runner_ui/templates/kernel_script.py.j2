@@ -1,0 +1,103 @@
+import os
+import shutil
+import subprocess
+import sys
+import traceback
+from pathlib import Path
+
+SLUG = "{{ slug }}"
+REPO_URL = "{{ repo_url }}"
+BRANCH = "{{ branch | default('main') }}"
+LOG_PATH = Path(f"/kaggle/working/job_debug_{SLUG}.log")
+REPO_DIR = Path("/kaggle/working/phylogap")
+
+
+def write_log(message):
+    print(message, flush=True)
+    with LOG_PATH.open("a", encoding="utf-8") as f:
+        f.write(message + "\n")
+
+
+def run(command):
+    if isinstance(command, list):
+        command = [os.path.expandvars(str(arg)) for arg in command]
+    line = "+ " + (" ".join(command) if isinstance(command, list) else str(command))
+    write_log(line)
+    with LOG_PATH.open("a", encoding="utf-8") as f:
+        proc = subprocess.Popen(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            shell=isinstance(command, str),
+        )
+        for out_line in proc.stdout:
+            print(out_line, end="", flush=True)
+            f.write(out_line)
+            f.flush()
+        proc.wait()
+    if proc.returncode != 0:
+        raise RuntimeError(f"Command failed with code {proc.returncode}: {line}")
+
+
+try:
+    os.chdir("/kaggle/working")
+    if REPO_DIR.exists():
+        shutil.rmtree(REPO_DIR)
+
+    clone_cmd = ["git", "clone", "--depth", "1"]
+    if BRANCH:
+        clone_cmd.extend(["--branch", BRANCH])
+    clone_cmd.extend([REPO_URL, str(REPO_DIR)])
+    run(clone_cmd)
+
+    os.chdir(REPO_DIR)
+    sys.path.insert(0, str(REPO_DIR))
+    sys.path.insert(0, str(REPO_DIR / "src"))
+    sys.path.insert(0, str(REPO_DIR / "scripts"))
+    os.environ["PYTHONPATH"] = str(REPO_DIR) + os.pathsep + str(REPO_DIR / "src") + os.pathsep + str(REPO_DIR / "scripts") + os.pathsep + os.environ.get("PYTHONPATH", "")
+    write_log("PYTHONPATH=" + os.environ["PYTHONPATH"])
+
+{% if code_bundle_b64 %}
+    import base64
+    import io
+    import tarfile
+    write_log("Unpacking local code bundle over repository...")
+    bundle_data = base64.b64decode("{{ code_bundle_b64 }}")
+    with tarfile.open(fileobj=io.BytesIO(bundle_data), mode="r:gz") as tar:
+        tar.extractall(path=str(REPO_DIR))
+    write_log("Code bundle successfully extracted.")
+{% endif %}
+
+{% for command in setup_commands %}
+    run({{ command }})
+{% endfor %}
+{% for command in install_commands %}
+    run({{ command }})
+{% endfor %}
+{% for command in run_commands %}
+    run({{ command }})
+{% endfor %}
+except Exception:
+    write_log("FAILED WITH TRACEBACK:")
+    write_log(traceback.format_exc())
+    raise
+finally:
+    # Gather experiment outputs and logs
+    os.chdir("/kaggle/working")
+    out_dir = Path(f"/kaggle/working/results_{SLUG}")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    if (REPO_DIR / "experiments/results").exists():
+        for item in (REPO_DIR / "experiments/results").glob("*"):
+            if item.is_file():
+                shutil.copy2(item, out_dir)
+    if (REPO_DIR / "data/manifests").exists():
+        for item in (REPO_DIR / "data/manifests").glob("*"):
+            if item.is_file():
+                shutil.copy2(item, out_dir)
+    run([
+        "bash",
+        "-lc",
+        f"cd /kaggle/working && zip -qr {SLUG}.zip results_{SLUG} job_debug_{SLUG}.log || true",
+    ])

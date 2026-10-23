@@ -35,14 +35,23 @@
 phylogap/
 ├── README.md                      # Project overview & quickstart (this file)
 ├── RESEARCH_PLAN.md               # Master research plan v0.1 (detailed blueprint)
+├── requirements.txt               # Core project dependencies
 ├── docs/                          # Detailed research documentation & notes
 │   ├── DETAILED_EXECUTION_PLAN.md # Phase-by-phase execution protocol & Done Criteria
+│   ├── KAGGLE_EXECUTION_GUIDE.md  # Multi-account Kaggle setup & execution runbook
 │   ├── literature_review_synthesis.md # Systematic survey & mathematical problem formulation
 │   ├── literature_matrix.md       # SOTA comparison & literature audit (7 dimensions)
 │   ├── baseline_benchmark_report.md # Standardized SOTA benchmark on Drosophila & Calypte anna
 │   ├── autoregressive_failure_analysis.md # Quantitative failure analysis of nucleotide LMs
 │   ├── avian_clade_accessions.md  # Curated NCBI accessions & evolutionary tiers (RQ3)
 │   └── data_manifest.md           # Accessions, species list, quality metrics & gap stats
+├── notebooks/                     # Interactive Jupyter Notebooks
+│   └── kaggle_phylogap_runner.ipynb # Ready-to-run Kaggle pipeline runner
+├── kaggle_runner_ui/              # Multi-Account Kaggle Control Hub (FastAPI web app)
+│   ├── run_windows.bat            # One-click Windows launcher
+│   ├── server.py                  # Web dashboard backend (port 8080)
+│   ├── runner/                    # Job builder & multi-account Kaggle API manager
+│   └── data/projects.yaml         # Configured remote jobs across 3 Kaggle accounts
 ├── data/                          # Datasets & metadata manifests
 │   ├── manifests/                 # Curated metadata CSVs (avian_b10k_manifest.csv)
 │   └── benchmarks/dentist_pilot/  # Pilot benchmark assemblies & ground truth BED/JSON
@@ -50,6 +59,7 @@ phylogap/
 │   ├── baseline_benchmark_sota.csv
 │   └── autoregressive_decay_simulation.csv
 ├── scripts/                       # Automated data download, evaluation & audit scripts
+│   ├── push_kaggle_phylogap.py    # CLI dispatcher for multi-account Kaggle runs
 │   ├── evaluate_metrics.py        # Independent metric computation (Acc, FCR, AU-RC)
 │   ├── benchmark_baseline_evaluator.py # Extracts and standardizes SOTA benchmarks
 │   ├── simulate_lm_gap_filling.py # Empirical autoregressive decay simulation

@@ -51,3 +51,14 @@ data/processed/
 experiments/logs/*.log
 checkpoints/
 models/weights/
+
+# Kaggle credentials & local runner storage (CRITICAL: NEVER COMMIT TO GIT)
+kaggle_runner_ui/data/tokens/
+kaggle_runner_ui/data/accounts.yaml
+kaggle_runner_ui/work/
+kaggle_runner_ui/outputs/
+kaggle_runner_ui/*.log
+*.token
+kaggle.json
+.kaggle/
+
