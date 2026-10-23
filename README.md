@@ -15,6 +15,7 @@
 * **Core Philosophy:**
   $$\text{Reproduce Baselines} \longrightarrow \text{Identify Empirical Failure Modes} \longrightarrow \text{Targeted Algorithmic Innovation}$$
 * **Research Plan Master File:** [RESEARCH_PLAN.md](file:///d:/THStudy/UniversityStudy/Research/phylogap/RESEARCH_PLAN.md)
+* **Detailed Execution Plan (SOP):** [docs/DETAILED_EXECUTION_PLAN.md](file:///d:/THStudy/UniversityStudy/Research/phylogap/docs/DETAILED_EXECUTION_PLAN.md)
 
 ---
 
@@ -35,19 +36,17 @@ phylogap/
 ├── README.md                      # Project overview & quickstart (this file)
 ├── RESEARCH_PLAN.md               # Master research plan v0.1 (detailed blueprint)
 ├── docs/                          # Detailed research documentation & notes
-│   ├── literature_matrix.md       # SOTA comparison & literature audit
-│   └── data_manifest.md           # Accessions, species list, quality metrics
-├── envs/                          # Reproducible environment specifications
-│   └── environment.yml
-├── data/                          # Datasets (gitignored raw files)
-│   ├── raw/                       # External raw FASTA, SRA reads
-│   ├── benchmarks/                # Standardized ground truth & gap coordinates
-│   └── processed/                 # Prepared evaluation sets
-├── scripts/                       # Data processing, evaluation & execution scripts
-│   ├── download_datasets.py
-│   └── evaluate_metrics.py        # Nucleotide accuracy, FCR, Risk-Coverage
-├── experiments/                   # Experiment logs and benchmark result sheets
-└── src/                           # Custom algorithm codebase (if Gates 4-5 passed)
+│   ├── DETAILED_EXECUTION_PLAN.md # Phase-by-phase execution protocol & Done Criteria
+│   ├── literature_matrix.md       # SOTA comparison & literature audit (7 dimensions)
+│   └── data_manifest.md           # Accessions, species list, quality metrics & gap stats
+├── data/                          # Datasets (gitignored large files)
+│   └── benchmarks/dentist_pilot/  # Pilot benchmark assemblies & ground truth BED/JSON
+├── scripts/                       # Automated data download, evaluation & audit scripts
+│   ├── download_dentist_metadata.py
+│   ├── download_pilot_assemblies.py
+│   ├── audit_gap_distribution.py
+│   └── analyze_gap_sequences.py   # Biological EDA & GC/repeat analysis
+└── src/                           # Custom algorithm codebase (conditional on Gates 4-5)
 ```
 
 ---
