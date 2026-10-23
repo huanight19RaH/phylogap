@@ -93,13 +93,17 @@ Mỗi gap được định nghĩa chính xác theo cấu trúc đối tượng:
 
 ---
 
-## 4. Kế hoạch Thu thập Dữ liệu B10K (Avian Clade Selection)
+## 4. Kế hoạch Thu thập Dữ liệu B10K (Avian Clade Selection & Curated Accessions)
 
-Để trả lời **RQ3 (Ảnh hưởng của khoảng cách tiến hóa)**, PhyloGap chọn 4 cấp độ phân tách tiến hóa từ dự án B10K (PRJNA545868) và NCBI Datasets:
+Để trả lời **RQ3 (Ảnh hưởng của khoảng cách tiến hóa)**, PhyloGap chọn 4 cấp độ phân tách tiến hóa từ dự án B10K (PRJNA545868) và VGP, được thẩm định và xác thực tự động qua NCBI Datasets API (chi tiết xem tại [avian_clade_accessions.md](file:///d:/THStudy/UniversityStudy/Research/phylogap/docs/avian_clade_accessions.md) và tệp manifest có cấu trúc [avian_b10k_manifest.csv](file:///d:/THStudy/UniversityStudy/Research/phylogap/data/manifests/avian_b10k_manifest.csv)):
 
-| Cấp độ Phân tách | Loài Mục tiêu (Target Assembly) | Loài Tham chiếu (Homology Reference) | Khoảng cách Ước tính (Mya) | Mục đích Thử nghiệm |
-| :--- | :--- | :--- | :---: | :--- |
-| **Cùng Chi (Sister Species)** | *Taeniopygia guttata* (Zebra finch) | *Taeniopygia bichenovii* (Double-barred finch) | $\sim 3 - 5$ Mya | Độ bảo tồn rất cao; kiểm tra baseline homology |
-| **Cùng Họ (Same Family)** | *Taeniopygia guttata* (Estrildidae) | *Lonchura striata* (White-rumped munia) | $\sim 10 - 15$ Mya | Khảo sát mức độ sai khác substitution |
-| **Cùng Bộ (Same Order)** | *Gallus gallus* (Gà nhà - Phasianidae) | *Numida meleagris* (Gà sao - Numididae) | $\sim 35 - 45$ Mya | Đánh giá suy thoái căn chỉnh tương đồng |
-| **Khác Bộ (Distant Order)** | *Calypte anna* (Apodiformes - Chim ruồi) | *Gallus gallus* (Galliformes - Gà) | $>80$ Mya | Đo lường failure mode khi reference quá xa |
+| Phân tầng (Tier) | Loài Mục tiêu (Target) & Accession | Loài Tham chiếu (Reference) & Accession | Phân tách (Mya) | Cấp độ Lắp ráp | Mục đích Thực nghiệm RQ3 |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| **Tier 1 (Sister Species)** | *Lonchura striata*<br/>`GCF_046129695.1` (bLonStr1.mat) | *Lonchura oryzivora*<br/>`GCA_056776775.1` (ASM5677677v1) | **~5.2** | Chromosome | Độ tương đồng cực cao; kiểm chứng trần hiệu năng của homology-guided filling |
+| **Tier 2 (Same Family)** | *Taeniopygia guttata*<br/>`GCF_003957565.2` (bTaeGut1.4.pri) | *Lonchura striata*<br/>`GCF_046129695.1` (bLonStr1.mat) | **~11.5** | Chromosome | Đánh giá sai số do substitution & vi đột biến indel trong cùng họ Estrildidae |
+| **Tier 2b (Alt Family Ref)** | *Taeniopygia guttata*<br/>`GCF_003957565.2` (bTaeGut1.4.pri) | *Poephila acuticauda*<br/>`GCA_057534655.1` (Pacu_hecki_V1) | **~14.1** | Chromosome | Nhóm đối chứng bổ trợ độc lập cho nhánh chim sẻ cỏ Úc |
+| **Tier 3 (Same Order)** | *Gallus gallus*<br/>`GCF_016699485.2` (GRCg7b) | *Numida meleagris*<br/>`GCF_002078875.1` (NumMel1.0) | **~46.2** | Chromosome | Khảo sát mức độ suy thoái căn chỉnh tương đồng giữa các họ trong bộ Galliformes |
+| **Tier 4 (Distant Orders)** | *Calypte anna*<br/>`GCF_003957555.1` (bCalAnn1_v1.p) | *Gallus gallus*<br/>`GCF_016699485.2` (GRCg7b) | **~88.0** | Chromosome | Xác định điểm gãy (*breakdown point*) khi loài tham chiếu quá xa (Galloanserae vs Neoaves) |
+
+> **Ghi chú Thẩm định Kỹ thuật:** *Taeniopygia bichenovii* ban đầu được thay thế bởi *Lonchura oryzivora* do *T. bichenovii* chưa có assembly de novo trên NCBI. Tất cả các assembly được chọn đều là dữ liệu chính thức từ VGP/B10K, đạt cấp độ Chromosome-scale với Contig N50 từ 8.9 Mb đến 36.1 Mb.
+

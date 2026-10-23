@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 * **Working Description:** Genome Gap Reconstruction through Cross-Species Evidence and Reliable Prediction
 * **Provisional Research Title:** *Cross-Species Benchmarking of Genome Assembly Gap-Filling Methods under Reference and Read-Data Constraints*
@@ -19,7 +19,7 @@
 
 ---
 
-## 🔬 Research Questions (RQ1–RQ5)
+## Research Questions (RQ1–RQ5)
 
 * **RQ1 (Baseline Fidelity):** How do existing read-based (DENTIST, Sealer) and learning-based (GapPredict, DLGapCloser, DL-GapFilling) gap-filling methods perform on standardized benchmarks with verifiable ground truth? *(Mandatory Phase 1)*
 * **RQ2 (Failure Mode Taxonomy):** What structural gap categories are most prone to failure (gap length, repetitive elements, low sequence conservation, or lack of read spanning)? *(Mandatory Phase 1)*
@@ -29,7 +29,7 @@
 
 ---
 
-## 📂 Repository Layout
+## Repository Layout
 
 ```text
 phylogap/
@@ -41,8 +41,10 @@ phylogap/
 │   ├── literature_matrix.md       # SOTA comparison & literature audit (7 dimensions)
 │   ├── baseline_benchmark_report.md # Standardized SOTA benchmark on Drosophila & Calypte anna
 │   ├── autoregressive_failure_analysis.md # Quantitative failure analysis of nucleotide LMs
+│   ├── avian_clade_accessions.md  # Curated NCBI accessions & evolutionary tiers (RQ3)
 │   └── data_manifest.md           # Accessions, species list, quality metrics & gap stats
-├── data/                          # Datasets (gitignored large files)
+├── data/                          # Datasets & metadata manifests
+│   ├── manifests/                 # Curated metadata CSVs (avian_b10k_manifest.csv)
 │   └── benchmarks/dentist_pilot/  # Pilot benchmark assemblies & ground truth BED/JSON
 ├── experiments/results/           # Standardized benchmark CSVs and simulation outputs
 │   ├── baseline_benchmark_sota.csv
@@ -51,18 +53,20 @@ phylogap/
 │   ├── evaluate_metrics.py        # Independent metric computation (Acc, FCR, AU-RC)
 │   ├── benchmark_baseline_evaluator.py # Extracts and standardizes SOTA benchmarks
 │   ├── simulate_lm_gap_filling.py # Empirical autoregressive decay simulation
+│   ├── query_b10k_metadata.py     # Automated NCBI Datasets metadata extractor
 │   ├── download_dentist_metadata.py
 │   ├── download_pilot_assemblies.py
 │   ├── audit_gap_distribution.py
 │   └── analyze_gap_sequences.py   # Biological EDA & GC/repeat analysis
-├── tests/                         # Unit tests for evaluation logic & algorithms
-│   └── test_evaluate_metrics.py   # 6 unit tests validating accuracy, FCR, AU-RC
+├── tests/                         # Unit tests for evaluation logic & data manifests
+│   ├── test_evaluate_metrics.py   # 6 unit tests validating accuracy, FCR, AU-RC
+│   └── test_b10k_manifest.py      # 8 unit tests validating avian metadata integrity
 └── src/                           # Custom algorithm codebase (conditional on Gates 4-5)
 ```
 
 ---
 
-## 🧭 Roadmap & Decision Gates
+## Roadmap & Decision Gates
 
 The project follows a rigorous 14-week schedule with hard **Go/No-Go Decision Gates**:
 1. **Gate 1 (Week 2):** Literature differentiation vs. recent SOTA (DL-GapFilling 2026, GapSuite 2026).
