@@ -39,11 +39,18 @@ phylogap/
 │   ├── DETAILED_EXECUTION_PLAN.md # Phase-by-phase execution protocol & Done Criteria
 │   ├── literature_review_synthesis.md # Systematic survey & mathematical problem formulation
 │   ├── literature_matrix.md       # SOTA comparison & literature audit (7 dimensions)
+│   ├── baseline_benchmark_report.md # Standardized SOTA benchmark on Drosophila & Calypte anna
+│   ├── autoregressive_failure_analysis.md # Quantitative failure analysis of nucleotide LMs
 │   └── data_manifest.md           # Accessions, species list, quality metrics & gap stats
 ├── data/                          # Datasets (gitignored large files)
 │   └── benchmarks/dentist_pilot/  # Pilot benchmark assemblies & ground truth BED/JSON
+├── experiments/results/           # Standardized benchmark CSVs and simulation outputs
+│   ├── baseline_benchmark_sota.csv
+│   └── autoregressive_decay_simulation.csv
 ├── scripts/                       # Automated data download, evaluation & audit scripts
 │   ├── evaluate_metrics.py        # Independent metric computation (Acc, FCR, AU-RC)
+│   ├── benchmark_baseline_evaluator.py # Extracts and standardizes SOTA benchmarks
+│   ├── simulate_lm_gap_filling.py # Empirical autoregressive decay simulation
 │   ├── download_dentist_metadata.py
 │   ├── download_pilot_assemblies.py
 │   ├── audit_gap_distribution.py

@@ -1,0 +1,7 @@
+Gap Length Range,Mean Length (bp),Exact Match Rate (%),Mean Nucleotide Accuracy (%),False-Closure Rate (%),Repetitive Degeneration Rate (%)
+10-30bp,20,40.4,93.09,18.8,12.0
+30-50bp,40,18.8,91.18,19.2,17.2
+50-100bp,75,3.2,87.8,23.2,24.0
+100-200bp,150,0.4,76.93,51.2,55.6
+200-500bp,350,0.0,65.08,74.0,77.6
+500-1000bp,750,0.0,48.66,96.8,99.6
