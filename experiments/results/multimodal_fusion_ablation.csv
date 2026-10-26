@@ -1,0 +1,601 @@
+regime_id,divergence_mya,gap_len,sample_idx,config,is_accepted,nucleotide_accuracy,exact_match,is_false_closure,error_rate,substitutions,indels
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,0,Config A: Sparse Reads Only,True,0.68,False,True,0.38,5,14
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,0,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,0,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,0,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,1,Config A: Sparse Reads Only,True,0.78,False,True,0.22,4,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,1,Config B: Homology Only,True,0.94,False,False,0.06,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,1,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,1,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,2,Config A: Sparse Reads Only,True,0.7,False,True,0.3,7,8
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,2,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,2,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,2,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,3,Config A: Sparse Reads Only,True,0.68,False,True,0.36,6,12
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,3,Config B: Homology Only,True,0.88,False,True,0.12,5,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,3,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,3,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,4,Config A: Sparse Reads Only,True,0.68,False,True,0.32,6,10
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,4,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,4,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,4,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,5,Config A: Sparse Reads Only,True,0.66,False,True,0.38,7,12
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,5,Config B: Homology Only,True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,5,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,5,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,6,Config A: Sparse Reads Only,True,0.7,False,True,0.32,5,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,6,Config B: Homology Only,True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,6,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,6,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,7,Config A: Sparse Reads Only,True,0.7,False,True,0.32,4,12
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,7,Config B: Homology Only,True,0.94,False,False,0.06,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,7,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,7,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,8,Config A: Sparse Reads Only,True,0.66,False,True,0.4,5,15
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,8,Config B: Homology Only,True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,8,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,8,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,9,Config A: Sparse Reads Only,True,0.64,False,True,0.36,8,10
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,9,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,9,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,9,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,10,Config A: Sparse Reads Only,True,0.66,False,True,0.36,7,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,10,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,10,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,10,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,11,Config A: Sparse Reads Only,True,0.68,False,True,0.4,4,16
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,11,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,11,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,11,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,12,Config A: Sparse Reads Only,True,0.7,False,True,0.32,7,9
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,12,Config B: Homology Only,True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,12,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,12,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,13,Config A: Sparse Reads Only,True,0.76,False,True,0.24,4,8
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,13,Config B: Homology Only,True,0.82,False,True,0.18,3,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,13,Config C: Naive Hybrid (No Gating),True,0.8,False,True,0.2,4,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,13,Config D: PhyloGap (Fusion + Gating),True,0.8,False,True,0.2,4,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,14,Config A: Sparse Reads Only,True,0.64,False,True,0.5,6,19
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,14,Config B: Homology Only,True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,14,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,14,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,15,Config A: Sparse Reads Only,True,0.7,False,True,0.4,2,18
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,15,Config B: Homology Only,True,0.96,False,False,0.04,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,15,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,15,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,16,Config A: Sparse Reads Only,True,0.74,False,True,0.26,5,8
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,16,Config B: Homology Only,True,0.94,False,False,0.06,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,16,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,16,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,17,Config A: Sparse Reads Only,True,0.64,False,True,0.36,7,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,17,Config B: Homology Only,True,0.92,False,False,0.08,3,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,17,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,17,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,18,Config A: Sparse Reads Only,True,0.64,False,True,0.36,7,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,18,Config B: Homology Only,True,0.94,False,False,0.06,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,18,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,18,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,19,Config A: Sparse Reads Only,True,0.62,False,True,0.4,9,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,19,Config B: Homology Only,True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,19,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,19,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,20,Config A: Sparse Reads Only,True,0.72,False,True,0.3,4,11
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,20,Config B: Homology Only,True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,20,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,20,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,21,Config A: Sparse Reads Only,True,0.64,False,True,0.48,6,18
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,21,Config B: Homology Only,True,0.82,False,True,0.18,2,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,21,Config C: Naive Hybrid (No Gating),True,0.84,False,True,0.16,1,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,21,Config D: PhyloGap (Fusion + Gating),True,0.84,False,True,0.16,1,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,22,Config A: Sparse Reads Only,True,0.68,False,True,0.32,6,10
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,22,Config B: Homology Only,True,0.94,False,False,0.06,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,22,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,22,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,23,Config A: Sparse Reads Only,True,0.7,False,True,0.32,4,12
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,23,Config B: Homology Only,True,0.92,False,False,0.08,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,23,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,23,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,24,Config A: Sparse Reads Only,True,0.68,False,True,0.42,4,17
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,24,Config B: Homology Only,True,0.98,False,False,0.02,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,24,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,50,24,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,0,Config A: Sparse Reads Only,True,0.64,False,True,0.4,14,26
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,0,Config B: Homology Only,True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,0,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,0,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,1,Config A: Sparse Reads Only,True,0.66,False,True,0.38,11,27
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,1,Config B: Homology Only,True,0.93,False,False,0.07,7,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,1,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,1,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,2,Config A: Sparse Reads Only,True,0.71,False,True,0.33,8,25
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,2,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,2,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,2,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,3,Config A: Sparse Reads Only,True,0.63,False,True,0.4,14,26
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,3,Config B: Homology Only,True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,3,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,3,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,4,Config A: Sparse Reads Only,True,0.65,False,True,0.44,10,34
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,4,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,4,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,4,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,5,Config A: Sparse Reads Only,True,0.66,False,True,0.45,9,36
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,5,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,5,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,5,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,6,Config A: Sparse Reads Only,True,0.64,False,True,0.41,12,29
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,6,Config B: Homology Only,True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,6,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,6,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,7,Config A: Sparse Reads Only,True,0.64,False,True,0.39,13,26
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,7,Config B: Homology Only,True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,7,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,7,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,8,Config A: Sparse Reads Only,True,0.67,False,True,0.34,11,23
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,8,Config B: Homology Only,True,0.94,False,False,0.06,6,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,8,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,8,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,9,Config A: Sparse Reads Only,True,0.65,False,True,0.44,10,34
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,9,Config B: Homology Only,True,0.9702970297029703,False,False,0.0297029702970297,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,9,Config C: Naive Hybrid (No Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,9,Config D: PhyloGap (Fusion + Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,10,Config A: Sparse Reads Only,True,0.64,False,True,0.4,13,27
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,10,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,10,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,10,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,11,Config A: Sparse Reads Only,True,0.69,False,True,0.33,13,20
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,11,Config B: Homology Only,True,0.97,False,False,0.03,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,11,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,11,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,12,Config A: Sparse Reads Only,True,0.7,False,True,0.4,5,35
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,12,Config B: Homology Only,True,0.92,False,False,0.08,4,4
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,12,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.05,1,4
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,12,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.05,1,4
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,13,Config A: Sparse Reads Only,True,0.77,False,True,0.26,7,19
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,13,Config B: Homology Only,True,0.93,False,False,0.07,7,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,13,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.05,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,13,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.05,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,14,Config A: Sparse Reads Only,True,0.73,False,True,0.29,7,22
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,14,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,14,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,14,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,15,Config A: Sparse Reads Only,True,0.63,False,True,0.42,12,30
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,15,Config B: Homology Only,True,0.96,False,False,0.04,2,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,15,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,15,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,16,Config A: Sparse Reads Only,True,0.68,False,True,0.33,12,21
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,16,Config B: Homology Only,True,0.91,False,False,0.09,6,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,16,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.04,1,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,16,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.04,1,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,17,Config A: Sparse Reads Only,True,0.65,False,True,0.38,12,26
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,17,Config B: Homology Only,True,0.97,False,False,0.03,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,17,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,0,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,17,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,0,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,18,Config A: Sparse Reads Only,True,0.62,False,True,0.44,13,31
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,18,Config B: Homology Only,True,0.94,False,False,0.06,1,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,18,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.06,1,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,18,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.06,1,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,19,Config A: Sparse Reads Only,True,0.65,False,True,0.41,13,28
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,19,Config B: Homology Only,True,0.95,False,False,0.05,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,19,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,19,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,20,Config A: Sparse Reads Only,True,0.64,False,True,0.4,11,29
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,20,Config B: Homology Only,True,0.9702970297029703,False,False,0.0297029702970297,2,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,20,Config C: Naive Hybrid (No Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,20,Config D: PhyloGap (Fusion + Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,21,Config A: Sparse Reads Only,True,0.69,False,True,0.34,11,23
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,21,Config B: Homology Only,True,0.9405940594059405,False,False,0.0594059405940594,5,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,21,Config C: Naive Hybrid (No Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,21,Config D: PhyloGap (Fusion + Gating),True,0.9900990099009901,False,False,0.009900990099009901,0,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,22,Config A: Sparse Reads Only,True,0.66,False,True,0.35,16,19
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,22,Config B: Homology Only,True,0.96,False,False,0.04,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,22,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,22,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,23,Config A: Sparse Reads Only,True,0.71,False,True,0.33,10,23
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,23,Config B: Homology Only,True,0.98,False,False,0.02,2,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,23,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,23,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.01,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,24,Config A: Sparse Reads Only,True,0.62,False,True,0.4,16,24
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,24,Config B: Homology Only,True,0.9705882352941176,False,False,0.029411764705882353,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,24,Config C: Naive Hybrid (No Gating),True,0.9705882352941176,False,False,0.029411764705882353,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,100,24,Config D: PhyloGap (Fusion + Gating),True,0.9705882352941176,False,False,0.029411764705882353,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,0,Config A: Sparse Reads Only,True,0.75,False,True,0.26,18,34
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,0,Config B: Homology Only,True,0.94,False,False,0.06,9,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,0,Config C: Naive Hybrid (No Gating),True,0.975,False,False,0.025,2,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,0,Config D: PhyloGap (Fusion + Gating),True,0.975,False,False,0.025,2,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,1,Config A: Sparse Reads Only,True,0.66,False,True,0.34,34,34
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,1,Config B: Homology Only,True,0.935,False,False,0.065,13,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,1,Config C: Naive Hybrid (No Gating),True,0.955,False,False,0.045,9,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,1,Config D: PhyloGap (Fusion + Gating),True,0.955,False,False,0.045,9,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,2,Config A: Sparse Reads Only,True,0.625,False,True,0.405,31,50
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,2,Config B: Homology Only,True,0.9024390243902439,False,False,0.0975609756097561,15,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,2,Config C: Naive Hybrid (No Gating),True,0.975609756097561,False,False,0.024390243902439025,0,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,2,Config D: PhyloGap (Fusion + Gating),True,0.975609756097561,False,False,0.024390243902439025,0,5
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,3,Config A: Sparse Reads Only,True,0.635,False,True,0.405,28,53
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,3,Config B: Homology Only,True,0.97,False,False,0.03,4,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,3,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,4,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,3,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,4,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,4,Config A: Sparse Reads Only,True,0.64,False,True,0.385,25,52
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,4,Config B: Homology Only,True,0.9752475247524752,False,False,0.024752475247524754,3,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,4,Config C: Naive Hybrid (No Gating),True,0.9851485148514851,False,False,0.01485148514851485,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,4,Config D: PhyloGap (Fusion + Gating),True,0.9851485148514851,False,False,0.01485148514851485,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,5,Config A: Sparse Reads Only,True,0.695,False,True,0.345,21,48
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,5,Config B: Homology Only,True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,5,Config C: Naive Hybrid (No Gating),True,0.995,False,False,0.005,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,5,Config D: PhyloGap (Fusion + Gating),True,0.995,False,False,0.005,1,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,6,Config A: Sparse Reads Only,True,0.655,False,True,0.39,24,54
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,6,Config B: Homology Only,True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,6,Config C: Naive Hybrid (No Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,6,Config D: PhyloGap (Fusion + Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,7,Config A: Sparse Reads Only,True,0.67,False,True,0.395,22,57
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,7,Config B: Homology Only,True,0.965,False,False,0.035,7,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,7,Config C: Naive Hybrid (No Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,7,Config D: PhyloGap (Fusion + Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,8,Config A: Sparse Reads Only,True,0.705,False,True,0.3,22,38
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,8,Config B: Homology Only,True,0.945,False,False,0.06,6,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,8,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.035,1,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,8,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.035,1,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,9,Config A: Sparse Reads Only,True,0.67,False,True,0.385,17,60
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,9,Config B: Homology Only,True,0.92,False,False,0.08,15,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,9,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.05,9,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,9,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.05,9,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,10,Config A: Sparse Reads Only,True,0.62,False,True,0.41,28,54
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,10,Config B: Homology Only,True,0.965,False,False,0.04,6,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,10,Config C: Naive Hybrid (No Gating),True,0.99,False,False,0.015,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,10,Config D: PhyloGap (Fusion + Gating),True,0.99,False,False,0.015,1,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,11,Config A: Sparse Reads Only,True,0.635,False,True,0.4,26,54
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,11,Config B: Homology Only,True,0.935,False,False,0.075,9,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,11,Config C: Naive Hybrid (No Gating),True,0.965,False,False,0.045,3,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,11,Config D: PhyloGap (Fusion + Gating),True,0.965,False,False,0.045,3,6
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,12,Config A: Sparse Reads Only,True,0.655,False,True,0.45,19,71
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,12,Config B: Homology Only,True,0.925,False,False,0.075,13,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,12,Config C: Naive Hybrid (No Gating),True,0.965,False,False,0.035,5,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,12,Config D: PhyloGap (Fusion + Gating),True,0.965,False,False,0.035,5,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,13,Config A: Sparse Reads Only,True,0.69,False,True,0.33,25,41
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,13,Config B: Homology Only,True,0.935,False,False,0.065,13,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,13,Config C: Naive Hybrid (No Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,13,Config D: PhyloGap (Fusion + Gating),True,0.985,False,False,0.015,3,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,14,Config A: Sparse Reads Only,True,0.655,False,True,0.37,28,46
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,14,Config B: Homology Only,True,0.935,False,False,0.07,11,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,14,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.045,6,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,14,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.045,6,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,15,Config A: Sparse Reads Only,True,0.635,False,True,0.415,25,58
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,15,Config B: Homology Only,True,0.945,False,False,0.06,9,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,15,Config C: Naive Hybrid (No Gating),True,0.955,False,False,0.05,7,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,15,Config D: PhyloGap (Fusion + Gating),True,0.955,False,False,0.05,7,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,16,Config A: Sparse Reads Only,True,0.65,False,True,0.395,22,57
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,16,Config B: Homology Only,True,0.945,False,False,0.055,11,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,16,Config C: Naive Hybrid (No Gating),True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,16,Config D: PhyloGap (Fusion + Gating),True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,17,Config A: Sparse Reads Only,True,0.645,False,True,0.41,22,60
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,17,Config B: Homology Only,True,0.96,False,False,0.04,8,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,17,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,17,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,18,Config A: Sparse Reads Only,True,0.66,False,True,0.4,23,57
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,18,Config B: Homology Only,True,0.97,False,False,0.03,6,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,18,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,6,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,18,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,6,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,19,Config A: Sparse Reads Only,True,0.67,False,True,0.355,25,46
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,19,Config B: Homology Only,True,0.945,False,False,0.055,9,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,19,Config C: Naive Hybrid (No Gating),True,0.97,False,False,0.03,4,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,19,Config D: PhyloGap (Fusion + Gating),True,0.97,False,False,0.03,4,2
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,20,Config A: Sparse Reads Only,True,0.66,False,True,0.425,20,65
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,20,Config B: Homology Only,True,0.945,False,False,0.055,11,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,20,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,20,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,4,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,21,Config A: Sparse Reads Only,True,0.65,False,True,0.37,27,47
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,21,Config B: Homology Only,True,0.9502487562189055,False,False,0.05472636815920398,8,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,21,Config C: Naive Hybrid (No Gating),True,0.9651741293532339,False,False,0.03980099502487562,5,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,21,Config D: PhyloGap (Fusion + Gating),True,0.9651741293532339,False,False,0.03980099502487562,5,3
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,22,Config A: Sparse Reads Only,True,0.625,False,True,0.405,30,51
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,22,Config B: Homology Only,True,0.95,False,False,0.05,10,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,22,Config C: Naive Hybrid (No Gating),True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,22,Config D: PhyloGap (Fusion + Gating),True,0.975,False,False,0.025,5,0
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,23,Config A: Sparse Reads Only,True,0.64,False,True,0.375,35,40
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,23,Config B: Homology Only,True,0.9468599033816425,False,False,0.05314009661835749,4,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,23,Config C: Naive Hybrid (No Gating),True,0.9468599033816425,False,False,0.05314009661835749,4,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,23,Config D: PhyloGap (Fusion + Gating),True,0.9468599033816425,False,False,0.05314009661835749,4,7
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,24,Config A: Sparse Reads Only,True,0.715,False,True,0.315,19,44
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,24,Config B: Homology Only,True,0.9601990049751243,False,False,0.03980099502487562,7,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,24,Config C: Naive Hybrid (No Gating),True,0.9900497512437811,False,False,0.009950248756218905,1,1
+Regime 1: Close Clade (~11.5 Mya - Estrildidae),11.5,200,24,Config D: PhyloGap (Fusion + Gating),True,0.9900497512437811,False,False,0.009950248756218905,1,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,0,Config A: Sparse Reads Only,True,0.72,False,True,0.3,4,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,0,Config B: Homology Only,True,0.84,False,True,0.16,7,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,0,Config C: Naive Hybrid (No Gating),True,0.9,False,False,0.1,4,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,0,Config D: PhyloGap (Fusion + Gating),True,0.9,False,False,0.1,4,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,1,Config A: Sparse Reads Only,True,0.7,False,True,0.38,2,17
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,1,Config B: Homology Only,True,0.7818181818181819,False,True,0.21818181818181817,7,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,1,Config C: Naive Hybrid (No Gating),True,0.8727272727272727,False,True,0.12727272727272726,2,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,1,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,2,Config A: Sparse Reads Only,True,0.52,False,True,0.5,12,13
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,2,Config B: Homology Only,True,0.8,False,True,0.22,7,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,2,Config C: Naive Hybrid (No Gating),True,0.9,False,True,0.12,2,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,2,Config D: PhyloGap (Fusion + Gating),True,0.9,False,True,0.12,2,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,3,Config A: Sparse Reads Only,True,0.94,False,False,0.06,3,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,3,Config B: Homology Only,True,0.72,False,True,0.28,7,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,3,Config C: Naive Hybrid (No Gating),True,0.82,False,True,0.18,2,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,3,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,4,Config A: Sparse Reads Only,True,0.96,False,False,0.04,2,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,4,Config B: Homology Only,True,0.82,False,True,0.18,9,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,4,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,4,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,5,Config A: Sparse Reads Only,True,0.64,False,True,0.4,6,14
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,5,Config B: Homology Only,True,0.8269230769230769,False,True,0.17307692307692307,7,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,5,Config C: Naive Hybrid (No Gating),True,0.9423076923076923,False,False,0.057692307692307696,1,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,5,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,6,Config A: Sparse Reads Only,True,0.66,False,True,0.46,5,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,6,Config B: Homology Only,True,0.8431372549019608,False,True,0.1568627450980392,7,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,6,Config C: Naive Hybrid (No Gating),True,0.9607843137254902,False,False,0.0392156862745098,1,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,6,Config D: PhyloGap (Fusion + Gating),True,0.9607843137254902,False,False,0.0392156862745098,1,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,7,Config A: Sparse Reads Only,True,0.68,False,True,0.34,6,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,7,Config B: Homology Only,True,0.84,False,True,0.16,6,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,7,Config C: Naive Hybrid (No Gating),True,0.9,False,False,0.1,3,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,7,Config D: PhyloGap (Fusion + Gating),True,0.9,False,False,0.1,3,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,8,Config A: Sparse Reads Only,True,0.7,False,True,0.32,5,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,8,Config B: Homology Only,True,0.6557377049180327,False,True,0.3442622950819672,10,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,8,Config C: Naive Hybrid (No Gating),True,0.7868852459016393,False,True,0.21311475409836064,2,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,8,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,9,Config A: Sparse Reads Only,True,0.72,False,True,0.3,5,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,9,Config B: Homology Only,True,0.86,False,True,0.14,5,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,9,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.06,1,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,9,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.06,1,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,10,Config A: Sparse Reads Only,True,0.6,False,True,0.44,8,14
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,10,Config B: Homology Only,True,0.8076923076923077,False,True,0.19230769230769232,8,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,10,Config C: Naive Hybrid (No Gating),True,0.8846153846153846,False,True,0.11538461538461539,4,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,10,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,11,Config A: Sparse Reads Only,True,0.64,False,True,0.44,6,16
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,11,Config B: Homology Only,True,0.76,False,True,0.24,12,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,11,Config C: Naive Hybrid (No Gating),True,0.82,False,True,0.18,9,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,11,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,12,Config A: Sparse Reads Only,True,0.56,False,True,0.44,11,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,12,Config B: Homology Only,True,0.82,False,True,0.18,7,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,12,Config C: Naive Hybrid (No Gating),True,0.9,False,False,0.1,3,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,12,Config D: PhyloGap (Fusion + Gating),True,0.9,False,False,0.1,3,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,13,Config A: Sparse Reads Only,True,0.74,False,True,0.3,2,13
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,13,Config B: Homology Only,True,0.8,False,True,0.2,9,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,13,Config C: Naive Hybrid (No Gating),True,0.92,False,False,0.08,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,13,Config D: PhyloGap (Fusion + Gating),True,0.92,False,False,0.08,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,14,Config A: Sparse Reads Only,True,0.74,False,True,0.26,5,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,14,Config B: Homology Only,True,0.8,False,True,0.2,10,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,14,Config C: Naive Hybrid (No Gating),True,1.0,True,False,0.0,0,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,14,Config D: PhyloGap (Fusion + Gating),True,1.0,True,False,0.0,0,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,15,Config A: Sparse Reads Only,True,0.64,False,True,0.46,6,17
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,15,Config B: Homology Only,True,0.76,False,True,0.24,5,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,15,Config C: Naive Hybrid (No Gating),True,0.84,False,True,0.16,1,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,15,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,16,Config A: Sparse Reads Only,True,0.78,False,True,0.24,4,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,16,Config B: Homology Only,True,0.8076923076923077,False,True,0.19230769230769232,8,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,16,Config C: Naive Hybrid (No Gating),True,0.8846153846153846,False,True,0.11538461538461539,4,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,16,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,17,Config A: Sparse Reads Only,True,0.6,False,True,0.42,10,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,17,Config B: Homology Only,True,0.8,False,True,0.2,9,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,17,Config C: Naive Hybrid (No Gating),True,0.92,False,False,0.08,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,17,Config D: PhyloGap (Fusion + Gating),True,0.92,False,False,0.08,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,18,Config A: Sparse Reads Only,True,0.66,False,True,0.44,4,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,18,Config B: Homology Only,True,0.7924528301886793,False,True,0.22641509433962265,7,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,18,Config C: Naive Hybrid (No Gating),True,0.9056603773584906,False,True,0.11320754716981132,1,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,18,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,19,Config A: Sparse Reads Only,True,1.0,True,False,0.0,0,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,19,Config B: Homology Only,True,0.7962962962962963,False,True,0.2037037037037037,7,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,19,Config C: Naive Hybrid (No Gating),True,0.9259259259259259,False,False,0.07407407407407407,0,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,19,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,50
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,20,Config A: Sparse Reads Only,True,0.64,False,True,0.36,7,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,20,Config B: Homology Only,True,0.82,False,True,0.18,9,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,20,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,20,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,21,Config A: Sparse Reads Only,True,0.66,False,True,0.36,6,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,21,Config B: Homology Only,True,0.8,False,True,0.2,10,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,21,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.04,2,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,21,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.04,2,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,22,Config A: Sparse Reads Only,True,0.74,False,True,0.28,5,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,22,Config B: Homology Only,True,0.8431372549019608,False,True,0.1568627450980392,7,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,22,Config C: Naive Hybrid (No Gating),True,0.9215686274509803,False,False,0.0784313725490196,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,22,Config D: PhyloGap (Fusion + Gating),True,0.9215686274509803,False,False,0.0784313725490196,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,23,Config A: Sparse Reads Only,True,0.66,False,True,0.5,4,21
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,23,Config B: Homology Only,True,0.92,False,False,0.08,3,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,23,Config C: Naive Hybrid (No Gating),True,0.96,False,False,0.04,1,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,23,Config D: PhyloGap (Fusion + Gating),True,0.96,False,False,0.04,1,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,24,Config A: Sparse Reads Only,True,0.72,False,True,0.3,3,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,24,Config B: Homology Only,True,0.9,False,False,0.1,5,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,24,Config C: Naive Hybrid (No Gating),True,0.98,False,False,0.02,1,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,50,24,Config D: PhyloGap (Fusion + Gating),True,0.98,False,False,0.02,1,0
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,0,Config A: Sparse Reads Only,True,0.7,False,True,0.34,8,26
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,0,Config B: Homology Only,True,0.84,False,True,0.18,14,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,0,Config C: Naive Hybrid (No Gating),True,0.93,False,False,0.09,5,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,0,Config D: PhyloGap (Fusion + Gating),True,0.93,False,False,0.09,5,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,1,Config A: Sparse Reads Only,True,0.61,False,True,0.45,15,30
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,1,Config B: Homology Only,True,0.79,False,True,0.24,18,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,1,Config C: Naive Hybrid (No Gating),True,0.92,False,True,0.11,5,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,1,Config D: PhyloGap (Fusion + Gating),True,0.92,False,True,0.11,5,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,2,Config A: Sparse Reads Only,True,0.66,False,True,0.39,10,29
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,2,Config B: Homology Only,True,0.82,False,True,0.21,15,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,2,Config C: Naive Hybrid (No Gating),True,0.87,False,True,0.16,10,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,2,Config D: PhyloGap (Fusion + Gating),True,0.87,False,True,0.16,10,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,3,Config A: Sparse Reads Only,True,0.63,False,True,0.43,13,30
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,3,Config B: Homology Only,True,0.88,False,True,0.12,8,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,3,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.05,1,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,3,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.05,1,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,4,Config A: Sparse Reads Only,True,0.71,False,True,0.37,6,31
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,4,Config B: Homology Only,True,0.8316831683168316,False,True,0.16831683168316833,16,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,4,Config C: Naive Hybrid (No Gating),True,0.9405940594059405,False,False,0.0594059405940594,5,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,4,Config D: PhyloGap (Fusion + Gating),True,0.9405940594059405,False,False,0.0594059405940594,5,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,5,Config A: Sparse Reads Only,True,0.68,False,True,0.33,12,21
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,5,Config B: Homology Only,True,0.73,False,True,0.27,21,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,5,Config C: Naive Hybrid (No Gating),True,0.8,False,True,0.2,14,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,5,Config D: PhyloGap (Fusion + Gating),True,0.8,False,True,0.2,14,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,6,Config A: Sparse Reads Only,True,0.66,False,True,0.38,11,27
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,6,Config B: Homology Only,True,0.76,False,True,0.26,16,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,6,Config C: Naive Hybrid (No Gating),True,0.9,False,True,0.12,2,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,6,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,7,Config A: Sparse Reads Only,True,0.64,False,True,0.44,12,32
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,7,Config B: Homology Only,True,0.79,False,True,0.24,15,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,7,Config C: Naive Hybrid (No Gating),True,0.92,False,True,0.11,2,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,7,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,8,Config A: Sparse Reads Only,True,0.59,False,True,0.46,19,27
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,8,Config B: Homology Only,True,0.8,False,True,0.24,13,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,8,Config C: Naive Hybrid (No Gating),True,0.85,False,True,0.19,8,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,8,Config D: PhyloGap (Fusion + Gating),True,0.85,False,True,0.19,8,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,9,Config A: Sparse Reads Only,True,0.68,False,True,0.34,10,24
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,9,Config B: Homology Only,True,0.8058252427184466,False,True,0.20388349514563106,16,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,9,Config C: Naive Hybrid (No Gating),True,0.912621359223301,False,False,0.0970873786407767,5,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,9,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,10,Config A: Sparse Reads Only,True,0.62,False,True,0.44,15,29
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,10,Config B: Homology Only,True,0.7904761904761904,False,True,0.20952380952380953,17,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,10,Config C: Naive Hybrid (No Gating),True,0.9238095238095239,False,False,0.0761904761904762,3,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,10,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,11,Config A: Sparse Reads Only,True,0.69,False,True,0.31,16,15
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,11,Config B: Homology Only,True,0.83,False,True,0.17,16,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,11,Config C: Naive Hybrid (No Gating),True,0.91,False,False,0.09,8,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,11,Config D: PhyloGap (Fusion + Gating),True,0.91,False,False,0.09,8,1
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,12,Config A: Sparse Reads Only,True,0.63,False,True,0.41,18,23
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,12,Config B: Homology Only,True,0.8316831683168316,False,True,0.2079207920792079,12,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,12,Config C: Naive Hybrid (No Gating),True,0.8613861386138614,False,True,0.1782178217821782,9,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,12,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,13,Config A: Sparse Reads Only,True,0.71,False,True,0.32,8,24
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,13,Config B: Homology Only,True,0.8,False,True,0.23,16,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,13,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.08,1,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,13,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.08,1,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,14,Config A: Sparse Reads Only,True,0.64,False,True,0.44,11,33
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,14,Config B: Homology Only,True,0.8217821782178217,False,True,0.19801980198019803,15,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,14,Config C: Naive Hybrid (No Gating),True,0.9306930693069307,False,False,0.0891089108910891,4,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,14,Config D: PhyloGap (Fusion + Gating),True,0.9306930693069307,False,False,0.0891089108910891,4,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,15,Config A: Sparse Reads Only,True,0.67,False,True,0.37,10,27
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,15,Config B: Homology Only,True,0.8118811881188119,False,True,0.21782178217821782,15,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,15,Config C: Naive Hybrid (No Gating),True,0.8910891089108911,False,True,0.13861386138613863,7,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,15,Config D: PhyloGap (Fusion + Gating),True,0.8910891089108911,False,True,0.13861386138613863,7,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,16,Config A: Sparse Reads Only,True,0.65,False,True,0.42,11,31
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,16,Config B: Homology Only,True,0.801980198019802,False,True,0.21782178217821782,17,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,16,Config C: Naive Hybrid (No Gating),True,0.8613861386138614,False,True,0.15841584158415842,11,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,16,Config D: PhyloGap (Fusion + Gating),True,0.8613861386138614,False,True,0.15841584158415842,11,5
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,17,Config A: Sparse Reads Only,True,0.68,False,True,0.32,13,19
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,17,Config B: Homology Only,True,0.69,False,True,0.31,18,13
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,17,Config C: Naive Hybrid (No Gating),True,0.72,False,True,0.28,15,13
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,17,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,18,Config A: Sparse Reads Only,True,0.59,False,True,0.42,17,25
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,18,Config B: Homology Only,True,0.8,False,True,0.21,11,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,18,Config C: Naive Hybrid (No Gating),True,0.89,False,True,0.12,2,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,18,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,19,Config A: Sparse Reads Only,True,0.59,False,True,0.45,18,27
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,19,Config B: Homology Only,True,0.8415841584158416,False,True,0.18811881188118812,12,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,19,Config C: Naive Hybrid (No Gating),True,0.9306930693069307,False,False,0.09900990099009901,3,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,19,Config D: PhyloGap (Fusion + Gating),True,0.9306930693069307,False,False,0.09900990099009901,3,7
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,20,Config A: Sparse Reads Only,True,0.65,False,True,0.43,10,33
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,20,Config B: Homology Only,True,0.79,False,True,0.25,15,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,20,Config C: Naive Hybrid (No Gating),True,0.87,False,True,0.17,7,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,20,Config D: PhyloGap (Fusion + Gating),True,0.87,False,True,0.17,7,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,21,Config A: Sparse Reads Only,True,0.75,False,True,0.25,9,16
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,21,Config B: Homology Only,True,0.7920792079207921,False,True,0.21782178217821782,19,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,21,Config C: Naive Hybrid (No Gating),True,0.8910891089108911,False,True,0.1188118811881188,9,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,21,Config D: PhyloGap (Fusion + Gating),True,0.8910891089108911,False,True,0.1188118811881188,9,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,22,Config A: Sparse Reads Only,True,0.59,False,True,0.45,17,28
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,22,Config B: Homology Only,True,0.82,False,True,0.2,14,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,22,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.07,3,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,22,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.07,3,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,23,Config A: Sparse Reads Only,True,0.67,False,True,0.38,9,29
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,23,Config B: Homology Only,True,0.8,False,True,0.25,13,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,23,Config C: Naive Hybrid (No Gating),True,0.85,False,True,0.2,8,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,23,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,24,Config A: Sparse Reads Only,True,0.63,False,True,0.4,13,27
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,24,Config B: Homology Only,True,0.83,False,True,0.19,9,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,24,Config C: Naive Hybrid (No Gating),True,0.82,False,True,0.2,10,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,100,24,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,100
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,0,Config A: Sparse Reads Only,True,0.63,False,True,0.395,30,49
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,0,Config B: Homology Only,True,0.806930693069307,False,True,0.22277227722772278,31,14
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,0,Config C: Naive Hybrid (No Gating),True,0.8762376237623762,False,True,0.15346534653465346,17,14
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,0,Config D: PhyloGap (Fusion + Gating),True,0.8762376237623762,False,True,0.15346534653465346,17,14
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,1,Config A: Sparse Reads Only,True,0.66,False,True,0.395,19,60
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,1,Config B: Homology Only,True,0.8507462686567164,False,True,0.15422885572139303,28,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,1,Config C: Naive Hybrid (No Gating),True,0.9502487562189055,False,False,0.05472636815920398,8,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,1,Config D: PhyloGap (Fusion + Gating),True,0.9502487562189055,False,False,0.05472636815920398,8,3
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,2,Config A: Sparse Reads Only,True,0.665,False,True,0.365,24,49
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,2,Config B: Homology Only,True,0.8656716417910447,False,True,0.15422885572139303,22,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,2,Config C: Naive Hybrid (No Gating),True,0.9303482587064676,False,False,0.08955223880597014,9,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,2,Config D: PhyloGap (Fusion + Gating),True,0.9303482587064676,False,False,0.08955223880597014,9,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,3,Config A: Sparse Reads Only,True,0.615,False,True,0.405,35,46
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,3,Config B: Homology Only,True,0.8059701492537313,False,True,0.21393034825870647,34,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,3,Config C: Naive Hybrid (No Gating),True,0.9402985074626866,False,False,0.07960199004975124,7,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,3,Config D: PhyloGap (Fusion + Gating),True,0.9402985074626866,False,False,0.07960199004975124,7,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,4,Config A: Sparse Reads Only,True,0.655,False,True,0.37,25,49
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,4,Config B: Homology Only,True,0.855,False,True,0.145,27,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,4,Config C: Naive Hybrid (No Gating),True,0.93,False,False,0.07,12,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,4,Config D: PhyloGap (Fusion + Gating),True,0.93,False,False,0.07,12,2
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,5,Config A: Sparse Reads Only,True,0.65,False,True,0.39,22,56
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,5,Config B: Homology Only,True,0.805,False,True,0.215,34,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,5,Config C: Naive Hybrid (No Gating),True,0.915,False,True,0.105,12,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,5,Config D: PhyloGap (Fusion + Gating),True,0.915,False,True,0.105,12,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,6,Config A: Sparse Reads Only,True,0.665,False,True,0.425,18,67
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,6,Config B: Homology Only,True,0.855,False,True,0.155,22,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,6,Config C: Naive Hybrid (No Gating),True,0.92,False,False,0.09,9,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,6,Config D: PhyloGap (Fusion + Gating),True,0.92,False,False,0.09,9,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,7,Config A: Sparse Reads Only,True,0.62,False,True,0.415,30,53
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,7,Config B: Homology Only,True,0.76,False,True,0.315,31,32
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,7,Config C: Naive Hybrid (No Gating),True,0.79,False,True,0.285,25,32
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,7,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,8,Config A: Sparse Reads Only,True,0.725,False,True,0.31,19,43
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,8,Config B: Homology Only,True,0.8009708737864077,False,True,0.21359223300970873,32,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,8,Config C: Naive Hybrid (No Gating),True,0.9077669902912622,False,True,0.10679611650485436,10,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,8,Config D: PhyloGap (Fusion + Gating),True,0.9077669902912622,False,True,0.10679611650485436,10,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,9,Config A: Sparse Reads Only,True,0.65,False,True,0.4,22,58
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,9,Config B: Homology Only,True,0.82,False,True,0.19,30,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,9,Config C: Naive Hybrid (No Gating),True,0.93,False,False,0.08,8,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,9,Config D: PhyloGap (Fusion + Gating),True,0.93,False,False,0.08,8,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,10,Config A: Sparse Reads Only,True,0.6,False,True,0.41,36,46
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,10,Config B: Homology Only,True,0.8164251207729468,False,True,0.1932367149758454,29,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,10,Config C: Naive Hybrid (No Gating),True,0.9178743961352657,False,False,0.09178743961352658,8,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,10,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,11,Config A: Sparse Reads Only,True,0.71,False,True,0.33,20,46
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,11,Config B: Homology Only,True,0.7980769230769231,False,True,0.20192307692307693,34,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,11,Config C: Naive Hybrid (No Gating),True,0.8701923076923077,False,True,0.12980769230769232,19,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,11,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,12,Config A: Sparse Reads Only,True,0.655,False,True,0.365,27,46
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,12,Config B: Homology Only,True,0.84,False,True,0.175,27,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,12,Config C: Naive Hybrid (No Gating),True,0.94,False,False,0.075,7,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,12,Config D: PhyloGap (Fusion + Gating),True,0.94,False,False,0.075,7,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,13,Config A: Sparse Reads Only,True,0.66,False,True,0.365,26,47
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,13,Config B: Homology Only,True,0.805,False,True,0.21,32,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,13,Config C: Naive Hybrid (No Gating),True,0.91,False,True,0.105,11,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,13,Config D: PhyloGap (Fusion + Gating),True,0.91,False,True,0.105,11,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,14,Config A: Sparse Reads Only,True,0.64,False,True,0.39,27,51
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,14,Config B: Homology Only,True,0.82,False,True,0.2,31,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,14,Config C: Naive Hybrid (No Gating),True,0.95,False,False,0.07,5,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,14,Config D: PhyloGap (Fusion + Gating),True,0.95,False,False,0.07,5,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,15,Config A: Sparse Reads Only,True,0.635,False,True,0.38,32,44
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,15,Config B: Homology Only,True,0.815,False,True,0.185,33,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,15,Config C: Naive Hybrid (No Gating),True,0.935,False,False,0.065,9,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,15,Config D: PhyloGap (Fusion + Gating),True,0.935,False,False,0.065,9,4
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,16,Config A: Sparse Reads Only,True,0.635,False,True,0.41,24,58
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,16,Config B: Homology Only,True,0.78,False,True,0.24,38,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,16,Config C: Naive Hybrid (No Gating),True,0.91,False,True,0.11,12,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,16,Config D: PhyloGap (Fusion + Gating),True,0.91,False,True,0.11,12,10
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,17,Config A: Sparse Reads Only,True,0.705,False,True,0.3,24,36
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,17,Config B: Homology Only,True,0.806930693069307,False,True,0.2079207920792079,34,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,17,Config C: Naive Hybrid (No Gating),True,0.905940594059406,False,True,0.10891089108910891,14,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,17,Config D: PhyloGap (Fusion + Gating),True,0.905940594059406,False,True,0.10891089108910891,14,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,18,Config A: Sparse Reads Only,True,0.68,False,True,0.375,16,59
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,18,Config B: Homology Only,True,0.815,False,True,0.195,31,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,18,Config C: Naive Hybrid (No Gating),True,0.935,False,False,0.075,7,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,18,Config D: PhyloGap (Fusion + Gating),True,0.935,False,False,0.075,7,8
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,19,Config A: Sparse Reads Only,True,0.655,False,True,0.365,27,46
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,19,Config B: Homology Only,True,0.8217821782178217,False,True,0.21782178217821782,26,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,19,Config C: Naive Hybrid (No Gating),True,0.9405940594059405,False,False,0.09900990099009901,2,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,19,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,20,Config A: Sparse Reads Only,True,0.635,False,True,0.39,31,47
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,20,Config B: Homology Only,True,0.845,False,True,0.18,25,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,20,Config C: Naive Hybrid (No Gating),True,0.93,False,False,0.095,8,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,20,Config D: PhyloGap (Fusion + Gating),True,0.93,False,False,0.095,8,11
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,21,Config A: Sparse Reads Only,True,0.645,False,True,0.43,22,64
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,21,Config B: Homology Only,True,0.7777777777777778,False,True,0.22685185185185186,31,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,21,Config C: Naive Hybrid (No Gating),True,0.8935185185185185,False,True,0.1111111111111111,6,18
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,21,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,22,Config A: Sparse Reads Only,True,0.62,False,True,0.45,28,62
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,22,Config B: Homology Only,True,0.8106796116504854,False,True,0.20388349514563106,30,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,22,Config C: Naive Hybrid (No Gating),True,0.8980582524271845,False,True,0.11650485436893204,12,12
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,22,Config D: PhyloGap (Fusion + Gating),False,0.0,False,False,1.0,0,200
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,23,Config A: Sparse Reads Only,True,0.675,False,True,0.37,16,58
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,23,Config B: Homology Only,True,0.81,False,True,0.2,31,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,23,Config C: Naive Hybrid (No Gating),True,0.895,False,True,0.115,14,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,23,Config D: PhyloGap (Fusion + Gating),True,0.895,False,True,0.115,14,9
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,24,Config A: Sparse Reads Only,True,0.615,False,True,0.435,30,57
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,24,Config B: Homology Only,True,0.84,False,True,0.165,27,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,24,Config C: Naive Hybrid (No Gating),True,0.93,False,False,0.075,9,6
+Regime 2: Distant Clade (~46.2 Mya - Galliformes),46.2,200,24,Config D: PhyloGap (Fusion + Gating),True,0.93,False,False,0.075,9,6
