@@ -296,8 +296,31 @@ phylogap/
 
 ## 12. Checklist Hành động Ngay (Immediate Phase 1 Action Items)
 
-- [ ] **Khởi tạo Git Repository:** Thiết lập `.gitignore` chuẩn cho bioinformatics/deep learning (loại trừ file FASTA/BAM lớn, model checkpoints).
-- [ ] **Lập Literature Matrix:** Tạo `docs/literature_matrix.md` và đọc kỹ 3 bài hạt nhân đầu tiên (DENTIST, GapPredict, DLGapCloser).
-- [ ] **Chuẩn bị Môi trường Pilot:** Cài đặt Conda environment với Python 3.10+, Biopython, samtools, minimap2.
-- [ ] **Kiểm tra Dữ liệu DENTIST:** Truy cập kho dữ liệu của DENTIST benchmark, tải sample genome nhỏ nhất (*Drosophila* hoặc *Arabidopsis*) để audit cấu trúc file.
-- [ ] **Viết Core Evaluator Script:** Xây dựng script Python độc lập để so sánh ground truth FASTA với sequence được điền, tính toán $Acc_{nuc}$ và $FCR$.
+- [x] **Khởi tạo Git Repository:** Thiết lập `.gitignore` chuẩn cho bioinformatics/deep learning (loại trừ file FASTA/BAM lớn, model checkpoints).
+- [x] **Lập Literature Matrix:** Tạo `docs/literature_matrix.md` và đọc kỹ 3 bài hạt nhân đầu tiên (DENTIST, GapPredict, DLGapCloser).
+- [x] **Chuẩn bị Môi trường Pilot:** Cài đặt Conda environment với Python 3.10+, Biopython, samtools, minimap2.
+- [x] **Kiểm tra Dữ liệu DENTIST:** Truy cập kho dữ liệu của DENTIST benchmark, tải sample genome nhỏ nhất (*Drosophila* hoặc *Arabidopsis*) để audit cấu trúc file.
+- [x] **Viết Core Evaluator Script:** Xây dựng script Python độc lập để so sánh ground truth FASTA với sequence được điền, tính toán $Acc_{nuc}$ và $FCR$.
+
+---
+
+## 13. Tiến Độ & Kết Quả Thực Nghiệm Pha 5 (Phase 5 Empirical Validation Milestone)
+
+> **Cập nhật ngày:** 2026-10-26 · **Commit:** `1011566` · **Trạng thái:** Hoàn thành 100% (42/42 Tests Passed)
+
+### 13.1. Kết Quả Thử Nghiệm Đối Đầu 720 Trials (Head-to-Head SOTA Benchmark)
+* **Tài liệu chi tiết:** `docs/head_to_head_sota_report.md` và `experiments/PHASE5_EXPERIMENT_PLAN.md`.
+* **Dữ liệu thực nghiệm:**
+  * 30 loci thực tế trích xuất từ assembly chuẩn `assembly-reference.fasta.gz` của *Drosophila melanogaster* (DENTIST pilot).
+  * 4 tầng phân tầng tiến hóa chim B10K (5.2 Mya, 11.5 Mya, 46.2 Mya, 88.0 Mya).
+* **Kết luận định lượng:**
+  1. **DENTIST (Read-Based):** Đạt độ chính xác cao khi reads đầy đủ (>20x), nhưng khi rơi vào điều kiện reads thưa hoặc thiếu hụt (0x), tỷ lệ bỏ trống gap tăng lên **100%** (không thể khôi phục).
+  2. **GapPredict (DNA-LM):** Luôn điền gap nhưng tỷ lệ đóng sai (False-Closure Rate) bùng nổ lên **73.3% - 100.0%** do tích lũy sai số tự hồi quy và suy biến lặp lại khi gap >100bp.
+  3. **Raw Homology:** An toàn ở khoảng cách gần (<6 Mya), nhưng gây ra **100% False-Closure Rate** ở các bộ xa (>46 Mya).
+  4. **PhyloGap Engine:** Đạt điểm cân bằng Pareto tối ưu: khôi phục an toàn ở loài gần (97.6% accuracy, 0% FCR) và kích hoạt Selective Gating từ chối 100% các ứng viên nguy hiểm ở loài xa, giữ **FCR = 0.0%**.
+
+### 13.2. Mô Hình Phân Rã Tiến Hóa Thích Ứng (Adaptive Decay Model)
+* Triển khai tại `scripts/adaptive_evolutionary_model.py`:
+  * Cá nhân hóa $\lambda$ theo vùng chức năng: $\lambda_{\text{exon}} < \lambda_{\text{utr}} < \lambda_{\text{intron}} < \lambda_{\text{intergenic}} < \lambda_{\text{repeat}}$.
+  * Tích hợp hệ số điều chỉnh theo độ lệch GC isochore $f(GC) = 1.0 + 0.65 \times |GC - 0.42|$.
+  * Mở rộng ngưỡng tới hạn $t_{\text{crit}}$ của vùng exon lên >20 Mya, bảo toàn khả năng tái cấu trúc các vùng mã hóa quan trọng.
