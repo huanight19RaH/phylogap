@@ -1,0 +1,721 @@
+trial_id,tier,mya,species_pair,read_scenario,gap_length,tool,status,is_closed,exact_match,nucleotide_accuracy,false_closure,unfilled_gap,error_rate,substitutions,insertions,deletions
+1,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+1,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+1,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+1,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+2,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+2,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,8,0,0
+2,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+2,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+3,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+3,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.98,False,False,0.02,1,0,0
+3,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,True,1.0,False,False,0.0,0,0,0
+3,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9803921568627451,False,False,0.0196078431372549,0,1,0
+4,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+4,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,8,0,0
+4,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,True,1.0,False,False,0.0,0,0,0
+4,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,True,1.0,False,False,0.0,0,0,0
+5,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+5,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+5,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+5,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+6,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+6,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+6,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,2,0,1
+6,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,2,0,1
+7,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+7,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+7,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,4,0,0
+7,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,4,0,0
+8,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+8,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.78,True,False,0.22,22,0,0
+8,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,3,0,0
+8,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,3,0,0
+9,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+9,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.77,True,False,0.23,23,0,0
+9,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,4,0,0
+9,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9056603773584906,False,False,0.09433962264150944,4,6,0
+10,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+10,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.15,13,1,1
+10,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,2,0,0
+10,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,2,0,1
+11,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+11,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.735,True,False,0.285,49,4,4
+11,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.945,False,False,0.06,4,1,7
+11,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.945,False,False,0.06,4,1,7
+12,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+12,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.7,True,False,0.32,56,4,4
+12,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,4,0,0
+12,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,4,0,0
+13,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,2,0,0
+13,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.355,True,False,0.645,129,0,0
+13,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9509803921568627,False,False,0.049019607843137254,6,4,0
+13,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9509803921568627,False,False,0.049019607843137254,6,4,0
+14,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+14,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.715,True,False,0.3,54,3,3
+14,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9556650246305419,False,False,0.04433497536945813,6,3,0
+14,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9509803921568627,False,False,0.049019607843137254,6,4,0
+15,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+15,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.75,True,False,0.265,47,3,3
+15,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9802955665024631,False,False,0.024630541871921183,0,4,1
+15,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,dense_reads (>20x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9802955665024631,False,False,0.024630541871921183,0,4,1
+16,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+16,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+16,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+16,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,True,1.0,False,False,0.0,0,0,0
+17,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+17,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+17,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+17,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,2,0,0
+18,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+18,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+18,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+18,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+19,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,1,0,0
+19,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,9,0,0
+19,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+19,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,1,0,1
+20,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+20,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+20,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+20,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+21,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+21,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+21,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9504950495049505,False,False,0.04950495049504951,4,1,0
+21,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9801980198019802,False,False,0.019801980198019802,1,1,0
+22,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+22,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+22,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,2,0,0
+22,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,2,0,0
+23,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+23,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+23,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,1,0,3
+23,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,0,0,3
+24,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+24,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,16,0,0
+24,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,2,0,0
+24,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,True,1.0,False,False,0.0,0,0,0
+25,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,2,0,0
+25,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+25,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,2,0,0
+25,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,3,0,0
+26,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+26,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.285,True,False,0.715,143,0,0
+26,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,2,0,4
+26,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.965,False,False,0.035,2,0,5
+27,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+27,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.285,True,False,0.715,143,0,0
+27,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,6,0,0
+27,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.985,False,False,0.015,3,0,0
+28,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+28,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.495,True,False,0.555,91,10,10
+28,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,4,0,0
+28,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9752475247524752,False,False,0.024752475247524754,3,2,0
+29,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+29,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.725,True,False,0.28,54,1,1
+29,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9601990049751243,False,False,0.03980099502487562,7,1,0
+29,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9800995024875622,False,False,0.01990049751243781,3,1,0
+30,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+30,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.43,True,False,0.62,104,10,10
+30,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.965,False,False,0.035,7,0,0
+30,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9512195121951219,False,False,0.04878048780487805,5,5,0
+31,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+31,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,9,0,0
+31,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,True,1.0,False,False,0.0,0,0,0
+31,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,0,0,1
+32,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+32,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+32,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9411764705882353,False,False,0.058823529411764705,2,1,0
+32,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9411764705882353,False,False,0.058823529411764705,2,1,0
+33,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+33,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+33,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,True,1.0,False,False,0.0,0,0,0
+33,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,0,0,2
+34,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+34,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+34,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+34,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.94,False,False,0.06,1,0,2
+35,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+35,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+35,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+35,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9230769230769231,False,False,0.07692307692307693,2,2,0
+36,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+36,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.79,True,False,0.21,21,0,0
+36,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9603960396039604,False,False,0.039603960396039604,3,1,0
+36,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9603960396039604,False,False,0.039603960396039604,3,1,0
+37,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+37,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,18,0,0
+37,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,True,1.0,False,False,0.0,0,0,0
+37,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,True,1.0,False,False,0.0,0,0,0
+38,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+38,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+38,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,1
+38,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,1
+39,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+39,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+39,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,4,0,2
+39,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.94,False,False,0.06,4,0,2
+40,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+40,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+40,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,4,0,0
+40,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,4,0,0
+41,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+41,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.275,True,False,0.725,145,0,0
+41,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.995,False,False,0.005,1,0,0
+41,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9851485148514851,False,False,0.01485148514851485,1,2,0
+42,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+42,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.74,True,False,0.26,52,0,0
+42,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9651741293532339,False,False,0.03482587064676617,6,1,0
+42,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.96,False,False,0.04,8,0,0
+43,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+43,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.68,True,False,0.33,62,2,2
+43,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9900497512437811,False,False,0.009950248756218905,1,1,0
+43,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,1,0,5
+44,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+44,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.765,True,False,0.235,47,0,0
+44,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.975,False,False,0.025,5,0,0
+44,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.975,False,False,0.025,5,0,0
+45,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+45,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.28,True,False,0.72,144,0,0
+45,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.985,False,False,0.015,3,0,0
+45,Tier 1: Sister Species,5.2,Lonchura striata vs L. oryzivora,zero_reads,200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.985,False,False,0.015,3,0,0
+46,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+46,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+46,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9411764705882353,False,False,0.058823529411764705,2,1,0
+46,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+47,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+47,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+47,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,3,0,0
+47,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+48,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+48,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,8,0,0
+48,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9607843137254902,False,False,0.0392156862745098,1,1,0
+48,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+49,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+49,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+49,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.92,False,False,0.08,3,0,1
+49,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+50,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+50,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+50,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.92,False,False,0.08,4,0,0
+50,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+51,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+51,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.78,True,False,0.22,22,0,0
+51,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,3,0,0
+51,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+52,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+52,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+52,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9230769230769231,False,False,0.07692307692307693,4,4,0
+52,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+53,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+53,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,14,0,0
+53,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.99,False,False,0.01,1,0,0
+53,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+54,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+54,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.8,True,False,0.2,20,0,0
+54,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9509803921568627,False,False,0.049019607843137254,3,2,0
+54,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+55,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+55,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.77,True,False,0.23,23,0,0
+55,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.97,False,False,0.03,3,0,0
+55,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+56,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+56,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.475,True,False,0.585,93,12,12
+56,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.945273631840796,False,False,0.06965174129353234,7,4,3
+56,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+57,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+57,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.755,True,False,0.245,49,0,0
+57,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9203980099502488,False,False,0.0845771144278607,14,2,1
+57,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+58,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+58,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.485,True,False,0.585,89,14,14
+58,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.955,False,False,0.045,7,0,2
+58,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+59,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+59,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.71,True,False,0.29,58,0,0
+59,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.93,False,False,0.07,14,0,0
+59,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+60,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+60,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.485,True,False,0.58,90,13,13
+60,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.905940594059406,False,False,0.09900990099009901,16,3,1
+60,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+61,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+61,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+61,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.92,False,False,0.08,4,0,0
+61,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.92,False,False,0.08,1,0,3
+62,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+62,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+62,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+62,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.92,False,False,0.08,2,0,2
+63,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+63,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+63,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,2,0,0
+63,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.92,False,False,0.08,0,0,4
+64,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,1,0,0
+64,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+64,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8867924528301887,True,False,0.11320754716981132,3,3,0
+64,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+65,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+65,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,9,0,0
+65,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,3,0,0
+65,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),50,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.98,False,False,0.02,1,0,0
+66,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+66,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+66,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.99,False,False,0.01,1,0,0
+66,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+67,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+67,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.89,True,False,0.11,11,0,0
+67,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9313725490196079,False,False,0.06862745098039216,5,2,0
+67,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.92,False,False,0.1,3,2,5
+68,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+68,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+68,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.07,4,1,2
+68,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.04,1,1,2
+69,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+69,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+69,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,6,0,0
+69,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+70,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+70,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,10,0,0
+70,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.95,False,False,0.05,5,0,0
+70,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),100,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9509803921568627,False,False,0.049019607843137254,3,2,0
+71,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+71,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.32,True,False,0.68,136,0,0
+71,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.965,False,False,0.035,7,0,0
+71,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.995,False,False,0.005,1,0,0
+72,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+72,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.72,True,False,0.28,56,0,0
+72,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.92,False,False,0.085,12,1,4
+72,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.965,False,False,0.04,3,1,4
+73,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+73,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.75,True,False,0.255,49,1,1
+73,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.95,False,False,0.055,7,1,3
+73,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.9402985074626866,False,False,0.07960199004975124,7,5,4
+74,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+74,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.475,True,False,0.57,96,9,9
+74,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.965,False,False,0.035,7,0,0
+74,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,6,0,0
+75,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+75,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.52,True,False,0.54,84,12,12
+75,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.92,False,False,0.08,16,0,0
+75,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,sparse_reads (1-2x),200,PhyloGap (Multimodal),ACCEPTED_MULTIMODAL,True,False,0.97,False,False,0.03,4,0,2
+76,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+76,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,8,0,0
+76,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+76,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+77,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+77,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+77,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,3,0,0
+77,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+78,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+78,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+78,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+78,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+79,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+79,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+79,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,1,0,0
+79,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+80,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+80,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+80,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9,False,False,0.1,4,0,1
+80,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+81,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+81,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+81,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9230769230769231,False,False,0.07692307692307693,4,4,0
+81,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+82,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+82,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+82,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.98,False,False,0.02,2,0,0
+82,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+83,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+83,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+83,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9056603773584906,False,False,0.09433962264150944,4,6,0
+83,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+84,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+84,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,14,0,0
+84,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.94,False,False,0.06,6,0,0
+84,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+85,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+85,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.79,True,False,0.21,21,0,0
+85,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.96,False,False,0.04,1,0,3
+85,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+86,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+86,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.315,True,False,0.685,137,0,0
+86,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9405940594059405,False,False,0.0594059405940594,10,2,0
+86,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+87,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+87,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.48,True,False,0.605,87,17,17
+87,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9504950495049505,False,False,0.04950495049504951,8,2,0
+87,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+88,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+88,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.71,True,False,0.295,57,1,1
+88,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.965,False,False,0.035,4,0,3
+88,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+89,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+89,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.765,True,False,0.235,47,0,0
+89,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.95,False,False,0.05,8,0,2
+89,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+90,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+90,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.75,True,False,0.265,47,3,3
+90,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.9353233830845771,False,False,0.06965174129353234,11,2,1
+90,Tier 2: Same Family,11.5,Taeniopygia guttata vs L. striata,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+91,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,1,0,0
+91,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+91,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.88,True,False,0.12,6,0,0
+91,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+92,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,1,0,0
+92,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+92,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.82,True,False,0.2,8,1,1
+92,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+93,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+93,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+93,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.86,True,False,0.14,7,0,0
+93,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+94,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,1,0,0
+94,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+94,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8,True,False,0.2,6,0,4
+94,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+95,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+95,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+95,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7272727272727273,True,False,0.2909090909090909,9,6,1
+95,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+96,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+96,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.14,12,1,1
+96,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8235294117647058,True,False,0.17647058823529413,16,2,0
+96,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+97,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+97,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+97,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.82,True,False,0.19,11,1,7
+97,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+98,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+98,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+98,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8207547169811321,True,False,0.18867924528301888,12,7,1
+98,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+99,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+99,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.89,True,False,0.11,11,0,0
+99,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7788461538461539,True,False,0.23076923076923078,18,5,1
+99,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+100,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+100,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.78,True,False,0.22,22,0,0
+100,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7788461538461539,True,False,0.23076923076923078,18,5,1
+100,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+101,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+101,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.465,True,False,0.585,97,10,10
+101,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8522167487684729,True,False,0.15270935960591134,26,4,1
+101,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+102,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+102,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.755,True,False,0.245,49,0,0
+102,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8712871287128713,True,False,0.12871287128712872,24,2,0
+102,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+103,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+103,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.735,True,False,0.265,53,0,0
+103,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.845,True,False,0.165,29,2,2
+103,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+104,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+104,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.455,True,False,0.6,98,11,11
+104,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.815,True,False,0.19,33,1,4
+104,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+105,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+105,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.74,True,False,0.26,52,0,0
+105,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7703349282296651,True,False,0.24401913875598086,36,12,3
+105,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+106,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+106,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.98,False,False,0.02,1,0,0
+106,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.84,True,False,0.16,8,0,0
+106,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+107,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+107,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+107,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7692307692307693,True,False,0.23076923076923078,10,2,0
+107,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+108,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+108,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.78,True,False,0.22,11,0,0
+108,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8235294117647058,True,False,0.17647058823529413,8,1,0
+108,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+109,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+109,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+109,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8,True,False,0.2,9,0,1
+109,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+110,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+110,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+110,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.82,True,False,0.2,7,1,2
+110,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+111,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+111,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+111,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8,True,False,0.22,13,2,7
+111,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+112,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+112,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,10,0,0
+112,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8365384615384616,True,False,0.16346153846153846,13,4,0
+112,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+113,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+113,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.8,True,False,0.2,20,0,0
+113,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.81,True,False,0.22,16,3,3
+113,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+114,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+114,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+114,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7843137254901961,True,False,0.23529411764705882,18,4,2
+114,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+115,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+115,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,18,0,0
+115,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.8058252427184466,True,False,0.1941747572815534,17,3,0
+115,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+116,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+116,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.455,True,False,0.605,97,12,12
+116,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7960199004975125,True,False,0.22388059701492538,36,5,4
+116,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+117,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,2,0,0
+117,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.715,True,False,0.295,55,2,2
+117,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.79,True,False,0.22,29,2,13
+117,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+118,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+118,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.695,True,False,0.32,58,3,3
+118,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7932692307692307,True,False,0.21153846153846154,34,9,1
+118,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+119,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+119,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.685,True,False,0.315,63,0,0
+119,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.825,True,False,0.2,29,5,6
+119,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+120,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+120,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.255,True,False,0.745,149,0,0
+120,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.815,True,False,0.2,25,3,12
+120,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+121,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+121,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+121,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.75,True,False,0.25,11,2,0
+121,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+122,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+122,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+122,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7924528301886793,True,False,0.20754716981132076,8,3,0
+122,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+123,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+123,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+123,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.78,True,False,0.28,5,3,6
+123,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+124,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+124,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+124,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.78,True,False,0.22,8,0,3
+124,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+125,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+125,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+125,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.86,True,False,0.14,7,0,0
+125,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+126,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+126,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.89,True,False,0.11,11,0,0
+126,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.86,True,False,0.14,12,0,2
+126,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+127,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+127,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.17,15,1,1
+127,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.87,True,False,0.14,10,1,3
+127,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+128,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+128,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.81,True,False,0.19,19,0,0
+128,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.77,True,False,0.24,20,1,3
+128,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+129,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+129,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.8,True,False,0.2,20,0,0
+129,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.78,True,False,0.24,17,2,5
+129,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+130,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+130,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,12,0,0
+130,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.801980198019802,True,False,0.24752475247524752,14,6,5
+130,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+131,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+131,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.745,True,False,0.255,51,0,0
+131,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.83,True,False,0.185,31,3,3
+131,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+132,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+132,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.5,True,False,0.565,87,13,13
+132,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.755,True,False,0.275,42,6,7
+132,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+133,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+133,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.73,True,False,0.27,54,0,0
+133,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.785,True,False,0.245,34,6,9
+133,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+134,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+134,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.715,True,False,0.29,56,1,1
+134,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7864077669902912,True,False,0.22330097087378642,36,8,2
+134,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+135,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+135,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.5,True,False,0.56,88,12,12
+135,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.805,True,False,0.205,32,2,7
+135,Tier 3: Same Order,46.2,Gallus gallus vs Numida meleagris,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+136,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+136,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.98,False,False,0.02,1,0,0
+136,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7884615384615384,True,False,0.23076923076923078,8,3,1
+136,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+137,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+137,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.96,False,False,0.04,2,0,0
+137,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7450980392156863,True,False,0.27450980392156865,11,2,1
+137,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+138,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+138,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.94,False,False,0.06,3,0,0
+138,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.68,True,False,0.34,11,1,5
+138,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+139,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+139,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+139,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6,True,False,0.4,18,0,2
+139,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+140,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+140,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+140,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.68,True,False,0.34,12,1,4
+140,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+141,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+141,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.78,True,False,0.22,22,0,0
+141,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.62,True,False,0.42,29,4,9
+141,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+142,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.98,False,False,0.02,2,0,0
+142,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,18,0,0
+142,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.73,True,False,0.27,24,0,3
+142,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+143,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+143,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+143,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7570093457943925,True,False,0.2803738317757009,15,11,4
+143,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+144,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+144,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.81,True,False,0.2,18,1,1
+144,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.69,True,False,0.35,24,4,7
+144,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+145,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+145,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+145,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6666666666666666,True,False,0.3431372549019608,31,3,1
+145,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+146,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+146,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.48,True,False,0.575,93,11,11
+146,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6962616822429907,True,False,0.32242990654205606,47,18,4
+146,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+147,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+147,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.795,True,False,0.205,41,0,0
+147,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.705,True,False,0.325,48,6,11
+147,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+148,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+148,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.755,True,False,0.26,46,3,3
+148,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.677570093457944,True,False,0.3411214953271028,51,18,4
+148,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+149,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+149,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.295,True,False,0.705,141,0,0
+149,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7038834951456311,True,False,0.33495145631067963,47,14,8
+149,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+150,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+150,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.455,True,False,0.595,99,10,10
+150,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.67,True,False,0.34,49,2,17
+150,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,dense_reads (>20x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+151,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+151,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+151,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7,True,False,0.3,14,0,1
+151,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+152,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+152,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+152,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7307692307692307,True,False,0.34615384615384615,8,6,4
+152,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+153,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+153,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+153,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.74,True,False,0.28,9,1,4
+153,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+154,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+154,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+154,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.66,True,False,0.34,14,0,3
+154,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+155,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+155,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,8,0,0
+155,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.76,True,False,0.26,10,1,2
+155,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+156,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+156,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,12,0,0
+156,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.67,True,False,0.37,27,4,6
+156,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+157,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+157,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+157,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.72,True,False,0.34,19,6,9
+157,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+158,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+158,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.76,True,False,0.24,24,0,0
+158,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.66,True,False,0.34,28,0,6
+158,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+159,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+159,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.77,True,False,0.23,23,0,0
+159,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.693069306930693,True,False,0.32673267326732675,28,3,2
+159,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+160,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.99,False,False,0.01,1,0,0
+160,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.85,True,False,0.15,15,0,0
+160,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.74,True,False,0.29,20,3,6
+160,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+161,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+161,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.72,True,False,0.29,54,2,2
+161,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7115384615384616,True,False,0.3317307692307692,43,17,9
+161,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+162,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+162,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.26,True,False,0.74,148,0,0
+162,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.74,True,False,0.295,44,7,8
+162,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+163,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+163,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.285,True,False,0.715,143,0,0
+163,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.715,True,False,0.31,40,5,17
+163,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+164,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,True,1.0,False,False,0.0,0,0,0
+164,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.755,True,False,0.245,49,0,0
+164,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6875,True,False,0.33653846153846156,52,13,5
+164,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+165,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,DENTIST (Read-Based),CLOSED_DENSE_CONSENSUS,True,False,0.995,False,False,0.005,1,0,0
+165,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.28,True,False,0.72,144,0,0
+165,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.705,True,False,0.325,53,6,6
+165,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,sparse_reads (1-2x),200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+166,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+166,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+166,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.66,True,False,0.34,16,0,1
+166,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+167,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+167,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,7,0,0
+167,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.66,True,False,0.34,9,0,8
+167,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+168,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+168,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.9,False,False,0.1,5,0,0
+168,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.62,True,False,0.42,17,2,2
+168,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+169,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+169,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.88,True,False,0.12,6,0,0
+169,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7058823529411765,True,False,0.3137254901960784,13,2,1
+169,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+170,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,50
+170,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.92,False,False,0.08,4,0,0
+170,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.5964912280701754,True,False,0.43859649122807015,14,9,2
+170,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,50,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,50
+171,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+171,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.87,True,False,0.13,13,0,0
+171,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6818181818181818,True,False,0.34545454545454546,22,13,3
+171,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+172,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+172,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.84,True,False,0.16,16,0,0
+172,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.73,True,False,0.29,22,2,5
+172,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+173,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+173,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.83,True,False,0.17,17,0,0
+173,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.69,True,False,0.35,23,4,8
+173,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+174,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+174,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.82,True,False,0.18,18,0,0
+174,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7425742574257426,True,False,0.25742574257425743,25,1,0
+174,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+175,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,100
+175,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.86,True,False,0.14,14,0,0
+175,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6936936936936937,True,False,0.32432432432432434,21,13,2
+175,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,100,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,100
+176,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+176,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.705,True,False,0.3,58,1,1
+176,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7129186602870813,True,False,0.2966507177033493,49,11,2
+176,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+177,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+177,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.755,True,False,0.245,49,0,0
+177,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.695,True,False,0.365,46,12,15
+177,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+178,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+178,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.365,True,False,0.635,127,0,0
+178,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.6748768472906403,True,False,0.3448275862068966,59,7,4
+178,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+179,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+179,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,GapPredict (DNA-LM),CLOSED_AUTOREGRESSIVE_LM,True,False,0.73,True,False,0.27,54,0,0
+179,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.67,True,False,0.355,49,5,17
+179,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
+180,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,DENTIST (Read-Based),UNFILLED_NO_READS,False,False,0.0,False,True,1.0,0,0,200
+180,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,GapPredict (DNA-LM),CLOSED_LM_COLLAPSE,True,False,0.265,True,False,0.735,147,0,0
+180,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,Raw Homology,CLOSED_RAW_HOMOLOGY,True,False,0.7,True,False,0.355,49,11,11
+180,Tier 4: Distant Orders,88.0,Calypte anna vs Gallus gallus,zero_reads,200,PhyloGap (Multimodal),REJECTED_SELECTIVE_GATING,False,False,0.0,False,True,1.0,0,0,200
