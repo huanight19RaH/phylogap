@@ -155,6 +155,20 @@ const I18N = {
     riskIdLbl: "Độ Tương Đồng Dự Kiến:",
     dynamicWeightLabel: "Trọng Số Động:",
     critExceededLabel: "VƯỢT NGƯỠNG TỚI HẠN (w_hom = 0)",
+    riskTiers: {
+      SAFE_CONGENERIC: {
+        label: "Vùng An Toàn (Cùng chi / Sister Species)",
+        guidance: "Độ chính xác tương đồng >95%. Có thể tái tạo an toàn ngay cả khi không có reads hỗ trợ."
+      },
+      CAUTION_FAMILY: {
+        label: "Vùng Cảnh Báo (Cùng họ / Family Level)",
+        guidance: "Độ chính xác tương đồng đạt 92-95% nhưng xuất hiện ~15% False Closure. Bắt buộc có Sparse Reads để sửa các đột biến đơn loài."
+      },
+      DANGER_ORDER_CLASS: {
+        label: "Vùng Nguy Hiểm (Khác bộ / Distant Orders)",
+        guidance: (mya, tCrit) => `Khoảng cách phân kỳ (${mya} Tr.năm) vượt mốc tới hạn t_crit (${tCrit} Tr.năm). Tỷ lệ đóng sai >95%! Bắt buộc kích hoạt Selective Gating để từ chối.`
+      }
+    },
 
     // Tab 3: Benchmark Matrix
     matrixTitle: "Ma Trận Thử Nghiệm Đối Chứng Cắt Bỏ (Ablation Benchmark - RQ4 & RQ5)",
@@ -321,6 +335,20 @@ const I18N = {
     riskIdLbl: "Expected Homology Identity:",
     dynamicWeightLabel: "Dynamic Weight:",
     critExceededLabel: "CRITICAL THRESHOLD EXCEEDED (w_hom = 0)",
+    riskTiers: {
+      SAFE_CONGENERIC: {
+        label: "Safe Zone (Congeneric / Sister Species)",
+        guidance: "Homology reference provides >95% accuracy. Safe for direct gap reconstruction even without read support."
+      },
+      CAUTION_FAMILY: {
+        label: "Caution Zone (Family Level Clade)",
+        guidance: "Homology identity is 92-95% but exhibits ~15% False Closure rate. Sparse reads required to polish species-specific substitutions."
+      },
+      DANGER_ORDER_CLASS: {
+        label: "Danger Zone (Distant Orders / Classes)",
+        guidance: (mya, tCrit) => `Phylogenetic distance (${mya} Mya) exceeds critical threshold t_crit (${tCrit} Mya). False-Closure Rate >95%! Selective Gating required to reject candidate.`
+      }
+    },
 
     // Tab 3: Benchmark Matrix
     matrixTitle: "Multimodal Fusion & Selective Gating Ablation Benchmark (RQ4 & RQ5)",
@@ -961,12 +989,14 @@ async function updateRiskCalc(mya) {
     if (!res.ok) throw new Error(`HTTP error ${res.status}`);
     const data = await res.json();
 
-    const riskBadge = document.getElementById('risk-badge');
-    const riskExpectedId = document.getElementById('risk-expected-id');
-    const riskGuidance = document.getElementById('risk-guidance-text');
+    const tierInfo = dict.riskTiers && dict.riskTiers[data.risk_tier];
+    const localizedLabel = tierInfo ? tierInfo.label : data.risk_label;
+    const localizedGuidance = tierInfo
+      ? (typeof tierInfo.guidance === 'function' ? tierInfo.guidance(t.toFixed(1), data.critical_threshold_t_crit) : tierInfo.guidance)
+      : data.guidance;
 
     if (riskBadge) {
-      riskBadge.textContent = data.risk_label;
+      riskBadge.textContent = localizedLabel;
       riskBadge.style.color = data.risk_color;
     }
     if (riskExpectedId) {
@@ -975,7 +1005,7 @@ async function updateRiskCalc(mya) {
     }
     if (riskGuidance) {
       riskGuidance.innerHTML = `
-        <div style="margin-bottom: 0.4rem;">${data.guidance}</div>
+        <div style="margin-bottom: 0.4rem;">${localizedGuidance}</div>
         <div style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">
           ${dict.dynamicWeightLabel} <code style="color: var(--primary);">w_hom(${t}) = ${data.homology_weight_w_hom}</code>
           ${data.is_exceeding_t_crit ? ` — <strong style="color: #F43F5E;">${dict.critExceededLabel}</strong>` : ''}
@@ -1046,7 +1076,7 @@ function renderSvgDecayChart(currentMya, currentIdentity, tCrit) {
   if (dangerWidth > 0) {
     svgContent += `
       <rect x="${xCrit}" y="${padTop}" width="${dangerWidth}" height="${plotH}" fill="url(#dangerHatch)" />
-      <text x="${xCrit + 12}" y="${padTop + 24}" fill="#F43F5E" font-size="10" font-weight="600" font-family="Be Vietnam Pro" letter-spacing="0.05em">${dict.dangerHatchLabel}</text>
+      <text x="${xCrit + 12}" y="${padTop + 24}" fill="#F43F5E" font-size="10" font-weight="600" font-family="Plus Jakarta Sans" letter-spacing="0.05em">${dict.dangerHatchLabel}</text>
     `;
   }
 
