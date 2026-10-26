@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PhyloGap Studio — Evidence-Aware Genome Gap Reconstruction</title>
+  <title>PhyloGap Studio — Tái Cấu Trúc Khoảng Trống Bộ Gene Nhận Biết Bằng Chứng</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
@@ -30,44 +30,52 @@
         </div>
         <div class="brand-text">
           <div class="brand-title">PhyloGap Studio</div>
-          <div class="brand-subtitle">Evidence-Aware Assembly Gap Reconstruction</div>
+          <div class="brand-subtitle" id="i18n-brand-subtitle">Tái Cấu Trúc Khoảng Trống Bộ Gene Nhận Biết Bằng Chứng</div>
         </div>
       </div>
       <div class="app-badge">
         <span class="badge-dot"></span>
-        <span>B10K Avian Calibrated</span>
+        <span id="i18n-badge-b10k">Hiệu Chuẩn Hệ Gene Chim B10K</span>
       </div>
     </div>
 
-    <!-- Main Navigation Tabs -->
-    <nav class="nav-tabs" aria-label="Main Navigation">
-      <button class="nav-tab active" id="tab-btn-studio" onclick="switchTab('studio')">
-        <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        <span>Gap Studio</span>
-      </button>
-      <button class="nav-tab" id="tab-btn-calculator" onclick="switchTab('calculator')">
-        <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-        </svg>
-        <span>Risk Calculator</span>
-      </button>
-      <button class="nav-tab" id="tab-btn-benchmarks" onclick="switchTab('benchmarks')">
-        <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="3" y1="9" x2="21" y2="9"></line>
-          <line x1="3" y1="15" x2="21" y2="15"></line>
-          <line x1="9" y1="3" x2="9" y2="21"></line>
-          <line x1="15" y1="3" x2="15" y2="21"></line>
-        </svg>
-        <span>Benchmark Matrix</span>
-      </button>
-    </nav>
+    <!-- Main Navigation Tabs & Language Toggle -->
+    <div class="header-right">
+      <nav class="nav-tabs" aria-label="Main Navigation">
+        <button class="nav-tab active" id="tab-btn-studio" onclick="switchTab('studio')">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span id="i18n-tab-studio">Xưởng Lắp Ráp Gap</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-calculator" onclick="switchTab('calculator')">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          <span id="i18n-tab-calc">Máy Tính Rủi Ro</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-benchmarks" onclick="switchTab('benchmarks')">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="3" y1="15" x2="21" y2="15"></line>
+            <line x1="9" y1="3" x2="9" y2="21"></line>
+            <line x1="15" y1="3" x2="15" y2="21"></line>
+          </svg>
+          <span id="i18n-tab-matrix">Ma Trận Đối Chứng</span>
+        </button>
+      </nav>
+
+      <!-- Language Switcher -->
+      <div class="lang-switch-group" role="group" aria-label="Language Selector">
+        <button type="button" class="lang-btn active" id="lang-btn-vi" onclick="setLanguage('vi')">Tiếng Việt</button>
+        <button type="button" class="lang-btn" id="lang-btn-en" onclick="setLanguage('en')">English</button>
+      </div>
+    </div>
   </header>
 
   <!-- Main Container -->
@@ -87,26 +95,26 @@
               <line x1="12" y1="8" x2="12" y2="12"></line>
               <line x1="12" y1="16" x2="12.01" y2="16"></line>
             </svg>
-            <span>Target Assembly Locus Architecture</span>
+            <span id="i18n-schematic-title">Kiến Trúc Vùng Phân Tích Locus</span>
           </div>
           <div class="schematic-species-tag" id="schematic-species-display">
-            Target: Taeniopygia guttata | Homology Ref: Lonchura striata (11.5 Mya)
+            Mục tiêu: Taeniopygia guttata | Tham chiếu: Lonchura striata (11.5 Tr.năm)
           </div>
         </div>
 
         <div class="schematic-tracks">
           <!-- Target Track -->
           <div class="track-row">
-            <span class="track-label">Target Scaff</span>
+            <span class="track-label" id="i18n-track-target">Scaffold Đích</span>
             <div class="track-bar-container">
-              <div class="track-block block-flank-left" title="Left Flank (Upstream Anchor)">
-                <span>5' Left Flank (200 bp)</span>
+              <div class="track-block block-flank-left" title="Left Flank">
+                <span id="i18n-track-flank-l">Flank 5' Thượng Lưu (200 bp)</span>
               </div>
-              <div class="track-block block-gap" title="Unresolved N-Gap">
-                <span id="schematic-gap-label">TARGET GAP [ 82 bp ]</span>
+              <div class="track-block block-gap" title="Unresolved Gap">
+                <span id="schematic-gap-label">GAP CẦN ĐIỀN [ 82 bp ]</span>
               </div>
-              <div class="track-block block-flank-right" title="Right Flank (Downstream Anchor)">
-                <span>3' Right Flank (200 bp)</span>
+              <div class="track-block block-flank-right" title="Right Flank">
+                <span id="i18n-track-flank-r">Flank 3' Hạ Lưu (200 bp)</span>
               </div>
             </div>
           </div>
@@ -114,22 +122,22 @@
           <!-- Alignment Connectors -->
           <div class="track-connectors">
             <div class="connector-line"></div>
-            <div class="connector-label">Cross-Species Synteny Mapping &amp; Sparse Read Polishing</div>
+            <div class="connector-label" id="i18n-track-connector">Ánh Xạ Trật Tự Đoạn Gen Synteny &amp; Hiệu Chỉnh Đột Biến Loài Bằng Reads</div>
             <div class="connector-line"></div>
           </div>
 
           <!-- Reference Track -->
           <div class="track-row">
-            <span class="track-label">Ref Scaffold</span>
+            <span class="track-label" id="i18n-track-ref">Scaffold Đối Chiếu</span>
             <div class="track-bar-container">
-              <div class="track-block block-ref-context" title="Upstream Flank Alignment">
-                <span>Homologous 5' Anchor</span>
+              <div class="track-block block-ref-context" title="Upstream Homology">
+                <span id="i18n-track-ref-l">Neo Tương Đồng 5'</span>
               </div>
-              <div class="track-block block-ref-homology" title="Orthologous Gap Donor Candidate">
-                <span>Orthologous Gap Sequence</span>
+              <div class="track-block block-ref-homology" title="Orthologous Gap Donor">
+                <span id="i18n-track-ref-gap">Đoạn Gap Trực Giao Khung</span>
               </div>
-              <div class="track-block block-ref-context" title="Downstream Flank Alignment">
-                <span>Homologous 3' Anchor</span>
+              <div class="track-block block-ref-context" title="Downstream Homology">
+                <span id="i18n-track-ref-r">Neo Tương Đồng 3'</span>
               </div>
             </div>
           </div>
@@ -148,25 +156,25 @@
                 <path d="M12 20h9"></path>
                 <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
               </svg>
-              <span>Target Gap &amp; Evidence Input</span>
+              <span id="i18n-panel-input-title">Tham Số Locus &amp; Bằng Chứng Đầu Vào</span>
             </div>
           </div>
 
           <!-- Presets Segmented Buttons -->
           <div class="preset-selector-group">
-            <div class="field-label-small">Select Validated Genomic Preset:</div>
+            <div class="field-label-small" id="i18n-preset-label">Chọn Mẫu Dữ Liệu Kiểm Chứng Sẵn:</div>
             <div class="preset-pill-grid">
               <button type="button" class="preset-pill" onclick="selectPresetByTier(1)" id="pill-tier-1">
-                <span class="pill-title">Sister Species</span>
-                <span class="pill-meta">Lonchura (~5.2 Mya)</span>
+                <span class="pill-title" id="i18n-p1-title">Cùng Chi Sinh Học</span>
+                <span class="pill-meta" id="i18n-p1-meta">Lonchura (~5.2 Tr.năm)</span>
               </button>
               <button type="button" class="preset-pill active" onclick="selectPresetByTier(2)" id="pill-tier-2">
-                <span class="pill-title">Zebra Finch</span>
-                <span class="pill-meta">Estrildidae (~11.5 Mya)</span>
+                <span class="pill-title" id="i18n-p2-title">Chim Di Manh</span>
+                <span class="pill-meta" id="i18n-p2-meta">Estrildidae (~11.5 Tr.năm)</span>
               </button>
               <button type="button" class="preset-pill" onclick="selectPresetByTier(3)" id="pill-tier-3">
-                <span class="pill-title">Chicken vs Guineafowl</span>
-                <span class="pill-meta">Galliformes (~46.2 Mya)</span>
+                <span class="pill-title" id="i18n-p3-title">Gà Nhà vs Gà Sao</span>
+                <span class="pill-meta" id="i18n-p3-meta">Galliformes (~46.2 Tr.năm)</span>
               </button>
             </div>
           </div>
@@ -183,20 +191,20 @@
             <!-- Flank Left -->
             <div class="form-field">
               <div class="field-header">
-                <label for="flank-left">5' Upstream Flanking Anchor (Target Left)</label>
+                <label for="flank-left" id="i18n-label-flank-l">Đoạn Neo Thượng Lưu 5' (Target Left Flank)</label>
                 <span class="field-counter" id="counter-flank-left">0 bp</span>
               </div>
-              <textarea id="flank-left" rows="2" required placeholder="Paste upstream sequence..."></textarea>
+              <textarea id="flank-left" rows="2" required placeholder="Dán trình tự neo 5' thượng lưu..."></textarea>
             </div>
 
             <!-- Gap Length & Divergence Time -->
             <div class="form-row-two-col">
               <div class="form-field">
-                <label for="gap-len">Expected Gap Length (bp)</label>
+                <label for="gap-len" id="i18n-label-gap-len">Chiều Dài Gap Dự Kiến (bp)</label>
                 <input type="number" id="gap-len" value="82" min="10" max="2000" required>
               </div>
               <div class="form-field">
-                <label for="div-mya">Divergence Time (Mya)</label>
+                <label for="div-mya" id="i18n-label-mya">Thời Gian Phân Kỳ (Mya / Tr.năm)</label>
                 <input type="number" id="div-mya" value="11.5" step="0.1" min="0" max="150" required>
               </div>
             </div>
@@ -204,37 +212,37 @@
             <!-- Flank Right -->
             <div class="form-field">
               <div class="field-header">
-                <label for="flank-right">3' Downstream Flanking Anchor (Target Right)</label>
+                <label for="flank-right" id="i18n-label-flank-r">Đoạn Neo Hạ Lưu 3' (Target Right Flank)</label>
                 <span class="field-counter" id="counter-flank-right">0 bp</span>
               </div>
-              <textarea id="flank-right" rows="2" required placeholder="Paste downstream sequence..."></textarea>
+              <textarea id="flank-right" rows="2" required placeholder="Dán trình tự neo 3' hạ lưu..."></textarea>
             </div>
 
             <!-- Homology Reference Locus -->
             <div class="form-field">
               <div class="field-header">
-                <label for="ref-locus">Homologous Reference Scaffold Region</label>
+                <label for="ref-locus" id="i18n-label-ref">Trình Tự Scaffold Tham Chiếu Tương Đồng</label>
                 <span class="field-counter" id="counter-ref-locus">0 bp</span>
               </div>
-              <textarea id="ref-locus" rows="3" required placeholder="Paste homologous reference locus..."></textarea>
+              <textarea id="ref-locus" rows="3" required placeholder="Dán trình tự locus tương đồng từ loài đối chiếu..."></textarea>
             </div>
 
             <!-- Sparse Reads -->
             <div class="form-field">
               <div class="field-header">
-                <label for="sparse-reads">Sparse Reads Overlapping Gap Locus (1-2x Depth, 1 per line)</label>
+                <label for="sparse-reads" id="i18n-label-reads">Dữ Liệu Reads Thưa Phủ Locus Gap (1-2x Coverage, 1 read/dòng)</label>
                 <span class="field-counter" id="counter-sparse-reads">0 reads</span>
               </div>
-              <textarea id="sparse-reads" rows="2" placeholder="Sparse reads overlapping gap locus (optional)..."></textarea>
+              <textarea id="sparse-reads" rows="2" placeholder="Dán các đoạn read ngắn phủ qua gap (tùy chọn)..."></textarea>
             </div>
 
             <!-- Ground Truth (Optional) -->
             <div class="form-field">
               <div class="field-header">
-                <label for="ground-truth">Ground Truth Gap (Optional Verification Baseline)</label>
+                <label for="ground-truth" id="i18n-label-gt">Trình Tự Chuẩn Ground Truth (Tùy Chọn Đánh Giá)</label>
                 <span class="field-counter" id="counter-ground-truth">0 bp</span>
               </div>
-              <textarea id="ground-truth" rows="2" placeholder="Known ground truth gap sequence..."></textarea>
+              <textarea id="ground-truth" rows="2" placeholder="Trình tự thật đã biết để đo độ chính xác (tùy chọn)..."></textarea>
             </div>
 
             <!-- Submit Button -->
@@ -242,7 +250,7 @@
               <svg class="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
               </svg>
-              <span>Execute Multimodal Reconstruction</span>
+              <span id="i18n-btn-execute">Thực Thi Tái Cấu Trúc Đa Bằng Chứng</span>
             </button>
           </form>
         </div>
@@ -255,10 +263,10 @@
               <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
-              <span>Reconstruction Audit &amp; Provenance</span>
+              <span id="i18n-panel-results-title">Báo Cáo Kiểm Định &amp; Nguồn Gốc Nucleotide</span>
             </div>
             <div id="verdict-container">
-              <span class="status-badge badge-neutral" id="verdict-badge">AWAITING EXECUTION</span>
+              <span class="status-badge badge-neutral" id="verdict-badge">CHỜ THỰC THI</span>
             </div>
           </div>
 
@@ -266,15 +274,15 @@
           <div class="metrics-grid">
             <div class="metric-card">
               <div class="metric-header">
-                <span class="metric-name">Confidence C(S)</span>
-                <span class="metric-sub">Selective Gating</span>
+                <span class="metric-name" id="i18n-metric-conf-name">Độ Tin Cậy C(S)</span>
+                <span class="metric-sub" id="i18n-metric-conf-sub">Gating Chọn Lọc</span>
               </div>
               <div class="metric-value" id="metric-conf">--</div>
             </div>
 
             <div class="metric-card">
               <div class="metric-header">
-                <span class="metric-name">Homology Weight</span>
+                <span class="metric-name" id="i18n-metric-whom-name">Trọng Số Tương Đồng</span>
                 <span class="metric-sub">w_hom(t)</span>
               </div>
               <div class="metric-value" id="metric-whom">--</div>
@@ -282,16 +290,16 @@
 
             <div class="metric-card">
               <div class="metric-header">
-                <span class="metric-name">Synteny Flank ID</span>
-                <span class="metric-sub">Mean Anchors</span>
+                <span class="metric-name" id="i18n-metric-flank-name">Tương Đồng Flank</span>
+                <span class="metric-sub" id="i18n-metric-flank-sub">Trung Bình Neo</span>
               </div>
               <div class="metric-value" id="metric-flank-id">--</div>
             </div>
 
             <div class="metric-card">
               <div class="metric-header">
-                <span class="metric-name">Read Corrections</span>
-                <span class="metric-sub">Sparse Polished</span>
+                <span class="metric-name" id="i18n-metric-corr-name">Hiệu Chỉnh Từ Reads</span>
+                <span class="metric-sub" id="i18n-metric-corr-sub">Đột Biến Loài Đã Sửa</span>
               </div>
               <div class="metric-value" id="metric-read-corr">--</div>
             </div>
@@ -300,25 +308,25 @@
           <!-- Nucleotide Provenance Track -->
           <div class="section-divider">
             <div class="section-title-wrapper">
-              <span class="section-title">Nucleotide Provenance Map</span>
-              <span class="section-subtitle">Single-base resolution source attribution</span>
+              <span class="section-title" id="i18n-provenance-title">Bản Đồ Nguồn Gốc Từng Nucleotide</span>
+              <span class="section-subtitle" id="i18n-provenance-subtitle">Phân giải nguồn gốc dữ liệu ở cấp độ từng base nucleotide</span>
             </div>
             
             <div class="utility-actions">
-              <button type="button" class="btn-util" id="btn-copy-seq" onclick="copyReconstructedSequence()" title="Copy reconstructed sequence">
+              <button type="button" class="btn-util" id="btn-copy-seq" onclick="copyReconstructedSequence()" title="Sao chép trình tự đã tái tạo">
                 <svg class="icon-inline-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
-                <span id="btn-copy-seq-text">Copy Sequence</span>
+                <span id="btn-copy-seq-text">Sao Chép Trình Tự</span>
               </button>
-              <button type="button" class="btn-util" onclick="exportFasta()" title="Export FASTA">
+              <button type="button" class="btn-util" onclick="exportFasta()" title="Xuất file định dạng FASTA">
                 <svg class="icon-inline-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <polyline points="7 10 12 15 17 10"></polyline>
                   <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                <span>Export FASTA</span>
+                <span id="i18n-btn-export-fasta">Xuất File FASTA</span>
               </button>
             </div>
           </div>
@@ -329,8 +337,8 @@
               <!-- Dynamically populated coordinate ruler -->
             </div>
             <div class="provenance-track" id="provenance-ribbon">
-              <div class="track-placeholder">
-                Execute reconstruction or select a preset above to inspect the nucleotide provenance sequence...
+              <div class="track-placeholder" id="i18n-track-placeholder">
+                Nhấn "Thực Thi Tái Cấu Trúc" hoặc chọn mẫu preset phía trên để xem bản đồ phân giải nguồn gốc nucleotide...
               </div>
             </div>
           </div>
@@ -339,15 +347,15 @@
           <div class="legend-container">
             <div class="legend-entry">
               <span class="legend-color-chip chip-homology"></span>
-              <span class="legend-text">Homology Scaffold Base</span>
+              <span class="legend-text" id="i18n-legend-homology">Base Từ Khung Tương Đồng (Homology)</span>
             </div>
             <div class="legend-entry">
               <span class="legend-color-chip chip-read-corrected"></span>
-              <span class="legend-text">Read-Corrected Target Base</span>
+              <span class="legend-text" id="i18n-legend-reads">Base Hiệu Chỉnh Từ Reads Thưa (Read-Corrected)</span>
             </div>
             <div class="legend-entry">
               <span class="legend-color-chip chip-rejected-masked"></span>
-              <span class="legend-text">Protected Masked 'N' (Rejection)</span>
+              <span class="legend-text" id="i18n-legend-masked">Ký Tự 'N' Được Bảo Tồn (Từ Chối Đóng Để Tránh Lỗi)</span>
             </div>
           </div>
 
@@ -357,7 +365,7 @@
               <svg class="icon-inline text-danger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
-              <span class="callout-title">Selective Gating Defense Activated</span>
+              <span class="callout-title" id="i18n-gating-title">Cơ Chế Selective Gating Kích Hoạt Phòng Thủ</span>
             </div>
             <div id="gating-rationale-text" class="callout-body">--</div>
           </div>
@@ -370,7 +378,7 @@
                 <circle cx="12" cy="12" r="6"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
               </svg>
-              <span class="callout-title">Ground Truth Fidelity Audit</span>
+              <span class="callout-title" id="i18n-gt-title">Kiểm Định So Khớp Với Ground Truth</span>
             </div>
             <div id="gt-eval-metrics" class="callout-body">--</div>
           </div>
@@ -378,7 +386,7 @@
           <!-- Comparative Paradigm Analysis -->
           <div class="section-divider" style="margin-top: 1.5rem;">
             <div class="section-title-wrapper">
-              <span class="section-title">Comparative Methodological Paradigms</span>
+              <span class="section-title" id="i18n-paradigm-title">Phân Tích Đối Chiếu Các Trường Phái Phương Pháp Luận</span>
             </div>
           </div>
 
@@ -386,37 +394,14 @@
             <table class="paradigms-table">
               <thead>
                 <tr>
-                  <th>Methodology</th>
-                  <th>Primary Data Requirement</th>
-                  <th>Observed Limitation</th>
-                  <th>PhyloGap Mitigation</th>
+                  <th id="i18n-th-method">Phương Pháp</th>
+                  <th id="i18n-th-req">Yêu Cầu Dữ Liệu</th>
+                  <th id="i18n-th-lim">Hạn Chế Thực Nghiệm</th>
+                  <th id="i18n-th-mit">Giải Pháp Của PhyloGap</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td class="method-name">DENTIST (Read-Based)</td>
-                  <td>High coverage long reads (&gt;20x)</td>
-                  <td>Leaves gaps unfilled when read depth is sparse</td>
-                  <td>Fuses orthologous scaffold with sparse reads</td>
-                </tr>
-                <tr>
-                  <td class="method-name">Pure DNA Language Model</td>
-                  <td>Flanking sequence context</td>
-                  <td>Repetitive collapse &amp; hallucination &gt;100bp</td>
-                  <td>Grounds generation on physical synteny anchors</td>
-                </tr>
-                <tr>
-                  <td class="method-name">Raw Homology Gap Filling</td>
-                  <td>Reference assembly</td>
-                  <td>Severe False Closures beyond t_crit (~13.2 Mya)</td>
-                  <td>Dynamic exponential weight decay w_hom(t)</td>
-                </tr>
-                <tr class="highlight-row">
-                  <td class="method-name text-primary">PhyloGap Multimodal Engine</td>
-                  <td>Hybrid (Homology + Sparse Reads)</td>
-                  <td>Requires calibration across clades</td>
-                  <td>Selective Gating suppresses false closures to &lt;3%</td>
-                </tr>
+              <tbody id="paradigms-table-body">
+                <!-- Dynamically populated in selected language -->
               </tbody>
             </table>
           </div>
@@ -436,46 +421,41 @@
             <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
             </svg>
-            <span>Evolutionary Sequence Decay &amp; Risk Calculator (RQ3)</span>
+            <span id="i18n-calc-title">Mô Hình Phân Rã Trình Tự &amp; Tính Toán Rủi Ro Tiến Hóa (RQ3)</span>
           </div>
           <div class="app-badge">
-            <span>Decay Rate: λ = 0.006395 / Myr</span>
+            <span id="i18n-calc-rate-badge">Tốc Độ Đột Biến: λ = 0.006395 / Tr.năm</span>
           </div>
         </div>
 
-        <p class="panel-intro-text">
-          Calibrated empirical decay model derived from 400 avian gap trials across B10K / VGP clades:
+        <p class="panel-intro-text" id="i18n-calc-intro">
+          Mô hình toán học phân rã thực nghiệm được kiểm chứng trên 400 gap trials thuộc các clade chim B10K / VGP:
           <code class="code-formula">Acc(t) = exp(-0.006395 · t)</code>
-          with a critical inflection threshold at <strong class="text-danger">t_crit = 13.2 Mya</strong>.
+          với mốc phân kỳ tới hạn <strong class="text-danger">t_crit = 13.2 Triệu năm</strong>.
         </p>
 
         <!-- Slider Control -->
         <div class="calc-slider-card">
           <div class="slider-header">
-            <span class="slider-title">Phylogenetic Divergence Distance (t):</span>
-            <span id="slider-val-display" class="slider-display-number">11.5 Mya</span>
+            <span class="slider-title" id="i18n-slider-title">Khoảng Cách Phân Kỳ Phát Sinh Loài (t):</span>
+            <span id="slider-val-display" class="slider-display-number">11.5 Tr.năm</span>
           </div>
           
           <input type="range" id="mya-slider" min="0" max="90" step="0.5" value="11.5" oninput="updateRiskCalc(this.value)">
           
-          <div class="slider-scale-ticks">
-            <button type="button" class="tick-btn" onclick="setSliderMya(0)">0 Mya<br><small>Identical</small></button>
-            <button type="button" class="tick-btn" onclick="setSliderMya(5.2)">5.2 Mya<br><small>Sister</small></button>
-            <button type="button" class="tick-btn" onclick="setSliderMya(11.5)">11.5 Mya<br><small>Family</small></button>
-            <button type="button" class="tick-btn tick-critical" onclick="setSliderMya(13.2)">13.2 Mya<br><small>t_crit</small></button>
-            <button type="button" class="tick-btn" onclick="setSliderMya(46.2)">46.2 Mya<br><small>Order</small></button>
-            <button type="button" class="tick-btn" onclick="setSliderMya(88.0)">88.0 Mya<br><small>Class</small></button>
+          <div class="slider-scale-ticks" id="slider-ticks-container">
+            <!-- Dynamically populated with localized labels -->
           </div>
         </div>
 
         <!-- SVG Exponential Curve Graph -->
         <div class="chart-canvas-container">
           <div class="chart-top-bar">
-            <span class="chart-caption">Homology Sequence Identity (%) vs Evolutionary Divergence Time (Mya)</span>
+            <span class="chart-caption" id="i18n-chart-caption">Độ Tương Đồng Trình Tự (%) Theo Thời Gian Phân Kỳ Tiến Hóa (Triệu Năm)</span>
             <div class="chart-legend-row">
-              <span class="chart-legend-item"><span class="chart-dot dot-cyan"></span>Model Acc(t)</span>
-              <span class="chart-legend-item"><span class="chart-dot dot-amber"></span>Current Position</span>
-              <span class="chart-legend-item"><span class="chart-dot dot-red"></span>Danger Zone (t &ge; t_crit)</span>
+              <span class="chart-legend-item"><span class="chart-dot dot-cyan"></span><span id="i18n-leg-curve">Mô Hình Acc(t)</span></span>
+              <span class="chart-legend-item"><span class="chart-dot dot-amber"></span><span id="i18n-leg-pos">Vị Trí Hiện Tại</span></span>
+              <span class="chart-legend-item"><span class="chart-dot dot-red"></span><span id="i18n-leg-danger">Vùng Nguy Hiểm (t &ge; t_crit)</span></span>
             </div>
           </div>
           <svg id="decay-chart" width="100%" height="240" viewBox="0 0 760 240" class="svg-decay-graph">
@@ -487,11 +467,11 @@
         <div id="risk-result-card" class="risk-summary-card">
           <div class="risk-summary-top">
             <div class="risk-level-group">
-              <span class="risk-summary-label">Risk Classification:</span>
+              <span class="risk-summary-label" id="i18n-risk-class-lbl">Phân Loại Mức Độ Rủi Ro:</span>
               <div id="risk-badge" class="risk-classification-text">--</div>
             </div>
             <div class="risk-level-group text-right">
-              <span class="risk-summary-label">Expected Homology Identity:</span>
+              <span class="risk-summary-label" id="i18n-risk-id-lbl">Độ Tương Đồng Dự Kiến:</span>
               <div id="risk-expected-id" class="risk-stat-number">--</div>
             </div>
           </div>
@@ -516,16 +496,16 @@
               <line x1="9" y1="3" x2="9" y2="21"></line>
               <line x1="15" y1="3" x2="15" y2="21"></line>
             </svg>
-            <span>Multimodal Fusion &amp; Selective Gating Ablation Benchmark (RQ4 &amp; RQ5)</span>
+            <span id="i18n-matrix-title">Ma Trận Thử Nghiệm Đối Chứng Cắt Bỏ (Ablation Benchmark - RQ4 &amp; RQ5)</span>
           </div>
           <div class="app-badge">
-            <span>600 Controlled Gap Trials</span>
+            <span id="i18n-matrix-badge">600 Gap Trials Có Kiểm Soát</span>
           </div>
         </div>
 
-        <p class="panel-intro-text">
-          Ablation matrix evaluating 4 distinct configurations across near (~11.5 Mya) and distant (~46.2 Mya) clades.
-          PhyloGap demonstrates Pareto optimality: boosting exact matches while driving false-closure rate to 2.7%.
+        <p class="panel-intro-text" id="i18n-matrix-intro">
+          Bảng thực nghiệm so sánh 4 cấu hình phương pháp giữa phân tầng gần (~11.5 triệu năm) và phân tầng xa (~46.2 triệu năm).
+          PhyloGap đạt điểm cân bằng Pareto: tăng tỷ lệ khớp hoàn toàn (Exact Match) lên 21.3% và kéo giảm tỷ lệ đóng sai xuống 2.7%.
         </p>
 
         <!-- Benchmark Table -->
@@ -533,111 +513,24 @@
           <table class="benchmark-data-table">
             <thead>
               <tr>
-                <th>Regime</th>
-                <th>Configuration</th>
-                <th>Coverage</th>
-                <th>Acc_nuc</th>
-                <th>Exact Match</th>
-                <th>False-Closure Rate</th>
-                <th>Substitutions</th>
-                <th>Indels</th>
+                <th id="i18n-bm-regime">Phân Tầng Phân Kỳ</th>
+                <th id="i18n-bm-config">Cấu Hình Mô Hình</th>
+                <th id="i18n-bm-cov">Độ Phủ (Coverage)</th>
+                <th id="i18n-bm-acc">Độ Chính Xác (Acc_nuc)</th>
+                <th id="i18n-bm-em">Khớp Hoàn Toàn (Exact Match)</th>
+                <th id="i18n-bm-fcr">Tỷ Lệ Đóng Sai (FCR)</th>
+                <th id="i18n-bm-sub">Đột Biến Thay Thế</th>
+                <th id="i18n-bm-indel">Đột Biến Thêm/Mất</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- Near Clade -->
-              <tr>
-                <td class="cell-regime">Near Clade (~11.5 Mya)</td>
-                <td class="cell-config">Config A: Sparse Reads Only</td>
-                <td>100.0%</td>
-                <td>67.0%</td>
-                <td>0.0%</td>
-                <td class="text-danger font-semibold">100.0%</td>
-                <td>13.8 bp</td>
-                <td>29.8 bp</td>
-              </tr>
-              <tr>
-                <td class="cell-regime">Near Clade (~11.5 Mya)</td>
-                <td class="cell-config">Config B: Homology Only</td>
-                <td>100.0%</td>
-                <td>95.1%</td>
-                <td>4.0%</td>
-                <td>4.0%</td>
-                <td>4.7 bp</td>
-                <td>1.1 bp</td>
-              </tr>
-              <tr>
-                <td class="cell-regime">Near Clade (~11.5 Mya)</td>
-                <td class="cell-config">Config C: Naive Hybrid</td>
-                <td>100.0%</td>
-                <td>97.5%</td>
-                <td>21.3%</td>
-                <td>2.7%</td>
-                <td>1.9 bp</td>
-                <td>1.1 bp</td>
-              </tr>
-              <tr class="table-row-phylogap">
-                <td class="cell-regime font-bold">Near Clade (~11.5 Mya)</td>
-                <td class="cell-config font-bold text-primary">Config D: PhyloGap (Full Model)</td>
-                <td class="font-bold">100.0%</td>
-                <td class="font-bold">97.5%</td>
-                <td class="font-bold text-success">21.3%</td>
-                <td class="font-bold text-success">2.7%</td>
-                <td class="font-bold">1.9 bp</td>
-                <td class="font-bold">1.1 bp</td>
-              </tr>
-
-              <!-- Distant Clade -->
-              <tr class="table-separator-row">
-                <td colspan="8"></td>
-              </tr>
-              <tr>
-                <td class="cell-regime">Distant Clade (~46.2 Mya)</td>
-                <td class="cell-config">Config A: Sparse Reads Only</td>
-                <td>100.0%</td>
-                <td>67.0%</td>
-                <td>1.3%</td>
-                <td class="text-danger font-semibold">96.0%</td>
-                <td>14.3 bp</td>
-                <td>29.9 bp</td>
-              </tr>
-              <tr>
-                <td class="cell-regime">Distant Clade (~46.2 Mya)</td>
-                <td class="cell-config">Config B: Homology Only</td>
-                <td>100.0%</td>
-                <td>81.0%</td>
-                <td>0.0%</td>
-                <td class="text-danger font-semibold">97.3%</td>
-                <td>17.5 bp</td>
-                <td>6.5 bp</td>
-              </tr>
-              <tr>
-                <td class="cell-regime">Distant Clade (~46.2 Mya)</td>
-                <td class="cell-config">Config C: Naive Hybrid</td>
-                <td>100.0%</td>
-                <td>90.5%</td>
-                <td>2.7%</td>
-                <td class="text-warning font-semibold">46.7%</td>
-                <td>6.3 bp</td>
-                <td>6.5 bp</td>
-              </tr>
-              <tr class="table-row-phylogap">
-                <td class="cell-regime font-bold">Distant Clade (~46.2 Mya)</td>
-                <td class="cell-config font-bold text-primary">Config D: PhyloGap (Full Model)</td>
-                <td class="font-bold">66.7%</td>
-                <td class="font-bold">61.5%</td>
-                <td class="font-bold text-success">2.7%</td>
-                <td class="font-bold text-success">21.3%</td>
-                <td class="font-bold">4.2 bp</td>
-                <td class="font-bold">38.1 bp</td>
-              </tr>
+            <tbody id="benchmark-table-body">
+              <!-- Dynamically populated in selected language -->
             </tbody>
           </table>
         </div>
 
-        <div class="benchmark-footnotes">
-          <div><strong class="text-main">Acc_nuc:</strong> Average nucleotide accuracy across closed gaps.</div>
-          <div><strong class="text-main">False-Closure Rate:</strong> Percentage of closed gaps that introduce severe error or hallucination (&gt;10% error rate).</div>
-          <div><strong class="text-main">Selective Gating Impact:</strong> In distant clades, PhyloGap safely rejects 33.3% of ambiguous gaps (Coverage 66.7%), preventing catastrophic false joins (FCR dropped from 97.3% to 21.3%).</div>
+        <div class="benchmark-footnotes" id="benchmark-footnotes-container">
+          <!-- Dynamically populated in selected language -->
         </div>
 
       </div>

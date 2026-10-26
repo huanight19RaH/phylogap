@@ -125,29 +125,43 @@ def reconstruct_gap(req: ReconstructionRequest):
     return res
 
 @app.get("/api/risk-calc")
-def calculate_evolutionary_risk(mya: float):
-    """Calculates evolutionary sequence identity decay and risk tier for given Mya."""
+def calculate_evolutionary_risk(mya: float, lang: str = "en"):
+    """Calculates evolutionary sequence identity decay and risk tier for given Mya in English or Vietnamese."""
     t = max(0.0, float(mya))
     expected_identity = math.exp(-EMPIRICAL_DECAY_LAMBDA * t) * 100.0
 
     fuser = EvidenceWeightedFuser()
     w_hom = fuser.compute_homology_weight(t)
 
+    is_vi = (lang.lower() == "vi")
+
     if t <= 6.0:
         risk_tier = "SAFE_CONGENERIC"
-        risk_label = "Vùng An toàn Cao (Cùng chi / Sister Species)"
+        risk_label = "Vùng An Toàn (Cùng chi / Sister Species)" if is_vi else "Safe Zone (Congeneric / Sister Species)"
         risk_color = "#10B981" # Green
-        guidance = "Homology reference có độ chính xác >95%. Có thể tái tạo gap an toàn ngay cả khi không có reads."
+        guidance = (
+            "Độ chính xác tương đồng >95%. Có thể tái tạo an toàn ngay cả khi không có reads hỗ trợ."
+            if is_vi else
+            "Homology reference provides >95% accuracy. Safe for direct gap reconstruction even without read support."
+        )
     elif t <= EMPIRICAL_T_CRIT:
         risk_tier = "CAUTION_FAMILY"
-        risk_label = "Vùng Cảnh báo (Cùng họ / Family Level)"
+        risk_label = "Vùng Cảnh Báo (Cùng họ / Family Level)" if is_vi else "Caution Zone (Family Level Clade)"
         risk_color = "#F59E0B" # Yellow
-        guidance = "Homology có độ chính xác 92-95% nhưng xuất hiện 15% False Closure. Khuyến nghị dùng Sparse Reads để sửa đột biến loài."
+        guidance = (
+            "Độ chính xác tương đồng đạt 92-95% nhưng xuất hiện ~15% False Closure. Bắt buộc có Sparse Reads để sửa các đột biến đơn loài."
+            if is_vi else
+            "Homology identity is 92-95% but exhibits ~15% False Closure rate. Sparse reads required to polish species-specific substitutions."
+        )
     else:
         risk_tier = "DANGER_ORDER_CLASS"
-        risk_label = "Vùng Nguy hiểm (Khác bộ / Distant Orders)"
-        risk_color = "#EF4444" # Red
-        guidance = f"Cự ly phân tách ({t:.1f} Mya) vượt mốc tới hạn t_crit ({EMPIRICAL_T_CRIT} Mya). Tỷ lệ đóng sai >95%! Bắt buộc kích hoạt Selective Gating để từ chối."
+        risk_label = "Vùng Nguy Hiểm (Khác bộ / Distant Orders)" if is_vi else "Danger Zone (Distant Orders / Classes)"
+        risk_color = "#F43F5E" # Red
+        guidance = (
+            f"Khoảng cách phân kỳ ({t:.1f} Mya) vượt mốc tới hạn t_crit ({EMPIRICAL_T_CRIT} Mya). Tỷ lệ đóng sai >95%! Bắt buộc kích hoạt Selective Gating để từ chối."
+            if is_vi else
+            f"Phylogenetic distance ({t:.1f} Mya) exceeds critical threshold t_crit ({EMPIRICAL_T_CRIT} Mya). False-Closure Rate >95%! Selective Gating required to reject candidate."
+        )
 
     return {
         "divergence_mya": t,
@@ -158,7 +172,8 @@ def calculate_evolutionary_risk(mya: float):
         "risk_tier": risk_tier,
         "risk_label": risk_label,
         "risk_color": risk_color,
-        "guidance": guidance
+        "guidance": guidance,
+        "lang": lang
     }
 
 # Mount static files
