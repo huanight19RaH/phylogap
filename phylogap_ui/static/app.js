@@ -1136,20 +1136,37 @@ function renderSvgDecayChart(currentMya, currentIdentity, tCrit) {
 document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLang);
   fetchPresets();
+  initPhyloMorphStudio();
 });
 
 // ==========================================================================
 // PHYLOMORPH 3D STUDIO CONTROLLER
 // ==========================================================================
 let phyloMorphEngine = null;
+let phyloMorphRetryCount = 0;
+let autoMorphInterval = null;
 
 function initPhyloMorphStudio() {
-  if (!phyloMorphEngine && window.PhyloMorphEngine) {
+  const container = document.getElementById('phylomorph-3d-viewport');
+  if (!container) return;
+
+  if (!window.PhyloMorphEngine) {
+    if (phyloMorphRetryCount < 10) {
+      phyloMorphRetryCount++;
+      setTimeout(initPhyloMorphStudio, 150);
+    }
+    return;
+  }
+
+  if (!phyloMorphEngine) {
     phyloMorphEngine = new window.PhyloMorphEngine('phylomorph-3d-viewport');
     runHybridization();
   }
   setTimeout(() => {
     window.dispatchEvent(new Event('resize'));
+    if (phyloMorphEngine && phyloMorphEngine.handleResize) {
+      phyloMorphEngine.handleResize();
+    }
   }, 100);
 }
 
@@ -1173,7 +1190,7 @@ function onMorphSliderChange(val) {
   if (badge) {
     if (progress < 0.25) badge.textContent = `${Math.round(progress * 100)}% (Sinh Vật)`;
     else if (progress > 0.75) badge.textContent = `${Math.round(progress * 100)}% (Xoắn Kép ADN)`;
-    else badge.textContent = `${Math.round(progress * 100)}% (Hạt Lốc Xoáy)`;
+    else badge.textContent = `${Math.round(progress * 100)}% (Lốc Xoáy Hạt)`;
   }
   const hudMode = document.getElementById('hud-current-mode-label');
   if (hudMode) {
@@ -1186,6 +1203,60 @@ function quickMorph(target) {
   const slider = document.getElementById('morph-progress-slider');
   if (slider) slider.value = target * 100;
   onMorphSliderChange(target * 100);
+}
+
+function setCameraPreset(mode) {
+  if (phyloMorphEngine && phyloMorphEngine.setCameraPreset) {
+    phyloMorphEngine.setCameraPreset(mode);
+  }
+}
+
+function toggleAutoRotate() {
+  if (phyloMorphEngine && phyloMorphEngine.toggleAutoRotate) {
+    const isRotating = phyloMorphEngine.toggleAutoRotate();
+    const btn = document.getElementById('btn-toggle-rotate');
+    if (btn) {
+      btn.classList.toggle('active', isRotating);
+      btn.style.color = isRotating ? '#34D399' : '#94A3B8';
+    }
+  }
+}
+
+function onChangeParticleSize(val) {
+  const size = parseFloat(val);
+  if (phyloMorphEngine && phyloMorphEngine.setParticleBaseSize) {
+    phyloMorphEngine.setParticleBaseSize(size);
+  }
+  const badge = document.getElementById('particle-size-badge');
+  if (badge) badge.textContent = `${Math.round(size)}`;
+}
+
+function toggleAutoMorph() {
+  if (autoMorphInterval) {
+    clearInterval(autoMorphInterval);
+    autoMorphInterval = null;
+    const btn = document.getElementById('btn-auto-morph');
+    if (btn) btn.textContent = 'Tự Động Biến Hình (Auto-Cycle)';
+    return;
+  }
+
+  let step = 0;
+  let forward = true;
+  const slider = document.getElementById('morph-progress-slider');
+  const btn = document.getElementById('btn-auto-morph');
+  if (btn) btn.textContent = 'Dừng Biến Hình Tự Động';
+
+  autoMorphInterval = setInterval(() => {
+    if (forward) {
+      step += 2;
+      if (step >= 100) forward = false;
+    } else {
+      step -= 2;
+      if (step <= 0) forward = true;
+    }
+    if (slider) slider.value = step;
+    onMorphSliderChange(step);
+  }, 40);
 }
 
 function triggerGapInjection() {

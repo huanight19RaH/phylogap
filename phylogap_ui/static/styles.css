@@ -1203,12 +1203,12 @@ input[type="range"] {
 .phylomorph-viewport {
   position: relative;
   width: 100%;
-  height: 540px;
-  background: radial-gradient(circle at 50% 50%, #0d1527 0%, #060913 85%);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  border-radius: var(--radius-lg);
+  height: 560px;
+  background: radial-gradient(circle at 50% 40%, rgba(16, 185, 129, 0.08) 0%, rgba(5, 10, 8, 0.95) 70%, #030303 100%);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(56, 189, 248, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 60px rgba(16, 185, 129, 0.05);
 }
 
 .phylomorph-viewport canvas {
@@ -1230,18 +1230,97 @@ input[type="range"] {
   z-index: 10;
 }
 
+.viewport-hud-presets {
+  display: flex;
+  gap: 6px;
+  background: rgba(8, 12, 10, 0.80);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 999px;
+  padding: 4px;
+  pointer-events: auto;
+}
+
+.hud-action-btn {
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hud-action-btn:hover {
+  color: #34D399;
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.hud-action-btn.active {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34D399;
+  font-weight: 600;
+}
+
+.viewport-bottom-dock {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  background: rgba(8, 12, 10, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  border-radius: 999px;
+  padding: 6px 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  max-width: 95%;
+  overflow-x: auto;
+}
+
+.dock-pill-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #94A3B8;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dock-pill-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dock-pill-btn.active {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #34D399;
+  font-weight: 600;
+}
+
 .hud-chip {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(8, 14, 11, 0.82);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.22);
   border-radius: 999px;
   padding: 6px 14px;
   font-size: 0.75rem;
-  color: var(--text-main);
+  color: #E2E8F0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hud-dot {
@@ -1260,13 +1339,13 @@ input[type="range"] {
 }
 
 .hud-controls-tip {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 6px;
-  padding: 4px 10px;
+  background: rgba(8, 14, 11, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 5px 12px;
   font-size: 0.7rem;
-  color: var(--text-dim);
+  color: #94A3B8;
 }
 
 .phylomorph-controls-grid {
@@ -1282,24 +1361,28 @@ input[type="range"] {
 }
 
 .morph-control-card {
-  padding: 1.25rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.15rem;
+  background: rgba(8, 12, 10, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  backdrop-filter: blur(16px);
 }
 
 .card-header-styled {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border-subtle);
+  gap: 14px;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .header-icon-circle {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1307,15 +1390,15 @@ input[type="range"] {
 }
 
 .header-icon-circle.icon-dna {
-  background: rgba(56, 189, 248, 0.15);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  color: var(--primary);
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34D399;
 }
 
 .header-icon-circle.icon-hybrid {
-  background: rgba(168, 85, 247, 0.15);
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  color: #C084FC;
+  background: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  color: #22D3EE;
 }
 
 .header-icon-circle svg {

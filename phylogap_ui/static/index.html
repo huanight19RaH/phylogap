@@ -167,10 +167,11 @@
           </div>
 
           <!-- Hero Floating 3D DNA Canvas Viewport -->
-          <div class="reveal mt-12 w-full max-w-lg h-64 sm:h-72 relative flex items-center justify-center" style="animation-delay: 0.6s">
-            <div id="hero-dna-canvas" class="w-full h-full cursor-grab"></div>
-            <div class="absolute bottom-2 text-[10px] font-mono uppercase tracking-[0.2em] text-emerald-400/80 bg-black/60 px-3 py-1 rounded-full border border-emerald-500/20 backdrop-blur-md">
-              Mô Phỏng 3D ADN Di Chuyển Trực Tiếp
+          <div class="reveal mt-12 w-full max-w-2xl h-80 sm:h-96 relative flex items-center justify-center rounded-3xl border border-emerald-500/20 bg-gradient-to-b from-[#060b08]/80 to-[#020403]/90 backdrop-blur-2xl p-2 shadow-[0_0_60px_-20px_rgba(16,185,129,0.25)]" style="animation-delay: 0.6s">
+            <div id="hero-dna-canvas" class="w-full h-full cursor-grab active:cursor-grabbing"></div>
+            <div class="absolute bottom-4 flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.2em] text-emerald-400 bg-black/70 px-4 py-1.5 rounded-full border border-emerald-500/25 backdrop-blur-md shadow-lg">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              3D ADN Xoắn Kép Thời Gian Thực • Kéo Chuột Để Xoay
             </div>
           </div>
 
@@ -276,18 +277,47 @@
           
           <!-- 3D WebGL Canvas Viewport -->
           <div class="phylomorph-viewport" id="phylomorph-3d-viewport">
+            
+            <!-- Top HUD: Status & Camera Presets -->
             <div class="viewport-hud-overlay">
               <div class="hud-chip">
                 <span class="hud-dot"></span>
-                <span id="hud-status-text">WebGL 3D: 9,600 Hạt Sinh Học Phát Sáng Hoạt Động</span>
+                <span id="hud-status-text">WebGL 3D: 12,000 Hạt Sinh Học GPU Phát Sáng Hoạt Động</span>
               </div>
+
+              <!-- Camera View Angle Presets (ThreeUI Inspired) -->
+              <div class="viewport-hud-presets hidden sm:flex">
+                <button class="hud-action-btn active" onclick="setCameraPreset('isometric')">Góc 3/4</button>
+                <button class="hud-action-btn" onclick="setCameraPreset('front')">Mặt Trước</button>
+                <button class="hud-action-btn" onclick="setCameraPreset('side')">Nhìn Ngang</button>
+                <button class="hud-action-btn" onclick="setCameraPreset('top')">Từ Trên Xuống</button>
+                <button class="hud-action-btn" id="btn-toggle-rotate" onclick="toggleAutoRotate()">Tự Động Xoay</button>
+              </div>
+
               <div class="hud-chip" id="hud-mode-chip">
                 Chế Độ: <strong id="hud-current-mode-label" class="text-emerald-400">Hình Thái Sinh Vật (Phenotype)</strong>
               </div>
-              <div class="hud-controls-tip hidden sm:block">
-                Kéo chuột trái: Xoay 360° | Cuộn chuột: Phóng to / Thu nhỏ
-              </div>
             </div>
+
+            <!-- Floating Quick-Species Dock at bottom of viewport -->
+            <div class="viewport-bottom-dock">
+              <button class="dock-pill-btn active" onclick="document.getElementById('morph-species-select').value='c_anna'; onSelectMorphSpecies('c_anna'); quickMorph(0.0);">
+                <iconify-icon icon="lucide:feather" class="text-emerald-400"></iconify-icon> Chim Ruồi (Calypte)
+              </button>
+              <button class="dock-pill-btn" onclick="document.getElementById('morph-species-select').value='mammal'; onSelectMorphSpecies('mammal'); quickMorph(0.0);">
+                <iconify-icon icon="lucide:paw-print" class="text-mint-400"></iconify-icon> Động Vật Có Vú
+              </button>
+              <button class="dock-pill-btn" onclick="document.getElementById('morph-species-select').value='plant'; onSelectMorphSpecies('plant'); quickMorph(0.0);">
+                <iconify-icon icon="lucide:sprout" class="text-green-400"></iconify-icon> Thực Vật (Arabidopsis)
+              </button>
+              <button class="dock-pill-btn" onclick="document.getElementById('morph-species-select').value='t_guttata'; onSelectMorphSpecies('t_guttata'); quickMorph(0.0);">
+                <iconify-icon icon="lucide:bird" class="text-cyan-400"></iconify-icon> Chim Sẻ (Taeniopygia)
+              </button>
+              <button class="dock-pill-btn" onclick="quickMorph(1.0);">
+                <iconify-icon icon="lucide:dna" class="text-emerald-300"></iconify-icon> Xoắn Kép ADN
+              </button>
+            </div>
+
           </div>
 
           <!-- Floating Controls Grid -->
@@ -309,9 +339,9 @@
               <div class="control-row">
                 <label class="control-label">Chọn Mô Hình 3D:</label>
                 <select class="select-styled" id="morph-species-select" onchange="onSelectMorphSpecies(this.value)">
-                  <option value="c_anna">Calypte anna (Chim Ruồi - Cánh Xòe & Mỏ Kim)</option>
+                  <option value="c_anna">Calypte anna (Chim Ruồi - Mỏ Dài & Cánh Đập)</option>
                   <option value="mammal">Mammalia (Động Vật Có Vú - 4 Chân & Cột Sống)</option>
-                  <option value="plant">Arabidopsis thaliana (Thực Vật - Lá Xòe & Hoa)</option>
+                  <option value="plant">Arabidopsis thaliana (Thực Vật - 10 Lá Xòe & Hoa)</option>
                   <option value="t_guttata">Taeniopygia guttata (Chim Sẻ - Mỏ Nón)</option>
                 </select>
               </div>
@@ -330,7 +360,7 @@
                 </div>
               </div>
 
-              <!-- Quick Action Buttons -->
+              <!-- Quick Action & Auto-Cycle Buttons -->
               <div class="btn-group-flex">
                 <button class="btn-action btn-secondary" onclick="quickMorph(0.0)">
                   Mô Hình Sinh Vật
@@ -338,6 +368,18 @@
                 <button class="btn-action btn-primary" onclick="quickMorph(1.0)">
                   Xoắn Kép ADN
                 </button>
+                <button class="btn-action btn-secondary" id="btn-auto-morph" onclick="toggleAutoMorph()">
+                  Tự Động Biến Hình
+                </button>
+              </div>
+
+              <!-- Particle Size Adjuster -->
+              <div class="control-row mt-1">
+                <div class="slider-header-flex">
+                  <span class="control-label">Kích Thước Hạt Phát Sáng:</span>
+                  <span class="slider-val-badge" id="particle-size-badge">85</span>
+                </div>
+                <input type="range" class="range-styled" id="particle-size-slider" min="40" max="160" value="85" oninput="onChangeParticleSize(this.value)">
               </div>
 
               <!-- Gap Simulation Controller -->
@@ -782,9 +824,16 @@
   <!-- Auto-initialize Hero 3D DNA Canvas on Load -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      if (window.HeroDnaBackground) {
-        new window.HeroDnaBackground('hero-dna-canvas');
+      let heroRetries = 0;
+      function startHero() {
+        if (window.HeroDnaBackground) {
+          new window.HeroDnaBackground('hero-dna-canvas');
+        } else if (heroRetries < 10) {
+          heroRetries++;
+          setTimeout(startHero, 120);
+        }
       }
+      startHero();
     });
 
     function copyCodeSnippet() {
