@@ -1,81 +1,801 @@
 trial_id,model,device,tier,divergence_mya,gap_length,replicate,runtime_sec,nucleotide_accuracy,exact_match,is_false_closure,is_gated,closure_status
-1,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,0,0.00011829999857582152,1.0,True,False,False,Exact
-1,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,50,0,0.07,0.84,False,True,False,FalseClosure
-2,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,1,0.00010930001735687256,1.0,True,False,False,Exact
-2,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,50,1,0.07,0.88,False,True,False,FalseClosure
-3,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,0,0.00020140002015978098,1.0,True,False,False,Exact
-3,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,100,0,0.095,0.62,False,True,False,FalseClosure
-4,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,1,0.00019580000662244856,1.0,True,False,False,Exact
-4,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,100,1,0.095,0.73,False,True,False,FalseClosure
-5,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,0,0.0004936000041197985,1.0,True,False,False,Exact
-5,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,250,0,0.16999999999999998,0.536,False,True,False,FalseClosure
-6,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,1,0.0004552000027615577,1.0,True,False,False,Exact
-6,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,250,1,0.16999999999999998,0.544,False,True,False,FalseClosure
-7,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,0,0.000905399996554479,1.0,True,False,False,Exact
-7,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,500,0,0.295,0.5,False,True,False,FalseClosure
-8,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,1,0.0010814999986905605,1.0,True,False,False,Exact
-8,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,500,1,0.295,0.456,False,True,False,FalseClosure
-9,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,0,0.003643000003648922,1.0,True,False,False,Exact
-9,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,1000,0,0.545,0.458,False,True,False,FalseClosure
-10,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,1,0.001947999990079552,1.0,True,False,False,Exact
-10,GapPredict,NVIDIA GeForce MX350,Closely-Related (5-15 MYA),10.0,1000,1,0.545,0.462,False,True,False,FalseClosure
-11,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,0,0.00010619999375194311,1.0,True,False,False,Exact
-11,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,50,0,0.07,0.86,False,True,False,FalseClosure
-12,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,1,0.00010289999772794545,1.0,True,False,False,Exact
-12,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,50,1,0.07,0.82,False,True,False,FalseClosure
-13,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,0,0.0002330999996047467,1.0,True,False,False,Exact
-13,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,100,0,0.095,0.69,False,True,False,FalseClosure
-14,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,1,0.0001975000195670873,1.0,True,False,False,Exact
-14,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,100,1,0.095,0.72,False,True,False,FalseClosure
-15,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,0,0.0006426000036299229,1.0,True,False,False,Exact
-15,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,250,0,0.16999999999999998,0.46,False,True,False,FalseClosure
-16,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,1,0.0004527999844867736,1.0,True,False,False,Exact
-16,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,250,1,0.16999999999999998,0.54,False,True,False,FalseClosure
-17,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,0,0.0009684999822638929,1.0,True,False,False,Exact
-17,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,500,0,0.295,0.486,False,True,False,FalseClosure
-18,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,1,0.001022200012812391,1.0,True,False,False,Exact
-18,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,500,1,0.295,0.504,False,True,False,FalseClosure
-19,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,0,0.0020072000043001026,1.0,True,False,False,Exact
-19,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,1000,0,0.545,0.301,False,True,False,FalseClosure
-20,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,1,0.001980800007004291,1.0,True,False,False,Exact
-20,GapPredict,NVIDIA GeForce MX350,Moderately-Divergent (15-35 MYA),25.0,1000,1,0.545,0.461,False,True,False,FalseClosure
-21,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,0,0.00010899998596869409,1.0,True,False,False,Exact
-21,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,50,0,0.07,0.86,False,True,False,FalseClosure
-22,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,1,0.00012280000373721123,1.0,True,False,False,Exact
-22,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,50,1,0.07,0.78,False,True,False,FalseClosure
-23,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,0,0.00022610000451095402,1.0,True,False,False,Exact
-23,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,100,0,0.095,0.71,False,True,False,FalseClosure
-24,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,1,0.0002967999898828566,1.0,True,False,False,Exact
-24,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,100,1,0.095,0.57,False,True,False,FalseClosure
-25,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,0,0.0005187999922782183,1.0,True,False,False,Exact
-25,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,250,0,0.16999999999999998,0.472,False,True,False,FalseClosure
-26,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,1,0.0005264999927021563,1.0,True,False,False,Exact
-26,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,250,1,0.16999999999999998,0.564,False,True,False,FalseClosure
-27,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,0,0.001067200006218627,1.0,True,False,False,Exact
-27,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,500,0,0.295,0.52,False,True,False,FalseClosure
-28,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,1,0.0012003000010736287,1.0,True,False,False,Exact
-28,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,500,1,0.295,0.302,False,True,False,FalseClosure
-29,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,0,0.0021314000186976045,0.999,False,False,False,Imperfect
-29,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,1000,0,0.545,0.454,False,True,False,FalseClosure
-30,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,1,0.0020914000051561743,1.0,True,False,False,Exact
-30,GapPredict,NVIDIA GeForce MX350,Deeply-Divergent (35-70 MYA),50.0,1000,1,0.545,0.269,False,True,False,FalseClosure
-31,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,0,0.00010989999282173812,1.0,True,False,False,Exact
-31,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,50,0,0.07,0.78,False,True,False,FalseClosure
-32,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,1,0.0001005999802146107,1.0,True,False,False,Exact
-32,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,50,1,0.07,0.78,False,True,False,FalseClosure
-33,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,0,0.0002269999822601676,1.0,True,False,False,Exact
-33,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,100,0,0.095,0.71,False,True,False,FalseClosure
-34,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,1,0.00023099998361431062,1.0,True,False,False,Exact
-34,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,100,1,0.095,0.59,False,True,False,FalseClosure
-35,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,0,0.0005748000112362206,1.0,True,False,False,Exact
-35,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,250,0,0.16999999999999998,0.54,False,True,False,FalseClosure
-36,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,1,0.0010887999960687011,1.0,True,False,False,Exact
-36,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,250,1,0.16999999999999998,0.588,False,True,False,FalseClosure
-37,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,0,0.0011630000080913305,1.0,True,False,False,Exact
-37,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,500,0,0.295,0.472,False,True,False,FalseClosure
-38,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,1,0.0010914999875240028,1.0,True,False,False,Exact
-38,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,500,1,0.295,0.506,False,True,False,FalseClosure
-39,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,0,0.002129400003468618,0.999,False,False,False,Imperfect
-39,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,1000,0,0.545,0.455,False,True,False,FalseClosure
-40,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,1,0.002241499983938411,1.0,True,False,False,Exact
-40,GapPredict,NVIDIA GeForce MX350,Extreme-Outgroup (>70 MYA),85.0,1000,1,0.545,0.469,False,True,False,FalseClosure
+1,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,0,0.000194267999972908,1.0,True,False,False,Exact
+1,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,0,0.07,0.84,False,True,False,FalseClosure
+2,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,1,0.0001662749999695734,1.0,True,False,False,Exact
+2,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,1,0.07,0.88,False,True,False,FalseClosure
+3,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,2,0.00015015799999673618,1.0,True,False,False,Exact
+3,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,2,0.07,0.88,False,True,False,FalseClosure
+4,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,3,0.00018246900003759947,1.0,True,False,False,Exact
+4,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,3,0.07,0.8,False,True,False,FalseClosure
+5,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,4,0.00015844799997921655,1.0,True,False,False,Exact
+5,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,4,0.07,0.78,False,True,False,FalseClosure
+6,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,5,0.0001692289999937202,1.0,True,False,False,Exact
+6,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,5,0.07,0.82,False,True,False,FalseClosure
+7,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,6,0.00016140899998617897,1.0,True,False,False,Exact
+7,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,6,0.07,0.76,False,True,False,FalseClosure
+8,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,7,0.00015778300002011747,1.0,True,False,False,Exact
+8,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,7,0.07,0.76,False,True,False,FalseClosure
+9,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,8,0.00017535599999973783,1.0,True,False,False,Exact
+9,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,8,0.07,0.72,False,True,False,FalseClosure
+10,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,9,0.00014638499999364285,1.0,True,False,False,Exact
+10,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,9,0.07,0.7,False,True,False,FalseClosure
+11,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,10,0.00013233299995363268,1.0,True,False,False,Exact
+11,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,10,0.07,0.86,False,True,False,FalseClosure
+12,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,11,0.00014628899998569977,1.0,True,False,False,Exact
+12,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,11,0.07,0.82,False,True,False,FalseClosure
+13,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,12,0.00014736299999640323,1.0,True,False,False,Exact
+13,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,12,0.07,0.76,False,True,False,FalseClosure
+14,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,13,0.00017405300002337754,1.0,True,False,False,Exact
+14,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,13,0.07,0.84,False,True,False,FalseClosure
+15,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,14,0.0001477380000096673,1.0,True,False,False,Exact
+15,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,14,0.07,0.82,False,True,False,FalseClosure
+16,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,15,0.00014667199997120406,1.0,True,False,False,Exact
+16,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,15,0.07,0.8,False,True,False,FalseClosure
+17,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,16,0.00016255000002729503,1.0,True,False,False,Exact
+17,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,16,0.07,0.88,False,True,False,FalseClosure
+18,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,17,0.00017265400003907416,1.0,True,False,False,Exact
+18,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,17,0.07,0.62,False,True,False,FalseClosure
+19,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,18,0.0001764970000408539,1.0,True,False,False,Exact
+19,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,18,0.07,0.74,False,True,False,FalseClosure
+20,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,50,19,0.0001534369999944829,1.0,True,False,False,Exact
+20,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,50,19,0.07,0.78,False,True,False,FalseClosure
+21,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,0,0.0003896139999710613,1.0,True,False,False,Exact
+21,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,0,0.095,0.55,False,True,False,FalseClosure
+22,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,1,0.00028994100000545586,1.0,True,False,False,Exact
+22,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,1,0.095,0.68,False,True,False,FalseClosure
+23,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,2,0.0002941399999940586,1.0,True,False,False,Exact
+23,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,2,0.095,0.71,False,True,False,FalseClosure
+24,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,3,0.0002903090000359043,1.0,True,False,False,Exact
+24,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,3,0.095,0.57,False,True,False,FalseClosure
+25,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,4,0.00031300599999894985,1.0,True,False,False,Exact
+25,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,4,0.095,0.6,False,True,False,FalseClosure
+26,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,5,0.0002862989999812271,1.0,True,False,False,Exact
+26,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,5,0.095,0.6,False,True,False,FalseClosure
+27,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,6,0.0003001970000013898,1.0,True,False,False,Exact
+27,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,6,0.095,0.78,False,True,False,FalseClosure
+28,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,7,0.00031121699998948316,1.0,True,False,False,Exact
+28,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,7,0.095,0.7,False,True,False,FalseClosure
+29,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,8,0.00037863799997239767,1.0,True,False,False,Exact
+29,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,8,0.095,0.62,False,True,False,FalseClosure
+30,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,9,0.0003319789999522982,1.0,True,False,False,Exact
+30,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,9,0.095,0.69,False,True,False,FalseClosure
+31,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,10,0.00028592500001423105,1.0,True,False,False,Exact
+31,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,10,0.095,0.76,False,True,False,FalseClosure
+32,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,11,0.0003102139999668907,1.0,True,False,False,Exact
+32,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,11,0.095,0.7,False,True,False,FalseClosure
+33,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,12,0.0003837209999915103,1.0,True,False,False,Exact
+33,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,12,0.095,0.71,False,True,False,FalseClosure
+34,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,13,0.000282886000036342,1.0,True,False,False,Exact
+34,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,13,0.095,0.59,False,True,False,FalseClosure
+35,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,14,0.0003486850000058439,1.0,True,False,False,Exact
+35,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,14,0.095,0.56,False,True,False,FalseClosure
+36,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,15,0.00028275800002575124,1.0,True,False,False,Exact
+36,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,15,0.095,0.61,False,True,False,FalseClosure
+37,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,16,0.00031099599999606653,1.0,True,False,False,Exact
+37,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,16,0.095,0.65,False,True,False,FalseClosure
+38,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,17,0.00032920700004979153,1.0,True,False,False,Exact
+38,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,17,0.095,0.62,False,True,False,FalseClosure
+39,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,18,0.0002568269999869699,1.0,True,False,False,Exact
+39,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,18,0.095,0.6,False,True,False,FalseClosure
+40,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,100,19,0.0002916379999646779,1.0,True,False,False,Exact
+40,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,100,19,0.095,0.7,False,True,False,FalseClosure
+41,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,0,0.0007668989999842779,1.0,True,False,False,Exact
+41,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,0,0.16999999999999998,0.376,False,True,False,FalseClosure
+42,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,1,0.000767773000006855,1.0,True,False,False,Exact
+42,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,1,0.16999999999999998,0.508,False,True,False,FalseClosure
+43,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,2,0.0007532840000408214,1.0,True,False,False,Exact
+43,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,2,0.16999999999999998,0.528,False,True,False,FalseClosure
+44,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,3,0.0008000980000133495,1.0,True,False,False,Exact
+44,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,3,0.16999999999999998,0.476,False,True,False,FalseClosure
+45,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,4,0.0007822520000217992,1.0,True,False,False,Exact
+45,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,4,0.16999999999999998,0.536,False,True,False,FalseClosure
+46,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,5,0.0008646619999694849,1.0,True,False,False,Exact
+46,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,5,0.16999999999999998,0.444,False,True,False,FalseClosure
+47,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,6,0.0007558390000212967,1.0,True,False,False,Exact
+47,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,6,0.16999999999999998,0.424,False,True,False,FalseClosure
+48,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,7,0.0007418459999826155,1.0,True,False,False,Exact
+48,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,7,0.16999999999999998,0.488,False,True,False,FalseClosure
+49,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,8,0.0008061120000206756,1.0,True,False,False,Exact
+49,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,8,0.16999999999999998,0.516,False,True,False,FalseClosure
+50,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,9,0.0007618160000220087,1.0,True,False,False,Exact
+50,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,9,0.16999999999999998,0.576,False,True,False,FalseClosure
+51,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,10,0.0008786850000319646,1.0,True,False,False,Exact
+51,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,10,0.16999999999999998,0.528,False,True,False,FalseClosure
+52,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,11,0.0007749309999667275,1.0,True,False,False,Exact
+52,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,11,0.16999999999999998,0.512,False,True,False,FalseClosure
+53,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,12,0.0007185300000287498,1.0,True,False,False,Exact
+53,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,12,0.16999999999999998,0.552,False,True,False,FalseClosure
+54,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,13,0.0006961970000247675,1.0,True,False,False,Exact
+54,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,13,0.16999999999999998,0.48,False,True,False,FalseClosure
+55,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,14,0.0007088059999773577,1.0,True,False,False,Exact
+55,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,14,0.16999999999999998,0.532,False,True,False,FalseClosure
+56,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,15,0.0007310010000196598,1.0,True,False,False,Exact
+56,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,15,0.16999999999999998,0.516,False,True,False,FalseClosure
+57,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,16,0.0007414440000275135,1.0,True,False,False,Exact
+57,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,16,0.16999999999999998,0.524,False,True,False,FalseClosure
+58,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,17,0.000752713999986554,1.0,True,False,False,Exact
+58,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,17,0.16999999999999998,0.536,False,True,False,FalseClosure
+59,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,18,0.0006864059999998062,1.0,True,False,False,Exact
+59,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,18,0.16999999999999998,0.548,False,True,False,FalseClosure
+60,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,250,19,0.0007458059999976285,1.0,True,False,False,Exact
+60,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,250,19,0.16999999999999998,0.508,False,True,False,FalseClosure
+61,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,0,0.0014558729999976094,1.0,True,False,False,Exact
+61,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,0,0.295,0.434,False,True,False,FalseClosure
+62,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,1,0.0015184800000156429,1.0,True,False,False,Exact
+62,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,1,0.295,0.33,False,True,False,FalseClosure
+63,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,2,0.0014081140000143932,1.0,True,False,False,Exact
+63,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,2,0.295,0.504,False,True,False,FalseClosure
+64,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,3,0.0015492520000179866,1.0,True,False,False,Exact
+64,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,3,0.295,0.498,False,True,False,FalseClosure
+65,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,4,0.0016527040000369198,1.0,True,False,False,Exact
+65,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,4,0.295,0.28,False,True,False,FalseClosure
+66,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,5,0.0013804789999767308,1.0,True,False,False,Exact
+66,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,5,0.295,0.486,False,True,False,FalseClosure
+67,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,6,0.0016118159999791715,1.0,True,False,False,Exact
+67,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,6,0.295,0.48,False,True,False,FalseClosure
+68,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,7,0.001478808999991088,1.0,True,False,False,Exact
+68,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,7,0.295,0.464,False,True,False,FalseClosure
+69,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,8,0.0014347099999554302,1.0,True,False,False,Exact
+69,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,8,0.295,0.488,False,True,False,FalseClosure
+70,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,9,0.0014999520000174016,1.0,True,False,False,Exact
+70,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,9,0.295,0.438,False,True,False,FalseClosure
+71,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,10,0.0014743049999879076,1.0,True,False,False,Exact
+71,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,10,0.295,0.432,False,True,False,FalseClosure
+72,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,11,0.0014861359999827073,1.0,True,False,False,Exact
+72,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,11,0.295,0.484,False,True,False,FalseClosure
+73,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,12,0.0015065850000155478,1.0,True,False,False,Exact
+73,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,12,0.295,0.496,False,True,False,FalseClosure
+74,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,13,0.0014358659999516021,1.0,True,False,False,Exact
+74,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,13,0.295,0.546,False,True,False,FalseClosure
+75,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,14,0.0013634630000183279,1.0,True,False,False,Exact
+75,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,14,0.295,0.474,False,True,False,FalseClosure
+76,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,15,0.0014490760000285263,1.0,True,False,False,Exact
+76,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,15,0.295,0.314,False,True,False,FalseClosure
+77,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,16,0.0015079249999985223,1.0,True,False,False,Exact
+77,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,16,0.295,0.478,False,True,False,FalseClosure
+78,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,17,0.0017402680000486725,1.0,True,False,False,Exact
+78,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,17,0.295,0.482,False,True,False,FalseClosure
+79,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,18,0.001615906999973049,1.0,True,False,False,Exact
+79,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,18,0.295,0.472,False,True,False,FalseClosure
+80,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,500,19,0.0014956050000023424,1.0,True,False,False,Exact
+80,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,500,19,0.295,0.484,False,True,False,FalseClosure
+81,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,0,0.0029584580000232563,1.0,True,False,False,Exact
+81,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,0,0.545,0.438,False,True,False,FalseClosure
+82,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,1,0.003250160999982654,1.0,True,False,False,Exact
+82,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,1,0.545,0.283,False,True,False,FalseClosure
+83,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,2,0.0029051980000076583,1.0,True,False,False,Exact
+83,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,2,0.545,0.452,False,True,False,FalseClosure
+84,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,3,0.0030604589999825293,1.0,True,False,False,Exact
+84,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,3,0.545,0.477,False,True,False,FalseClosure
+85,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,4,0.003091584999992847,1.0,True,False,False,Exact
+85,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,4,0.545,0.435,False,True,False,FalseClosure
+86,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,5,0.00317070099998773,1.0,True,False,False,Exact
+86,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,5,0.545,0.438,False,True,False,FalseClosure
+87,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,6,0.003005653999991864,1.0,True,False,False,Exact
+87,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,6,0.545,0.447,False,True,False,FalseClosure
+88,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,7,0.0031588909999982207,1.0,True,False,False,Exact
+88,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,7,0.545,0.486,False,True,False,FalseClosure
+89,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,8,0.0031769679999911205,1.0,True,False,False,Exact
+89,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,8,0.545,0.463,False,True,False,FalseClosure
+90,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,9,0.003371607000019594,1.0,True,False,False,Exact
+90,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,9,0.545,0.484,False,True,False,FalseClosure
+91,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,10,0.003023967000046923,1.0,True,False,False,Exact
+91,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,10,0.545,0.472,False,True,False,FalseClosure
+92,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,11,0.003351980999980242,1.0,True,False,False,Exact
+92,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,11,0.545,0.462,False,True,False,FalseClosure
+93,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,12,0.0028900450000151068,1.0,True,False,False,Exact
+93,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,12,0.545,0.464,False,True,False,FalseClosure
+94,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,13,0.0031957969999893976,1.0,True,False,False,Exact
+94,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,13,0.545,0.451,False,True,False,FalseClosure
+95,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,14,0.0031237569999689185,1.0,True,False,False,Exact
+95,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,14,0.545,0.492,False,True,False,FalseClosure
+96,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,15,0.00284353900002543,1.0,True,False,False,Exact
+96,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,15,0.545,0.423,False,True,False,FalseClosure
+97,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,16,0.002827047000039329,1.0,True,False,False,Exact
+97,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,16,0.545,0.459,False,True,False,FalseClosure
+98,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,17,0.00310665599999993,1.0,True,False,False,Exact
+98,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,17,0.545,0.435,False,True,False,FalseClosure
+99,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,18,0.0030144400000153837,1.0,True,False,False,Exact
+99,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,18,0.545,0.478,False,True,False,FalseClosure
+100,PhyloGap,CPU (Banded NW),Closely-Related (5-15 MYA),10.0,1000,19,0.0030548780000003717,1.0,True,False,False,Exact
+100,GapPredict,Tesla T4,Closely-Related (5-15 MYA),10.0,1000,19,0.545,0.445,False,True,False,FalseClosure
+101,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,0,0.0001607830000125432,1.0,True,False,False,Exact
+101,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,0,0.07,0.88,False,True,False,FalseClosure
+102,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,1,0.00017139999999926658,1.0,True,False,False,Exact
+102,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,1,0.07,0.8,False,True,False,FalseClosure
+103,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,2,0.00020922999999584135,1.0,True,False,False,Exact
+103,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,2,0.07,0.68,False,True,False,FalseClosure
+104,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,3,0.0001580449999778466,1.0,True,False,False,Exact
+104,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,3,0.07,0.84,False,True,False,FalseClosure
+105,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,4,0.00018572300001551412,1.0,True,False,False,Exact
+105,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,4,0.07,0.82,False,True,False,FalseClosure
+106,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,5,0.00014743700000963145,1.0,True,False,False,Exact
+106,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,5,0.07,0.84,False,True,False,FalseClosure
+107,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,6,0.00016027800000983916,1.0,True,False,False,Exact
+107,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,6,0.07,0.7,False,True,False,FalseClosure
+108,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,7,0.00015718399998831956,1.0,True,False,False,Exact
+108,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,7,0.07,0.72,False,True,False,FalseClosure
+109,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,8,0.0001558939999881659,1.0,True,False,False,Exact
+109,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,8,0.07,0.8,False,True,False,FalseClosure
+110,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,9,0.00016498100001172133,1.0,True,False,False,Exact
+110,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,9,0.07,0.72,False,True,False,FalseClosure
+111,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,10,0.00014496699998289841,1.0,True,False,False,Exact
+111,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,10,0.07,0.88,False,True,False,FalseClosure
+112,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,11,0.00014539799997237424,1.0,True,False,False,Exact
+112,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,11,0.07,0.74,False,True,False,FalseClosure
+113,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,12,0.00016854099999363825,1.0,True,False,False,Exact
+113,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,12,0.07,0.72,False,True,False,FalseClosure
+114,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,13,0.00016976500000964734,1.0,True,False,False,Exact
+114,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,13,0.07,0.82,False,True,False,FalseClosure
+115,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,14,0.0001572389999751067,1.0,True,False,False,Exact
+115,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,14,0.07,0.8,False,True,False,FalseClosure
+116,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,15,0.00015668699995785573,1.0,True,False,False,Exact
+116,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,15,0.07,0.88,False,True,False,FalseClosure
+117,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,16,0.0001572310000028665,1.0,True,False,False,Exact
+117,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,16,0.07,0.8,False,True,False,FalseClosure
+118,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,17,0.00016643399999338726,1.0,True,False,False,Exact
+118,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,17,0.07,0.84,False,True,False,FalseClosure
+119,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,18,0.00023509600003990272,1.0,True,False,False,Exact
+119,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,18,0.07,0.76,False,True,False,FalseClosure
+120,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,50,19,0.00014468500000930362,1.0,True,False,False,Exact
+120,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,50,19,0.07,0.68,False,True,False,FalseClosure
+121,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,0,0.00028349699999807854,1.0,True,False,False,Exact
+121,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,0,0.095,0.59,False,True,False,FalseClosure
+122,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,1,0.0003226629999630859,1.0,True,False,False,Exact
+122,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,1,0.095,0.71,False,True,False,FalseClosure
+123,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,2,0.0003132240000240927,1.0,True,False,False,Exact
+123,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,2,0.095,0.74,False,True,False,FalseClosure
+124,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,3,0.0002833020000139186,1.0,True,False,False,Exact
+124,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,3,0.095,0.63,False,True,False,FalseClosure
+125,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,4,0.0004016199999909986,1.0,True,False,False,Exact
+125,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,4,0.095,0.58,False,True,False,FalseClosure
+126,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,5,0.00027844100003449057,1.0,True,False,False,Exact
+126,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,5,0.095,0.72,False,True,False,FalseClosure
+127,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,6,0.00026930100000299717,1.0,True,False,False,Exact
+127,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,6,0.095,0.56,False,True,False,FalseClosure
+128,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,7,0.0003342699999961951,1.0,True,False,False,Exact
+128,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,7,0.095,0.71,False,True,False,FalseClosure
+129,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,8,0.00029580599999690094,1.0,True,False,False,Exact
+129,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,8,0.095,0.65,False,True,False,FalseClosure
+130,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,9,0.00036892200000693265,0.99,False,False,False,Imperfect
+130,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,9,0.095,0.65,False,True,False,FalseClosure
+131,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,10,0.000300745000004099,1.0,True,False,False,Exact
+131,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,10,0.095,0.66,False,True,False,FalseClosure
+132,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,11,0.00035264600001028157,1.0,True,False,False,Exact
+132,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,11,0.095,0.6,False,True,False,FalseClosure
+133,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,12,0.0003386939999927563,1.0,True,False,False,Exact
+133,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,12,0.095,0.69,False,True,False,FalseClosure
+134,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,13,0.00036065900002313356,1.0,True,False,False,Exact
+134,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,13,0.095,0.77,False,True,False,FalseClosure
+135,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,14,0.00036903099999108235,1.0,True,False,False,Exact
+135,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,14,0.095,0.55,False,True,False,FalseClosure
+136,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,15,0.0003563930000041182,1.0,True,False,False,Exact
+136,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,15,0.095,0.71,False,True,False,FalseClosure
+137,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,16,0.0002892609999776141,1.0,True,False,False,Exact
+137,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,16,0.095,0.62,False,True,False,FalseClosure
+138,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,17,0.00031245399998169887,1.0,True,False,False,Exact
+138,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,17,0.095,0.68,False,True,False,FalseClosure
+139,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,18,0.0003128129999936391,1.0,True,False,False,Exact
+139,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,18,0.095,0.66,False,True,False,FalseClosure
+140,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,100,19,0.0002966409999771713,1.0,True,False,False,Exact
+140,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,100,19,0.095,0.64,False,True,False,FalseClosure
+141,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,0,0.0007015360000082183,1.0,True,False,False,Exact
+141,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,0,0.16999999999999998,0.476,False,True,False,FalseClosure
+142,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,1,0.0008266020000178287,1.0,True,False,False,Exact
+142,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,1,0.16999999999999998,0.512,False,True,False,FalseClosure
+143,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,2,0.0007617979999849922,1.0,True,False,False,Exact
+143,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,2,0.16999999999999998,0.476,False,True,False,FalseClosure
+144,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,3,0.0007853160000195203,1.0,True,False,False,Exact
+144,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,3,0.16999999999999998,0.448,False,True,False,FalseClosure
+145,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,4,0.0008076810000261503,1.0,True,False,False,Exact
+145,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,4,0.16999999999999998,0.528,False,True,False,FalseClosure
+146,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,5,0.0007995379999670149,1.0,True,False,False,Exact
+146,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,5,0.16999999999999998,0.392,False,True,False,FalseClosure
+147,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,6,0.0008630709999692954,1.0,True,False,False,Exact
+147,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,6,0.16999999999999998,0.496,False,True,False,FalseClosure
+148,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,7,0.0008407269999679556,1.0,True,False,False,Exact
+148,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,7,0.16999999999999998,0.468,False,True,False,FalseClosure
+149,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,8,0.0007768890000079409,1.0,True,False,False,Exact
+149,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,8,0.16999999999999998,0.592,False,True,False,FalseClosure
+150,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,9,0.0010214100000212056,1.0,True,False,False,Exact
+150,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,9,0.16999999999999998,0.532,False,True,False,FalseClosure
+151,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,10,0.000749116999998023,1.0,True,False,False,Exact
+151,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,10,0.16999999999999998,0.524,False,True,False,FalseClosure
+152,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,11,0.001001346000009562,1.0,True,False,False,Exact
+152,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,11,0.16999999999999998,0.512,False,True,False,FalseClosure
+153,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,12,0.000637428999993972,1.0,True,False,False,Exact
+153,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,12,0.16999999999999998,0.504,False,True,False,FalseClosure
+154,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,13,0.000809973999992053,1.0,True,False,False,Exact
+154,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,13,0.16999999999999998,0.528,False,True,False,FalseClosure
+155,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,14,0.0008211150000079215,1.0,True,False,False,Exact
+155,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,14,0.16999999999999998,0.536,False,True,False,FalseClosure
+156,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,15,0.0008451100000002043,1.0,True,False,False,Exact
+156,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,15,0.16999999999999998,0.576,False,True,False,FalseClosure
+157,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,16,0.0008312919999866608,1.0,True,False,False,Exact
+157,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,16,0.16999999999999998,0.572,False,True,False,FalseClosure
+158,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,17,0.0006940199999689867,1.0,True,False,False,Exact
+158,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,17,0.16999999999999998,0.572,False,True,False,FalseClosure
+159,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,18,0.0007667529999935141,1.0,True,False,False,Exact
+159,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,18,0.16999999999999998,0.536,False,True,False,FalseClosure
+160,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,250,19,0.0009174510000207192,1.0,True,False,False,Exact
+160,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,250,19,0.16999999999999998,0.5,False,True,False,FalseClosure
+161,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,0,0.0014732270000195058,1.0,True,False,False,Exact
+161,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,0,0.295,0.464,False,True,False,FalseClosure
+162,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,1,0.001655247000030613,1.0,True,False,False,Exact
+162,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,1,0.295,0.536,False,True,False,FalseClosure
+163,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,2,0.0016946370000141542,1.0,True,False,False,Exact
+163,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,2,0.295,0.484,False,True,False,FalseClosure
+164,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,3,0.0015477459999715393,1.0,True,False,False,Exact
+164,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,3,0.295,0.482,False,True,False,FalseClosure
+165,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,4,0.0016470109999886517,1.0,True,False,False,Exact
+165,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,4,0.295,0.502,False,True,False,FalseClosure
+166,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,5,0.0014660189999631257,1.0,True,False,False,Exact
+166,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,5,0.295,0.45,False,True,False,FalseClosure
+167,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,6,0.0016104450000398174,1.0,True,False,False,Exact
+167,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,6,0.295,0.444,False,True,False,FalseClosure
+168,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,7,0.0015474859999926593,1.0,True,False,False,Exact
+168,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,7,0.295,0.452,False,True,False,FalseClosure
+169,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,8,0.0015932790000192654,1.0,True,False,False,Exact
+169,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,8,0.295,0.512,False,True,False,FalseClosure
+170,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,9,0.00161157299999104,1.0,True,False,False,Exact
+170,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,9,0.295,0.448,False,True,False,FalseClosure
+171,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,10,0.0014652030000092964,1.0,True,False,False,Exact
+171,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,10,0.295,0.374,False,True,False,FalseClosure
+172,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,11,0.0015832889999956024,1.0,True,False,False,Exact
+172,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,11,0.295,0.316,False,True,False,FalseClosure
+173,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,12,0.0015769260000411123,1.0,True,False,False,Exact
+173,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,12,0.295,0.492,False,True,False,FalseClosure
+174,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,13,0.001506679999977223,1.0,True,False,False,Exact
+174,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,13,0.295,0.316,False,True,False,FalseClosure
+175,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,14,0.0017221500000346168,1.0,True,False,False,Exact
+175,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,14,0.295,0.516,False,True,False,FalseClosure
+176,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,15,0.0016595410000377342,1.0,True,False,False,Exact
+176,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,15,0.295,0.412,False,True,False,FalseClosure
+177,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,16,0.0015829239999902711,1.0,True,False,False,Exact
+177,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,16,0.295,0.5,False,True,False,FalseClosure
+178,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,17,0.0014252599999622362,1.0,True,False,False,Exact
+178,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,17,0.295,0.468,False,True,False,FalseClosure
+179,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,18,0.0016453879999858145,1.0,True,False,False,Exact
+179,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,18,0.295,0.3,False,True,False,FalseClosure
+180,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,500,19,0.0015171360000181267,1.0,True,False,False,Exact
+180,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,500,19,0.295,0.49,False,True,False,FalseClosure
+181,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,0,0.0029695559999822763,1.0,True,False,False,Exact
+181,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,0,0.545,0.461,False,True,False,FalseClosure
+182,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,1,0.0031543150000175046,1.0,True,False,False,Exact
+182,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,1,0.545,0.454,False,True,False,FalseClosure
+183,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,2,0.003054930000018885,1.0,True,False,False,Exact
+183,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,2,0.545,0.468,False,True,False,FalseClosure
+184,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,3,0.0030692560000034064,1.0,True,False,False,Exact
+184,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,3,0.545,0.429,False,True,False,FalseClosure
+185,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,4,0.002770561000033922,1.0,True,False,False,Exact
+185,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,4,0.545,0.448,False,True,False,FalseClosure
+186,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,5,0.002728154999999788,1.0,True,False,False,Exact
+186,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,5,0.545,0.437,False,True,False,FalseClosure
+187,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,6,0.0031189970000014,1.0,True,False,False,Exact
+187,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,6,0.545,0.464,False,True,False,FalseClosure
+188,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,7,0.003109914999981811,1.0,True,False,False,Exact
+188,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,7,0.545,0.293,False,True,False,FalseClosure
+189,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,8,0.0032115869999529423,1.0,True,False,False,Exact
+189,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,8,0.545,0.449,False,True,False,FalseClosure
+190,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,9,0.0028170539999905486,1.0,True,False,False,Exact
+190,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,9,0.545,0.466,False,True,False,FalseClosure
+191,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,10,0.00328177199997981,1.0,True,False,False,Exact
+191,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,10,0.545,0.441,False,True,False,FalseClosure
+192,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,11,0.00312358899998344,1.0,True,False,False,Exact
+192,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,11,0.545,0.461,False,True,False,FalseClosure
+193,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,12,0.003778386000021783,1.0,True,False,False,Exact
+193,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,12,0.545,0.431,False,True,False,FalseClosure
+194,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,13,0.0030814730000088275,1.0,True,False,False,Exact
+194,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,13,0.545,0.271,False,True,False,FalseClosure
+195,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,14,0.0029254979999677744,0.999,False,False,False,Imperfect
+195,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,14,0.545,0.465,False,True,False,FalseClosure
+196,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,15,0.0030457660000138276,0.999,False,False,False,Imperfect
+196,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,15,0.545,0.453,False,True,False,FalseClosure
+197,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,16,0.0031276549999574854,1.0,True,False,False,Exact
+197,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,16,0.545,0.441,False,True,False,FalseClosure
+198,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,17,0.0031450959999688166,1.0,True,False,False,Exact
+198,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,17,0.545,0.44,False,True,False,FalseClosure
+199,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,18,0.0030002870000203075,1.0,True,False,False,Exact
+199,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,18,0.545,0.44,False,True,False,FalseClosure
+200,PhyloGap,CPU (Banded NW),Moderately-Divergent (15-35 MYA),25.0,1000,19,0.003146947999994154,1.0,True,False,False,Exact
+200,GapPredict,Tesla T4,Moderately-Divergent (15-35 MYA),25.0,1000,19,0.545,0.335,False,True,False,FalseClosure
+201,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,0,0.00015902299998060698,1.0,True,False,False,Exact
+201,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,0,0.07,0.78,False,True,False,FalseClosure
+202,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,1,0.00015457400002105715,1.0,True,False,False,Exact
+202,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,1,0.07,0.76,False,True,False,FalseClosure
+203,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,2,0.00014966799994908797,1.0,True,False,False,Exact
+203,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,2,0.07,0.74,False,True,False,FalseClosure
+204,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,3,0.00015198400001281698,1.0,True,False,False,Exact
+204,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,3,0.07,0.8,False,True,False,FalseClosure
+205,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,4,0.0002270809999913581,1.0,True,False,False,Exact
+205,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,4,0.07,0.78,False,True,False,FalseClosure
+206,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,5,0.00017210599997952158,1.0,True,False,False,Exact
+206,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,5,0.07,0.9,False,False,False,Imperfect
+207,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,6,0.00015933299999915107,1.0,True,False,False,Exact
+207,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,6,0.07,0.74,False,True,False,FalseClosure
+208,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,7,0.00014735099995277778,1.0,True,False,False,Exact
+208,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,7,0.07,0.82,False,True,False,FalseClosure
+209,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,8,0.00015852199999244476,1.0,True,False,False,Exact
+209,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,8,0.07,0.84,False,True,False,FalseClosure
+210,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,9,0.00018624299997327398,1.0,True,False,False,Exact
+210,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,9,0.07,0.88,False,True,False,FalseClosure
+211,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,10,0.00015978800001903437,1.0,True,False,False,Exact
+211,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,10,0.07,0.78,False,True,False,FalseClosure
+212,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,11,0.0001707089999740674,1.0,True,False,False,Exact
+212,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,11,0.07,0.76,False,True,False,FalseClosure
+213,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,12,0.00015923099999781698,1.0,True,False,False,Exact
+213,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,12,0.07,0.8,False,True,False,FalseClosure
+214,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,13,0.0001340599999934966,1.0,True,False,False,Exact
+214,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,13,0.07,0.76,False,True,False,FalseClosure
+215,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,14,0.00016888700002937185,1.0,True,False,False,Exact
+215,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,14,0.07,0.76,False,True,False,FalseClosure
+216,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,15,0.00016641799999206341,1.0,True,False,False,Exact
+216,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,15,0.07,0.78,False,True,False,FalseClosure
+217,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,16,0.00020971800000779695,1.0,True,False,False,Exact
+217,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,16,0.07,0.68,False,True,False,FalseClosure
+218,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,17,0.00014620299998568953,1.0,True,False,False,Exact
+218,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,17,0.07,0.8,False,True,False,FalseClosure
+219,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,18,0.00014697199998181532,1.0,True,False,False,Exact
+219,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,18,0.07,0.8,False,True,False,FalseClosure
+220,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,50,19,0.00017853899998954148,1.0,True,False,False,Exact
+220,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,50,19,0.07,0.72,False,True,False,FalseClosure
+221,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,0,0.00032436300000426854,1.0,True,False,False,Exact
+221,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,0,0.095,0.63,False,True,False,FalseClosure
+222,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,1,0.00034177099996668403,1.0,True,False,False,Exact
+222,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,1,0.095,0.76,False,True,False,FalseClosure
+223,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,2,0.00039658900004724273,1.0,True,False,False,Exact
+223,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,2,0.095,0.68,False,True,False,FalseClosure
+224,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,3,0.0003262820000031752,1.0,True,False,False,Exact
+224,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,3,0.095,0.65,False,True,False,FalseClosure
+225,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,4,0.00036941100000831284,1.0,True,False,False,Exact
+225,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,4,0.095,0.75,False,True,False,FalseClosure
+226,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,5,0.0003465789999950175,1.0,True,False,False,Exact
+226,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,5,0.095,0.75,False,True,False,FalseClosure
+227,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,6,0.00035573599996041594,1.0,True,False,False,Exact
+227,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,6,0.095,0.7,False,True,False,FalseClosure
+228,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,7,0.0003616170000100283,1.0,True,False,False,Exact
+228,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,7,0.095,0.59,False,True,False,FalseClosure
+229,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,8,0.000437978999968891,0.99,False,False,False,Imperfect
+229,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,8,0.095,0.57,False,True,False,FalseClosure
+230,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,9,0.00031849599997713085,1.0,True,False,False,Exact
+230,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,9,0.095,0.61,False,True,False,FalseClosure
+231,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,10,0.00036413100002619103,1.0,True,False,False,Exact
+231,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,10,0.095,0.78,False,True,False,FalseClosure
+232,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,11,0.00032207499998548883,1.0,True,False,False,Exact
+232,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,11,0.095,0.7,False,True,False,FalseClosure
+233,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,12,0.0003077210000128616,1.0,True,False,False,Exact
+233,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,12,0.095,0.76,False,True,False,FalseClosure
+234,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,13,0.0002892460000225583,1.0,True,False,False,Exact
+234,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,13,0.095,0.76,False,True,False,FalseClosure
+235,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,14,0.0003512249999744199,1.0,True,False,False,Exact
+235,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,14,0.095,0.7,False,True,False,FalseClosure
+236,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,15,0.0003602179999688815,1.0,True,False,False,Exact
+236,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,15,0.095,0.71,False,True,False,FalseClosure
+237,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,16,0.0003854079999996429,1.0,True,False,False,Exact
+237,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,16,0.095,0.58,False,True,False,FalseClosure
+238,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,17,0.00029778400005398,1.0,True,False,False,Exact
+238,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,17,0.095,0.68,False,True,False,FalseClosure
+239,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,18,0.0003057019999914701,1.0,True,False,False,Exact
+239,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,18,0.095,0.58,False,True,False,FalseClosure
+240,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,100,19,0.0002863249999904838,1.0,True,False,False,Exact
+240,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,100,19,0.095,0.6,False,True,False,FalseClosure
+241,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,0,0.0007948429999942164,1.0,True,False,False,Exact
+241,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,0,0.16999999999999998,0.384,False,True,False,FalseClosure
+242,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,1,0.0006872060000091551,1.0,True,False,False,Exact
+242,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,1,0.16999999999999998,0.548,False,True,False,FalseClosure
+243,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,2,0.0007375410000349802,1.0,True,False,False,Exact
+243,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,2,0.16999999999999998,0.504,False,True,False,FalseClosure
+244,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,3,0.0007824909999953888,1.0,True,False,False,Exact
+244,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,3,0.16999999999999998,0.552,False,True,False,FalseClosure
+245,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,4,0.0007515579999903821,1.0,True,False,False,Exact
+245,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,4,0.16999999999999998,0.464,False,True,False,FalseClosure
+246,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,5,0.0009037010000270129,1.0,True,False,False,Exact
+246,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,5,0.16999999999999998,0.508,False,True,False,FalseClosure
+247,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,6,0.0007783780000067964,1.0,True,False,False,Exact
+247,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,6,0.16999999999999998,0.52,False,True,False,FalseClosure
+248,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,7,0.0008262399999807712,1.0,True,False,False,Exact
+248,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,7,0.16999999999999998,0.384,False,True,False,FalseClosure
+249,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,8,0.0008093609999946239,1.0,True,False,False,Exact
+249,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,8,0.16999999999999998,0.532,False,True,False,FalseClosure
+250,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,9,0.0008534650000342481,1.0,True,False,False,Exact
+250,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,9,0.16999999999999998,0.324,False,True,False,FalseClosure
+251,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,10,0.000814272000013716,1.0,True,False,False,Exact
+251,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,10,0.16999999999999998,0.492,False,True,False,FalseClosure
+252,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,11,0.0007733899999493588,1.0,True,False,False,Exact
+252,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,11,0.16999999999999998,0.356,False,True,False,FalseClosure
+253,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,12,0.0007840300000339084,1.0,True,False,False,Exact
+253,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,12,0.16999999999999998,0.412,False,True,False,FalseClosure
+254,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,13,0.0008047939999755727,1.0,True,False,False,Exact
+254,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,13,0.16999999999999998,0.548,False,True,False,FalseClosure
+255,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,14,0.0008898229999658724,1.0,True,False,False,Exact
+255,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,14,0.16999999999999998,0.524,False,True,False,FalseClosure
+256,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,15,0.0007830430000126398,1.0,True,False,False,Exact
+256,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,15,0.16999999999999998,0.52,False,True,False,FalseClosure
+257,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,16,0.0008237129999884019,1.0,True,False,False,Exact
+257,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,16,0.16999999999999998,0.512,False,True,False,FalseClosure
+258,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,17,0.0008436410000172145,1.0,True,False,False,Exact
+258,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,17,0.16999999999999998,0.532,False,True,False,FalseClosure
+259,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,18,0.0008394860000180415,1.0,True,False,False,Exact
+259,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,18,0.16999999999999998,0.536,False,True,False,FalseClosure
+260,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,250,19,0.0009596080000164875,1.0,True,False,False,Exact
+260,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,250,19,0.16999999999999998,0.364,False,True,False,FalseClosure
+261,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,0,0.001585766000005151,1.0,True,False,False,Exact
+261,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,0,0.295,0.466,False,True,False,FalseClosure
+262,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,1,0.0016442980000306306,1.0,True,False,False,Exact
+262,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,1,0.295,0.456,False,True,False,FalseClosure
+263,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,2,0.001551615000039419,1.0,True,False,False,Exact
+263,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,2,0.295,0.476,False,True,False,FalseClosure
+264,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,3,0.0016334849999566359,1.0,True,False,False,Exact
+264,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,3,0.295,0.524,False,True,False,FalseClosure
+265,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,4,0.0015812379999715631,1.0,True,False,False,Exact
+265,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,4,0.295,0.532,False,True,False,FalseClosure
+266,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,5,0.0015499900000008893,1.0,True,False,False,Exact
+266,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,5,0.295,0.462,False,True,False,FalseClosure
+267,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,6,0.0015175789999943845,1.0,True,False,False,Exact
+267,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,6,0.295,0.364,False,True,False,FalseClosure
+268,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,7,0.001504918000023281,0.998,False,False,False,Imperfect
+268,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,7,0.295,0.322,False,True,False,FalseClosure
+269,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,8,0.0017174000000181877,1.0,True,False,False,Exact
+269,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,8,0.295,0.55,False,True,False,FalseClosure
+270,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,9,0.0015623109999864937,1.0,True,False,False,Exact
+270,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,9,0.295,0.478,False,True,False,FalseClosure
+271,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,10,0.001681669999982205,0.998,False,False,False,Imperfect
+271,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,10,0.295,0.444,False,True,False,FalseClosure
+272,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,11,0.0016088770000237673,1.0,True,False,False,Exact
+272,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,11,0.295,0.354,False,True,False,FalseClosure
+273,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,12,0.0015740019999839205,1.0,True,False,False,Exact
+273,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,12,0.295,0.422,False,True,False,FalseClosure
+274,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,13,0.001593600999967748,1.0,True,False,False,Exact
+274,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,13,0.295,0.478,False,True,False,FalseClosure
+275,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,14,0.0015136299999767289,1.0,True,False,False,Exact
+275,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,14,0.295,0.47,False,True,False,FalseClosure
+276,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,15,0.0016957459999957791,0.998,False,False,False,Imperfect
+276,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,15,0.295,0.462,False,True,False,FalseClosure
+277,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,16,0.0014647030000105588,1.0,True,False,False,Exact
+277,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,16,0.295,0.472,False,True,False,FalseClosure
+278,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,17,0.0016095370000357434,1.0,True,False,False,Exact
+278,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,17,0.295,0.468,False,True,False,FalseClosure
+279,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,18,0.0016057960000352978,1.0,True,False,False,Exact
+279,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,18,0.295,0.444,False,True,False,FalseClosure
+280,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,500,19,0.0016208420000225487,1.0,True,False,False,Exact
+280,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,500,19,0.295,0.482,False,True,False,FalseClosure
+281,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,0,0.003182406999997056,1.0,True,False,False,Exact
+281,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,0,0.545,0.442,False,True,False,FalseClosure
+282,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,1,0.0031683629999861296,0.999,False,False,False,Imperfect
+282,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,1,0.545,0.427,False,True,False,FalseClosure
+283,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,2,0.003056567999976778,1.0,True,False,False,Exact
+283,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,2,0.545,0.443,False,True,False,FalseClosure
+284,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,3,0.0031996750000189422,0.999,False,False,False,Imperfect
+284,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,3,0.545,0.448,False,True,False,FalseClosure
+285,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,4,0.0031553219999977955,1.0,True,False,False,Exact
+285,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,4,0.545,0.303,False,True,False,FalseClosure
+286,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,5,0.0030810110000061286,1.0,True,False,False,Exact
+286,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,5,0.545,0.272,False,True,False,FalseClosure
+287,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,6,0.0031879860000003646,1.0,True,False,False,Exact
+287,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,6,0.545,0.317,False,True,False,FalseClosure
+288,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,7,0.0028405299999576528,1.0,True,False,False,Exact
+288,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,7,0.545,0.291,False,True,False,FalseClosure
+289,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,8,0.0032249409999849377,1.0,True,False,False,Exact
+289,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,8,0.545,0.442,False,True,False,FalseClosure
+290,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,9,0.0032184360000542256,1.0,True,False,False,Exact
+290,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,9,0.545,0.432,False,True,False,FalseClosure
+291,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,10,0.0033542410000109157,1.0,True,False,False,Exact
+291,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,10,0.545,0.446,False,True,False,FalseClosure
+292,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,11,0.0033157650000248395,1.0,True,False,False,Exact
+292,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,11,0.545,0.456,False,True,False,FalseClosure
+293,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,12,0.003002367000021877,1.0,True,False,False,Exact
+293,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,12,0.545,0.455,False,True,False,FalseClosure
+294,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,13,0.003285588999972333,0.999,False,False,False,Imperfect
+294,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,13,0.545,0.445,False,True,False,FalseClosure
+295,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,14,0.0029811949999611898,1.0,True,False,False,Exact
+295,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,14,0.545,0.283,False,True,False,FalseClosure
+296,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,15,0.0032710880000195175,1.0,True,False,False,Exact
+296,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,15,0.545,0.45,False,True,False,FalseClosure
+297,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,16,0.003569924999965224,1.0,True,False,False,Exact
+297,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,16,0.545,0.456,False,True,False,FalseClosure
+298,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,17,0.00309838700002274,1.0,True,False,False,Exact
+298,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,17,0.545,0.444,False,True,False,FalseClosure
+299,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,18,0.0033415880000120524,0.999,False,False,False,Imperfect
+299,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,18,0.545,0.47,False,True,False,FalseClosure
+300,PhyloGap,CPU (Banded NW),Deeply-Divergent (35-70 MYA),50.0,1000,19,0.0032761439999831055,1.0,True,False,False,Exact
+300,GapPredict,Tesla T4,Deeply-Divergent (35-70 MYA),50.0,1000,19,0.545,0.281,False,True,False,FalseClosure
+301,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,0,0.00020410499996614817,1.0,True,False,False,Exact
+301,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,0,0.07,0.74,False,True,False,FalseClosure
+302,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,1,0.00027776100000664883,1.0,True,False,False,Exact
+302,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,1,0.07,0.72,False,True,False,FalseClosure
+303,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,2,0.0001600549999238865,1.0,True,False,False,Exact
+303,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,2,0.07,0.74,False,True,False,FalseClosure
+304,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,3,0.0002056100000800143,1.0,True,False,False,Exact
+304,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,3,0.07,0.9,False,False,False,Imperfect
+305,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,4,0.00019189199997526885,1.0,True,False,False,Exact
+305,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,4,0.07,0.74,False,True,False,FalseClosure
+306,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,5,0.00014855699998861382,1.0,True,False,False,Exact
+306,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,5,0.07,0.82,False,True,False,FalseClosure
+307,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,6,0.00017635299991525244,1.0,True,False,False,Exact
+307,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,6,0.07,0.84,False,True,False,FalseClosure
+308,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,7,0.00023559999999633874,0.98,False,False,False,Imperfect
+308,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,7,0.07,0.8,False,True,False,FalseClosure
+309,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,8,0.00018885700001192163,1.0,True,False,False,Exact
+309,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,8,0.07,0.82,False,True,False,FalseClosure
+310,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,9,0.00016947000005984592,1.0,True,False,False,Exact
+310,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,9,0.07,0.7,False,True,False,FalseClosure
+311,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,10,0.00019498699998621305,1.0,True,False,False,Exact
+311,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,10,0.07,0.8,False,True,False,FalseClosure
+312,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,11,0.00017540299995744135,1.0,True,False,False,Exact
+312,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,11,0.07,0.78,False,True,False,FalseClosure
+313,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,12,0.00015021900003375777,1.0,True,False,False,Exact
+313,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,12,0.07,0.86,False,True,False,FalseClosure
+314,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,13,0.0001963759999625836,1.0,True,False,False,Exact
+314,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,13,0.07,0.74,False,True,False,FalseClosure
+315,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,14,0.0001893819999168045,1.0,True,False,False,Exact
+315,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,14,0.07,0.78,False,True,False,FalseClosure
+316,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,15,0.00019364400009180827,1.0,True,False,False,Exact
+316,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,15,0.07,0.84,False,True,False,FalseClosure
+317,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,16,0.00029545300003519515,1.0,True,False,False,Exact
+317,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,16,0.07,0.78,False,True,False,FalseClosure
+318,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,17,0.00018656400004601892,1.0,True,False,False,Exact
+318,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,17,0.07,0.82,False,True,False,FalseClosure
+319,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,18,0.00017549100004998763,1.0,True,False,False,Exact
+319,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,18,0.07,0.76,False,True,False,FalseClosure
+320,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,50,19,0.0001622920000272643,1.0,True,False,False,Exact
+320,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,50,19,0.07,0.84,False,True,False,FalseClosure
+321,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,0,0.0003643600000486913,1.0,True,False,False,Exact
+321,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,0,0.095,0.65,False,True,False,FalseClosure
+322,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,1,0.00035624099996312,1.0,True,False,False,Exact
+322,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,1,0.095,0.62,False,True,False,FalseClosure
+323,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,2,0.00033760299993446097,1.0,True,False,False,Exact
+323,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,2,0.095,0.71,False,True,False,FalseClosure
+324,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,3,0.0003134939998972186,1.0,True,False,False,Exact
+324,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,3,0.095,0.61,False,True,False,FalseClosure
+325,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,4,0.0003196400000433641,1.0,True,False,False,Exact
+325,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,4,0.095,0.63,False,True,False,FalseClosure
+326,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,5,0.0004310010000381226,1.0,True,False,False,Exact
+326,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,5,0.095,0.59,False,True,False,FalseClosure
+327,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,6,0.00034712699994088325,1.0,True,False,False,Exact
+327,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,6,0.095,0.59,False,True,False,FalseClosure
+328,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,7,0.0003228640000543237,1.0,True,False,False,Exact
+328,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,7,0.095,0.65,False,True,False,FalseClosure
+329,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,8,0.0003624299999955838,1.0,True,False,False,Exact
+329,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,8,0.095,0.71,False,True,False,FalseClosure
+330,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,9,0.00040785200008031097,1.0,True,False,False,Exact
+330,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,9,0.095,0.69,False,True,False,FalseClosure
+331,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,10,0.00034005800000613817,1.0,True,False,False,Exact
+331,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,10,0.095,0.75,False,True,False,FalseClosure
+332,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,11,0.0002932209999926272,1.0,True,False,False,Exact
+332,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,11,0.095,0.69,False,True,False,FalseClosure
+333,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,12,0.0004093210000064573,1.0,True,False,False,Exact
+333,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,12,0.095,0.63,False,True,False,FalseClosure
+334,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,13,0.00031594499989751057,1.0,True,False,False,Exact
+334,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,13,0.095,0.65,False,True,False,FalseClosure
+335,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,14,0.0003164629999901081,0.99,False,False,False,Imperfect
+335,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,14,0.095,0.76,False,True,False,FalseClosure
+336,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,15,0.0003202650000275753,1.0,True,False,False,Exact
+336,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,15,0.095,0.6,False,True,False,FalseClosure
+337,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,16,0.0003292039999678309,1.0,True,False,False,Exact
+337,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,16,0.095,0.72,False,True,False,FalseClosure
+338,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,17,0.0003906059999962963,1.0,True,False,False,Exact
+338,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,17,0.095,0.66,False,True,False,FalseClosure
+339,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,18,0.0003827259999980015,1.0,True,False,False,Exact
+339,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,18,0.095,0.72,False,True,False,FalseClosure
+340,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,100,19,0.0003688790000069275,1.0,True,False,False,Exact
+340,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,100,19,0.095,0.68,False,True,False,FalseClosure
+341,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,0,0.0009008850000782331,1.0,True,False,False,Exact
+341,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,0,0.16999999999999998,0.476,False,True,False,FalseClosure
+342,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,1,0.0009249309999859179,1.0,True,False,False,Exact
+342,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,1,0.16999999999999998,0.5,False,True,False,FalseClosure
+343,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,2,0.0008996889999934865,1.0,True,False,False,Exact
+343,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,2,0.16999999999999998,0.56,False,True,False,FalseClosure
+344,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,3,0.0008430489999682322,1.0,True,False,False,Exact
+344,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,3,0.16999999999999998,0.532,False,True,False,FalseClosure
+345,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,4,0.0008438290000185589,1.0,True,False,False,Exact
+345,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,4,0.16999999999999998,0.388,False,True,False,FalseClosure
+346,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,5,0.0007776029999604361,1.0,True,False,False,Exact
+346,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,5,0.16999999999999998,0.524,False,True,False,FalseClosure
+347,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,6,0.0008076980000168987,0.996,False,False,False,Imperfect
+347,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,6,0.16999999999999998,0.424,False,True,False,FalseClosure
+348,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,7,0.0009379979999266652,0.996,False,False,False,Imperfect
+348,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,7,0.16999999999999998,0.384,False,True,False,FalseClosure
+349,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,8,0.0007632149998926252,1.0,True,False,False,Exact
+349,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,8,0.16999999999999998,0.576,False,True,False,FalseClosure
+350,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,9,0.001042091999920558,1.0,True,False,False,Exact
+350,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,9,0.16999999999999998,0.552,False,True,False,FalseClosure
+351,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,10,0.0008634749999600899,1.0,True,False,False,Exact
+351,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,10,0.16999999999999998,0.484,False,True,False,FalseClosure
+352,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,11,0.0008019090000743745,1.0,True,False,False,Exact
+352,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,11,0.16999999999999998,0.488,False,True,False,FalseClosure
+353,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,12,0.0008673789999420478,1.0,True,False,False,Exact
+353,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,12,0.16999999999999998,0.484,False,True,False,FalseClosure
+354,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,13,0.0008237949999738703,1.0,True,False,False,Exact
+354,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,13,0.16999999999999998,0.368,False,True,False,FalseClosure
+355,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,14,0.0008884239999815691,1.0,True,False,False,Exact
+355,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,14,0.16999999999999998,0.504,False,True,False,FalseClosure
+356,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,15,0.0008723319999717205,1.0,True,False,False,Exact
+356,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,15,0.16999999999999998,0.44,False,True,False,FalseClosure
+357,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,16,0.0006873340000765893,1.0,True,False,False,Exact
+357,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,16,0.16999999999999998,0.492,False,True,False,FalseClosure
+358,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,17,0.000881302000038886,1.0,True,False,False,Exact
+358,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,17,0.16999999999999998,0.46,False,True,False,FalseClosure
+359,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,18,0.0007385000000112996,0.996,False,False,False,Imperfect
+359,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,18,0.16999999999999998,0.496,False,True,False,FalseClosure
+360,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,250,19,0.0008860550000235889,1.0,True,False,False,Exact
+360,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,250,19,0.16999999999999998,0.52,False,True,False,FalseClosure
+361,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,0,0.0016849400000182868,1.0,True,False,False,Exact
+361,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,0,0.295,0.464,False,True,False,FalseClosure
+362,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,1,0.0018392409999705706,1.0,True,False,False,Exact
+362,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,1,0.295,0.44,False,True,False,FalseClosure
+363,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,2,0.0015959219999786,1.0,True,False,False,Exact
+363,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,2,0.295,0.502,False,True,False,FalseClosure
+364,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,3,0.0015061289999493965,1.0,True,False,False,Exact
+364,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,3,0.295,0.298,False,True,False,FalseClosure
+365,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,4,0.001635302999943633,1.0,True,False,False,Exact
+365,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,4,0.295,0.48,False,True,False,FalseClosure
+366,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,5,0.0017238640000414307,1.0,True,False,False,Exact
+366,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,5,0.295,0.532,False,True,False,FalseClosure
+367,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,6,0.0015909490000467486,0.998,False,False,False,Imperfect
+367,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,6,0.295,0.292,False,True,False,FalseClosure
+368,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,7,0.0017138940000904768,1.0,True,False,False,Exact
+368,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,7,0.295,0.424,False,True,False,FalseClosure
+369,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,8,0.0017491730000074313,1.0,True,False,False,Exact
+369,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,8,0.295,0.514,False,True,False,FalseClosure
+370,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,9,0.0016835389999414474,0.998,False,False,False,Imperfect
+370,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,9,0.295,0.482,False,True,False,FalseClosure
+371,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,10,0.0017281050000974574,1.0,True,False,False,Exact
+371,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,10,0.295,0.474,False,True,False,FalseClosure
+372,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,11,0.0018425539999498142,1.0,True,False,False,Exact
+372,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,11,0.295,0.458,False,True,False,FalseClosure
+373,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,12,0.0015900090000968703,1.0,True,False,False,Exact
+373,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,12,0.295,0.506,False,True,False,FalseClosure
+374,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,13,0.0016684979999581628,0.996,False,False,False,Imperfect
+374,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,13,0.295,0.468,False,True,False,FalseClosure
+375,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,14,0.0016329479999512841,1.0,True,False,False,Exact
+375,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,14,0.295,0.35,False,True,False,FalseClosure
+376,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,15,0.0017321889999948326,0.998,False,False,False,Imperfect
+376,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,15,0.295,0.344,False,True,False,FalseClosure
+377,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,16,0.0016899190000003728,1.0,True,False,False,Exact
+377,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,16,0.295,0.368,False,True,False,FalseClosure
+378,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,17,0.001737258000048314,0.998,False,False,False,Imperfect
+378,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,17,0.295,0.504,False,True,False,FalseClosure
+379,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,18,0.0017913120000230265,1.0,True,False,False,Exact
+379,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,18,0.295,0.492,False,True,False,FalseClosure
+380,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,500,19,0.0016807409999728407,0.998,False,False,False,Imperfect
+380,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,500,19,0.295,0.324,False,True,False,FalseClosure
+381,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,0,0.0035419869999486764,0.999,False,False,False,Imperfect
+381,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,0,0.545,0.481,False,True,False,FalseClosure
+382,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,1,0.003291848999992908,0.997,False,False,False,Imperfect
+382,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,1,0.545,0.486,False,True,False,FalseClosure
+383,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,2,0.002912644999923941,0.999,False,False,False,Imperfect
+383,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,2,0.545,0.463,False,True,False,FalseClosure
+384,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,3,0.003282108000007611,1.0,True,False,False,Exact
+384,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,3,0.545,0.443,False,True,False,FalseClosure
+385,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,4,0.003353767000021435,0.999,False,False,False,Imperfect
+385,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,4,0.545,0.453,False,True,False,FalseClosure
+386,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,5,0.003487937000045349,0.999,False,False,False,Imperfect
+386,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,5,0.545,0.461,False,True,False,FalseClosure
+387,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,6,0.003345781000007264,1.0,True,False,False,Exact
+387,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,6,0.545,0.419,False,True,False,FalseClosure
+388,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,7,0.0036631289999604633,1.0,True,False,False,Exact
+388,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,7,0.545,0.432,False,True,False,FalseClosure
+389,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,8,0.0031269019999626835,0.999,False,False,False,Imperfect
+389,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,8,0.545,0.475,False,True,False,FalseClosure
+390,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,9,0.003339492000009159,0.999,False,False,False,Imperfect
+390,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,9,0.545,0.293,False,True,False,FalseClosure
+391,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,10,0.003372555999931137,0.998,False,False,False,Imperfect
+391,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,10,0.545,0.45,False,True,False,FalseClosure
+392,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,11,0.0032747279999512102,1.0,True,False,False,Exact
+392,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,11,0.545,0.42,False,True,False,FalseClosure
+393,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,12,0.0036864620000187642,0.999,False,False,False,Imperfect
+393,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,12,0.545,0.31,False,True,False,FalseClosure
+394,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,13,0.0031927709999308718,0.999,False,False,False,Imperfect
+394,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,13,0.545,0.429,False,True,False,FalseClosure
+395,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,14,0.0032178500000554777,0.997,False,False,False,Imperfect
+395,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,14,0.545,0.457,False,True,False,FalseClosure
+396,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,15,0.003011149000030855,1.0,True,False,False,Exact
+396,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,15,0.545,0.458,False,True,False,FalseClosure
+397,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,16,0.0035033920000842045,0.999,False,False,False,Imperfect
+397,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,16,0.545,0.457,False,True,False,FalseClosure
+398,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,17,0.003540927000017291,1.0,True,False,False,Exact
+398,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,17,0.545,0.447,False,True,False,FalseClosure
+399,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,18,0.0031964129999551005,1.0,True,False,False,Exact
+399,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,18,0.545,0.283,False,True,False,FalseClosure
+400,PhyloGap,CPU (Banded NW),Extreme-Outgroup (>70 MYA),85.0,1000,19,0.0033164509999323855,1.0,True,False,False,Exact
+400,GapPredict,Tesla T4,Extreme-Outgroup (>70 MYA),85.0,1000,19,0.545,0.468,False,True,False,FalseClosure
