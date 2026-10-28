@@ -42,6 +42,9 @@ class ReconstructionRequest(BaseModel):
     expected_gap_len: int
     sparse_reads: Optional[List[str]] = []
     ground_truth_gap: Optional[str] = None
+    feature_type: Optional[str] = "intron"
+    gc_fraction: Optional[float] = None
+    enable_preprocessing: Optional[bool] = True
 
 @app.get("/api/health")
 def health_check():
@@ -99,7 +102,10 @@ def reconstruct_gap(req: ReconstructionRequest):
         divergence_mya=req.divergence_mya,
         expected_gap_len=req.expected_gap_len,
         sparse_reads=req.sparse_reads,
-        ground_truth_gap=req.ground_truth_gap
+        ground_truth_gap=req.ground_truth_gap,
+        feature_type=req.feature_type or "intron",
+        gc_fraction=req.gc_fraction,
+        enable_preprocessing=req.enable_preprocessing if req.enable_preprocessing is not None else True
     )
 
     # Base-by-base provenance decomposition for interactive visual rendering

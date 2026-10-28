@@ -35,6 +35,11 @@ from scripts.evidence_fusion_engine import (
     EMPIRICAL_DECAY_LAMBDA,
     EMPIRICAL_T_CRIT
 )
+from scripts.biological_feature_extractor import (
+    FlankUniquenessFilter,
+    SparseReadQualityFilter,
+    GapBiologicalProfiler
+)
 from scripts.evaluate_metrics import evaluate_single_gap
 
 DEMO_PRESETS = {
@@ -87,14 +92,55 @@ def reconstruct_gap_pipeline(
     divergence_mya: float,
     expected_gap_len: int,
     sparse_reads: Optional[List[str]] = None,
-    ground_truth_gap: Optional[str] = None
+    ground_truth_gap: Optional[str] = None,
+    feature_type: str = "intron",
+    gc_fraction: Optional[float] = None,
+    enable_preprocessing: bool = True
 ) -> Dict[str, Any]:
     """
     Core pipeline to reconstruct a single gap using PhyloGap Evidence-Aware Engine.
+    Supports biological features (coding_exon, intron, repeat) and automated data preprocessing.
     """
     mapper = SyntenicAnchorMapper(max_flank_mismatch=0.25)
     fuser = EvidenceWeightedFuser()
     gater = SelectivePredictionGater(min_confidence_threshold=0.68)
+
+    # 0. Automated Data Preprocessing (if enabled)
+    effective_flanks = {"left": flank_left, "right": flank_right}
+    effective_reads = sparse_reads or []
+    prep_metadata: Dict[str, Any] = {
+        "preprocessing_enabled": enable_preprocessing,
+        "feature_type": feature_type
+    }
+
+    if enable_preprocessing:
+        flank_filter = FlankUniquenessFilter()
+        l_assess = flank_filter.assess_flank_anchor(flank_left)
+        r_assess = flank_filter.assess_flank_anchor(flank_right)
+        
+        read_filter = SparseReadQualityFilter()
+        effective_reads = read_filter.filter_and_bin_reads(
+            raw_reads=effective_reads,
+            flank_left=flank_left,
+            flank_right=flank_right,
+            homology_seq=homology_reference
+        )
+
+        calc_gc = gc_fraction if gc_fraction is not None else GapBiologicalProfiler.compute_gc_fraction(flank_left + flank_right)
+        isochore_class = GapBiologicalProfiler.categorize_isochore(calc_gc)
+
+        prep_metadata.update({
+            "flank_left_entropy": l_assess["kmer_entropy"],
+            "flank_right_entropy": r_assess["kmer_entropy"],
+            "flank_left_ambiguous": l_assess["is_ambiguous"],
+            "flank_right_ambiguous": r_assess["is_ambiguous"],
+            "reads_prior_count": len(sparse_reads or []),
+            "reads_cleaned_count": len(effective_reads),
+            "local_gc_fraction": float(calc_gc),
+            "isochore_class": isochore_class
+        })
+    else:
+        calc_gc = gc_fraction if gc_fraction is not None else 0.42
 
     # 1. Map syntenic anchors on homologous reference
     map_res = mapper.map_flanks_to_reference(
@@ -111,7 +157,8 @@ def reconstruct_gap_pipeline(
             "final_sequence": "N" * expected_gap_len,
             "confidence_score": 0.0,
             "rejection_reason": "Flank synteny could not be anchored within tolerance",
-            "mapping_details": map_res
+            "mapping_details": map_res,
+            "preprocessing": prep_metadata
         }
 
     raw_homology_gap = map_res["extracted_gap"]
@@ -120,10 +167,12 @@ def reconstruct_gap_pipeline(
     # 2. Fuse with sparse reads (if provided) and evolutionary weighting
     fusion_res = fuser.fuse(
         homology_seq=raw_homology_gap,
-        reads=sparse_reads or [],
+        reads=effective_reads,
         divergence_mya=divergence_mya,
         flank_identity=flank_identity,
-        expected_gap_len=expected_gap_len
+        expected_gap_len=expected_gap_len,
+        feature_type=feature_type,
+        gc_fraction=calc_gc
     )
 
     # 3. Apply Selective Prediction Gating
@@ -131,7 +180,8 @@ def reconstruct_gap_pipeline(
         fusion_result=fusion_res,
         divergence_mya=divergence_mya,
         expected_gap_len=expected_gap_len,
-        reads_present=bool(sparse_reads and len(sparse_reads) > 0)
+        reads_present=bool(effective_reads and len(effective_reads) > 0),
+        feature_type=feature_type
     )
 
     result = {
@@ -172,6 +222,7 @@ def reconstruct_gap_pipeline(
 
     result["read_corrections_applied"] = fusion_res["substitutions_corrected"]
     result["flank_identity_mean"] = flank_identity
+    result["preprocessing"] = prep_metadata
 
     return result
 
@@ -197,11 +248,11 @@ def print_cli_summary(res: Dict[str, Any], tier_name: str = "Custom Run"):
         ev = res["evaluation"]
         print("-" * 80)
         print("GROUND TRUTH VERIFICATION METRICS:")
-        print(f"• Nucleotide Accuracy (Acc_nuc):  {ev['nucleotide_accuracy']*100:.2f}%")
-        print(f"• Exact Match (100% Identity):    {'YES' if ev['exact_match'] else 'NO'}")
-        print(f"• False-Closure Verdict:          {'FALSE CLOSURE DETECTED' if ev['is_false_closure'] else 'PASSED SAFE TOLERANCE'}")
-        print(f"• Substitution Errors:            {ev['substitutions']} bp")
-        print(f"• Indel Errors:                   {ev['indels']} bp")
+        print(f"- Nucleotide Accuracy (Acc_nuc):  {ev['nucleotide_accuracy']*100:.2f}%")
+        print(f"- Exact Match (100% Identity):    {'YES' if ev['exact_match'] else 'NO'}")
+        print(f"- False-Closure Verdict:          {'FALSE CLOSURE DETECTED' if ev['is_false_closure'] else 'PASSED SAFE TOLERANCE'}")
+        print(f"- Substitution Errors:            {ev['substitutions']} bp")
+        print(f"- Indel Errors:                   {ev['indels']} bp")
 
     print("-" * 80)
     seq = res["final_sequence"]
