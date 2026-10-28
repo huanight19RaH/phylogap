@@ -1,0 +1,201 @@
+clade,gap_idx,gap_len,method,references_count,reads_used,accuracy,exact_match,is_false_closure,substitutions,indels
+Clade A (Estrildidae - Medium Divergence),0,36,Single Ref 1 (Primary Homology),1,False,0.9444444444444444,False,True,0,4
+Clade A (Estrildidae - Medium Divergence),0,36,Single Ref 2 (Secondary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),0,36,Multi-Reference Ancestral Consensus,2,False,0.9444444444444444,False,False,0,2
+Clade A (Estrildidae - Medium Divergence),0,36,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,36
+Clade A (Estrildidae - Medium Divergence),1,93,Single Ref 1 (Primary Homology),1,False,0.956989247311828,False,False,2,4
+Clade A (Estrildidae - Medium Divergence),1,93,Single Ref 2 (Secondary Homology),1,False,0.9354838709677419,False,False,5,2
+Clade A (Estrildidae - Medium Divergence),1,93,Multi-Reference Ancestral Consensus,2,False,0.956989247311828,False,False,2,2
+Clade A (Estrildidae - Medium Divergence),1,93,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.956989247311828,False,False,2,2
+Clade A (Estrildidae - Medium Divergence),2,43,Single Ref 1 (Primary Homology),1,False,0.9534883720930233,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),2,43,Single Ref 2 (Secondary Homology),1,False,0.7209302325581395,False,True,4,16
+Clade A (Estrildidae - Medium Divergence),2,43,Multi-Reference Ancestral Consensus,1,False,0.9534883720930233,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),2,43,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),3,38,Single Ref 1 (Primary Homology),1,False,0.9210526315789473,False,True,2,2
+Clade A (Estrildidae - Medium Divergence),3,38,Single Ref 2 (Secondary Homology),1,False,0.868421052631579,False,True,1,8
+Clade A (Estrildidae - Medium Divergence),3,38,Multi-Reference Ancestral Consensus,2,False,0.9473684210526315,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),3,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),4,48,Single Ref 1 (Primary Homology),1,False,0.8958333333333334,False,True,5,0
+Clade A (Estrildidae - Medium Divergence),4,48,Single Ref 2 (Secondary Homology),1,False,0.9583333333333334,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),4,48,Multi-Reference Ancestral Consensus,2,False,0.8958333333333334,False,True,5,0
+Clade A (Estrildidae - Medium Divergence),4,48,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),5,59,Single Ref 1 (Primary Homology),1,False,0.8813559322033898,False,True,7,0
+Clade A (Estrildidae - Medium Divergence),5,59,Single Ref 2 (Secondary Homology),1,False,0.9491525423728814,False,False,3,0
+Clade A (Estrildidae - Medium Divergence),5,59,Multi-Reference Ancestral Consensus,2,False,0.8813559322033898,False,True,7,0
+Clade A (Estrildidae - Medium Divergence),5,59,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),6,54,Single Ref 1 (Primary Homology),1,False,0.9444444444444444,False,False,2,2
+Clade A (Estrildidae - Medium Divergence),6,54,Single Ref 2 (Secondary Homology),1,False,0.8333333333333334,False,True,5,8
+Clade A (Estrildidae - Medium Divergence),6,54,Multi-Reference Ancestral Consensus,2,False,0.9629629629629629,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),6,54,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),7,99,Single Ref 1 (Primary Homology),1,False,0.9696969696969697,False,False,3,0
+Clade A (Estrildidae - Medium Divergence),7,99,Single Ref 2 (Secondary Homology),1,False,0.9393939393939394,False,False,4,4
+Clade A (Estrildidae - Medium Divergence),7,99,Multi-Reference Ancestral Consensus,2,False,0.9696969696969697,False,False,3,0
+Clade A (Estrildidae - Medium Divergence),7,99,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.98989898989899,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),8,45,Single Ref 1 (Primary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),8,45,Single Ref 2 (Secondary Homology),1,False,0.9111111111111111,False,False,4,0
+Clade A (Estrildidae - Medium Divergence),8,45,Multi-Reference Ancestral Consensus,2,False,0.9574468085106383,False,False,0,2
+Clade A (Estrildidae - Medium Divergence),8,45,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9574468085106383,False,False,0,2
+Clade A (Estrildidae - Medium Divergence),9,39,Single Ref 1 (Primary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),9,39,Single Ref 2 (Secondary Homology),1,False,0.8717948717948718,False,True,3,4
+Clade A (Estrildidae - Medium Divergence),9,39,Multi-Reference Ancestral Consensus,2,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),9,39,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),10,26,Single Ref 1 (Primary Homology),1,False,0.9615384615384616,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),10,26,Single Ref 2 (Secondary Homology),1,False,0.8846153846153846,False,True,1,4
+Clade A (Estrildidae - Medium Divergence),10,26,Multi-Reference Ancestral Consensus,2,False,0.9615384615384616,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),10,26,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),11,58,Single Ref 1 (Primary Homology),1,False,0.8793103448275862,False,True,3,8
+Clade A (Estrildidae - Medium Divergence),11,58,Single Ref 2 (Secondary Homology),1,False,0.9137931034482759,False,False,5,0
+Clade A (Estrildidae - Medium Divergence),11,58,Multi-Reference Ancestral Consensus,2,False,0.8870967741935484,False,True,3,4
+Clade A (Estrildidae - Medium Divergence),11,58,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9354838709677419,False,False,0,4
+Clade A (Estrildidae - Medium Divergence),12,42,Single Ref 1 (Primary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),12,42,Single Ref 2 (Secondary Homology),1,False,0.9761904761904762,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),12,42,Multi-Reference Ancestral Consensus,2,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),12,42,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),13,38,Single Ref 1 (Primary Homology),1,False,0.868421052631579,False,True,1,8
+Clade A (Estrildidae - Medium Divergence),13,38,Single Ref 2 (Secondary Homology),1,False,0.9210526315789473,False,True,2,2
+Clade A (Estrildidae - Medium Divergence),13,38,Multi-Reference Ancestral Consensus,2,False,0.868421052631579,False,True,1,4
+Clade A (Estrildidae - Medium Divergence),13,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.8947368421052632,False,True,0,4
+Clade A (Estrildidae - Medium Divergence),14,138,Single Ref 1 (Primary Homology),1,False,0.9347826086956522,False,False,7,4
+Clade A (Estrildidae - Medium Divergence),14,138,Single Ref 2 (Secondary Homology),1,False,0.9565217391304348,False,False,6,0
+Clade A (Estrildidae - Medium Divergence),14,138,Multi-Reference Ancestral Consensus,2,False,0.9347826086956522,False,False,7,2
+Clade A (Estrildidae - Medium Divergence),14,138,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9855072463768116,False,False,0,2
+Clade A (Estrildidae - Medium Divergence),15,36,Single Ref 1 (Primary Homology),1,False,0.9444444444444444,False,False,1,2
+Clade A (Estrildidae - Medium Divergence),15,36,Single Ref 2 (Secondary Homology),1,False,0.9722222222222222,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),15,36,Multi-Reference Ancestral Consensus,2,False,0.918918918918919,False,False,2,1
+Clade A (Estrildidae - Medium Divergence),15,36,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.972972972972973,False,False,0,1
+Clade A (Estrildidae - Medium Divergence),16,32,Single Ref 1 (Primary Homology),1,False,0.8125,False,True,2,8
+Clade A (Estrildidae - Medium Divergence),16,32,Single Ref 2 (Secondary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),16,32,Multi-Reference Ancestral Consensus,2,False,0.8125,False,True,1,9
+Clade A (Estrildidae - Medium Divergence),16,32,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.84375,False,True,0,9
+Clade A (Estrildidae - Medium Divergence),17,26,Single Ref 1 (Primary Homology),1,False,0.9615384615384616,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),17,26,Single Ref 2 (Secondary Homology),1,False,0.9230769230769231,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),17,26,Multi-Reference Ancestral Consensus,2,False,0.9615384615384616,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),17,26,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),18,39,Single Ref 1 (Primary Homology),1,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),18,39,Single Ref 2 (Secondary Homology),1,False,0.9230769230769231,False,False,3,0
+Clade A (Estrildidae - Medium Divergence),18,39,Multi-Reference Ancestral Consensus,2,False,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),18,39,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),19,35,Single Ref 1 (Primary Homology),1,False,0.9428571428571428,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),19,35,Single Ref 2 (Secondary Homology),1,False,0.9428571428571428,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),19,35,Multi-Reference Ancestral Consensus,2,False,0.9428571428571428,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),19,35,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),20,50,Single Ref 1 (Primary Homology),1,False,0.96,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),20,50,Single Ref 2 (Secondary Homology),1,False,0.86,False,True,3,8
+Clade A (Estrildidae - Medium Divergence),20,50,Multi-Reference Ancestral Consensus,2,False,0.96,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),20,50,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),21,62,Single Ref 1 (Primary Homology),1,False,0.9838709677419355,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),21,62,Single Ref 2 (Secondary Homology),1,False,0.9354838709677419,False,False,4,0
+Clade A (Estrildidae - Medium Divergence),21,62,Multi-Reference Ancestral Consensus,2,False,0.9838709677419355,False,False,1,0
+Clade A (Estrildidae - Medium Divergence),21,62,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),22,29,Single Ref 1 (Primary Homology),1,False,0.896551724137931,False,True,3,0
+Clade A (Estrildidae - Medium Divergence),22,29,Single Ref 2 (Secondary Homology),1,False,0.7931034482758621,False,True,2,8
+Clade A (Estrildidae - Medium Divergence),22,29,Multi-Reference Ancestral Consensus,2,False,0.896551724137931,False,True,3,0
+Clade A (Estrildidae - Medium Divergence),22,29,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade A (Estrildidae - Medium Divergence),23,38,Single Ref 1 (Primary Homology),1,False,0.9473684210526315,False,False,1,2
+Clade A (Estrildidae - Medium Divergence),23,38,Single Ref 2 (Secondary Homology),1,False,0.9473684210526315,False,False,2,0
+Clade A (Estrildidae - Medium Divergence),23,38,Multi-Reference Ancestral Consensus,2,False,0.9487179487179487,False,False,1,1
+Clade A (Estrildidae - Medium Divergence),23,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9743589743589743,False,False,0,1
+Clade A (Estrildidae - Medium Divergence),24,32,Single Ref 1 (Primary Homology),1,False,0.90625,False,True,1,4
+Clade A (Estrildidae - Medium Divergence),24,32,Single Ref 2 (Secondary Homology),1,False,0.90625,False,False,3,0
+Clade A (Estrildidae - Medium Divergence),24,32,Multi-Reference Ancestral Consensus,2,False,0.90625,False,False,1,2
+Clade A (Estrildidae - Medium Divergence),24,32,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9375,False,False,0,2
+Clade B (Galliformes - Distant Divergence),0,36,Single Ref 1 (Primary Homology),1,False,0.6666666666666666,False,True,10,4
+Clade B (Galliformes - Distant Divergence),0,36,Single Ref 2 (Secondary Homology),1,False,0.9166666666666666,False,True,2,2
+Clade B (Galliformes - Distant Divergence),0,36,Multi-Reference Ancestral Consensus,2,False,0.9166666666666666,False,False,2,1
+Clade B (Galliformes - Distant Divergence),0,36,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9444444444444444,False,False,1,1
+Clade B (Galliformes - Distant Divergence),1,93,Single Ref 1 (Primary Homology),1,False,0.7741935483870968,False,True,17,8
+Clade B (Galliformes - Distant Divergence),1,93,Single Ref 2 (Secondary Homology),1,False,0.8064516129032258,False,True,18,0
+Clade B (Galliformes - Distant Divergence),1,93,Multi-Reference Ancestral Consensus,2,False,0.8064516129032258,False,True,16,2
+Clade B (Galliformes - Distant Divergence),1,93,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9247311827956989,False,False,5,2
+Clade B (Galliformes - Distant Divergence),2,43,Single Ref 1 (Primary Homology),1,False,0.813953488372093,False,True,6,4
+Clade B (Galliformes - Distant Divergence),2,43,Single Ref 2 (Secondary Homology),1,False,0.7441860465116279,False,True,5,12
+Clade B (Galliformes - Distant Divergence),2,43,Multi-Reference Ancestral Consensus,2,False,0.7209302325581395,False,True,7,7
+Clade B (Galliformes - Distant Divergence),2,43,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,43
+Clade B (Galliformes - Distant Divergence),3,38,Single Ref 1 (Primary Homology),1,False,0.7368421052631579,False,True,7,6
+Clade B (Galliformes - Distant Divergence),3,38,Single Ref 2 (Secondary Homology),1,False,0.7894736842105263,False,True,6,4
+Clade B (Galliformes - Distant Divergence),3,38,Multi-Reference Ancestral Consensus,1,False,0.8157894736842105,False,True,6,1
+Clade B (Galliformes - Distant Divergence),3,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.9473684210526315,False,False,1,1
+Clade B (Galliformes - Distant Divergence),4,48,Single Ref 1 (Primary Homology),1,False,0.875,False,True,5,2
+Clade B (Galliformes - Distant Divergence),4,48,Single Ref 2 (Secondary Homology),1,False,0.7916666666666666,False,True,6,8
+Clade B (Galliformes - Distant Divergence),4,48,Multi-Reference Ancestral Consensus,2,False,0.7916666666666666,False,True,6,4
+Clade B (Galliformes - Distant Divergence),4,48,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.8333333333333334,False,True,4,4
+Clade B (Galliformes - Distant Divergence),5,59,Single Ref 1 (Primary Homology),1,False,0.7627118644067796,False,True,11,6
+Clade B (Galliformes - Distant Divergence),5,59,Single Ref 2 (Secondary Homology),1,False,0.864406779661017,False,True,6,4
+Clade B (Galliformes - Distant Divergence),5,59,Multi-Reference Ancestral Consensus,2,False,0.864406779661017,False,True,5,4
+Clade B (Galliformes - Distant Divergence),5,59,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9491525423728814,False,False,0,4
+Clade B (Galliformes - Distant Divergence),6,54,Single Ref 1 (Primary Homology),1,False,0.8148148148148148,False,True,8,4
+Clade B (Galliformes - Distant Divergence),6,54,Single Ref 2 (Secondary Homology),1,False,0.8333333333333334,False,True,6,6
+Clade B (Galliformes - Distant Divergence),6,54,Multi-Reference Ancestral Consensus,1,False,0.847457627118644,False,True,4,5
+Clade B (Galliformes - Distant Divergence),6,54,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.0,False,False,0,54
+Clade B (Galliformes - Distant Divergence),7,99,Single Ref 1 (Primary Homology),1,False,0.8282828282828283,False,True,11,12
+Clade B (Galliformes - Distant Divergence),7,99,Single Ref 2 (Secondary Homology),1,False,0.9090909090909091,False,False,9,0
+Clade B (Galliformes - Distant Divergence),7,99,Multi-Reference Ancestral Consensus,2,False,0.9090909090909091,False,False,9,0
+Clade B (Galliformes - Distant Divergence),7,99,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9797979797979798,False,False,2,0
+Clade B (Galliformes - Distant Divergence),8,45,Single Ref 1 (Primary Homology),1,False,0.7555555555555555,False,True,4,14
+Clade B (Galliformes - Distant Divergence),8,45,Single Ref 2 (Secondary Homology),1,False,0.8888888888888888,False,True,4,2
+Clade B (Galliformes - Distant Divergence),8,45,Multi-Reference Ancestral Consensus,2,False,0.8666666666666667,False,True,4,2
+Clade B (Galliformes - Distant Divergence),8,45,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9555555555555556,False,False,0,2
+Clade B (Galliformes - Distant Divergence),9,39,Single Ref 1 (Primary Homology),1,False,0.8461538461538461,False,True,6,0
+Clade B (Galliformes - Distant Divergence),9,39,Single Ref 2 (Secondary Homology),1,False,0.7948717948717948,False,True,4,8
+Clade B (Galliformes - Distant Divergence),9,39,Multi-Reference Ancestral Consensus,2,False,0.7906976744186046,False,True,5,4
+Clade B (Galliformes - Distant Divergence),9,39,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,39
+Clade B (Galliformes - Distant Divergence),10,26,Single Ref 1 (Primary Homology),1,False,0.6923076923076923,False,True,2,12
+Clade B (Galliformes - Distant Divergence),10,26,Single Ref 2 (Secondary Homology),1,False,0.8076923076923077,False,True,2,6
+Clade B (Galliformes - Distant Divergence),10,26,Multi-Reference Ancestral Consensus,2,False,0.8571428571428571,False,True,2,2
+Clade B (Galliformes - Distant Divergence),10,26,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,26
+Clade B (Galliformes - Distant Divergence),11,58,Single Ref 1 (Primary Homology),1,False,0.8275862068965517,False,True,10,0
+Clade B (Galliformes - Distant Divergence),11,58,Single Ref 2 (Secondary Homology),1,False,0.8103448275862069,False,True,6,10
+Clade B (Galliformes - Distant Divergence),11,58,Multi-Reference Ancestral Consensus,2,False,0.8103448275862069,False,True,6,9
+Clade B (Galliformes - Distant Divergence),11,58,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.896551724137931,False,True,1,9
+Clade B (Galliformes - Distant Divergence),12,42,Single Ref 1 (Primary Homology),1,False,0.7857142857142857,False,True,8,2
+Clade B (Galliformes - Distant Divergence),12,42,Single Ref 2 (Secondary Homology),1,False,0.7857142857142857,False,True,5,8
+Clade B (Galliformes - Distant Divergence),12,42,Multi-Reference Ancestral Consensus,2,False,0.782608695652174,False,True,6,4
+Clade B (Galliformes - Distant Divergence),12,42,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,42
+Clade B (Galliformes - Distant Divergence),13,38,Single Ref 1 (Primary Homology),1,False,0.7368421052631579,False,True,8,4
+Clade B (Galliformes - Distant Divergence),13,38,Single Ref 2 (Secondary Homology),1,False,0.8157894736842105,False,True,4,6
+Clade B (Galliformes - Distant Divergence),13,38,Multi-Reference Ancestral Consensus,1,False,0.7105263157894737,False,True,5,6
+Clade B (Galliformes - Distant Divergence),13,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.8421052631578947,False,True,0,6
+Clade B (Galliformes - Distant Divergence),14,138,Single Ref 1 (Primary Homology),1,False,0.7536231884057971,False,True,27,14
+Clade B (Galliformes - Distant Divergence),14,138,Single Ref 2 (Secondary Homology),1,False,0.8768115942028986,False,True,16,2
+Clade B (Galliformes - Distant Divergence),14,138,Multi-Reference Ancestral Consensus,1,False,0.8531468531468531,False,True,16,5
+Clade B (Galliformes - Distant Divergence),14,138,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.0,False,False,0,138
+Clade B (Galliformes - Distant Divergence),15,36,Single Ref 1 (Primary Homology),1,False,0.8611111111111112,False,True,3,4
+Clade B (Galliformes - Distant Divergence),15,36,Single Ref 2 (Secondary Homology),1,False,0.7777777777777778,False,True,5,6
+Clade B (Galliformes - Distant Divergence),15,36,Multi-Reference Ancestral Consensus,2,False,0.7777777777777778,False,True,5,6
+Clade B (Galliformes - Distant Divergence),15,36,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.8055555555555556,False,True,4,6
+Clade B (Galliformes - Distant Divergence),16,32,Single Ref 1 (Primary Homology),1,False,0.78125,False,True,6,2
+Clade B (Galliformes - Distant Divergence),16,32,Single Ref 2 (Secondary Homology),1,False,0.8125,False,True,5,2
+Clade B (Galliformes - Distant Divergence),16,32,Multi-Reference Ancestral Consensus,2,False,0.7714285714285715,False,True,5,3
+Clade B (Galliformes - Distant Divergence),16,32,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.0,False,False,0,32
+Clade B (Galliformes - Distant Divergence),17,26,Single Ref 1 (Primary Homology),1,False,0.6923076923076923,False,True,4,8
+Clade B (Galliformes - Distant Divergence),17,26,Single Ref 2 (Secondary Homology),1,False,0.6538461538461539,False,True,6,6
+Clade B (Galliformes - Distant Divergence),17,26,Multi-Reference Ancestral Consensus,1,False,0.6923076923076923,False,True,4,6
+Clade B (Galliformes - Distant Divergence),17,26,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.7692307692307693,False,True,2,6
+Clade B (Galliformes - Distant Divergence),18,39,Single Ref 1 (Primary Homology),1,False,0.9230769230769231,False,False,3,0
+Clade B (Galliformes - Distant Divergence),18,39,Single Ref 2 (Secondary Homology),1,False,0.7948717948717948,False,True,7,2
+Clade B (Galliformes - Distant Divergence),18,39,Multi-Reference Ancestral Consensus,2,False,0.7948717948717948,False,True,7,1
+Clade B (Galliformes - Distant Divergence),18,39,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9743589743589743,False,False,0,1
+Clade B (Galliformes - Distant Divergence),19,35,Single Ref 1 (Primary Homology),1,False,0.7142857142857143,False,True,5,10
+Clade B (Galliformes - Distant Divergence),19,35,Single Ref 2 (Secondary Homology),1,False,0.8285714285714286,False,True,5,2
+Clade B (Galliformes - Distant Divergence),19,35,Multi-Reference Ancestral Consensus,1,False,0.8333333333333334,False,True,5,1
+Clade B (Galliformes - Distant Divergence),19,35,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.8888888888888888,False,True,3,1
+Clade B (Galliformes - Distant Divergence),20,50,Single Ref 1 (Primary Homology),1,False,0.82,False,True,8,2
+Clade B (Galliformes - Distant Divergence),20,50,Single Ref 2 (Secondary Homology),1,False,0.86,False,True,5,4
+Clade B (Galliformes - Distant Divergence),20,50,Multi-Reference Ancestral Consensus,2,False,0.86,False,True,5,2
+Clade B (Galliformes - Distant Divergence),20,50,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.94,False,False,1,2
+Clade B (Galliformes - Distant Divergence),21,62,Single Ref 1 (Primary Homology),1,False,0.8064516129032258,False,True,7,10
+Clade B (Galliformes - Distant Divergence),21,62,Single Ref 2 (Secondary Homology),1,False,0.8387096774193549,False,True,8,4
+Clade B (Galliformes - Distant Divergence),21,62,Multi-Reference Ancestral Consensus,2,False,0.8548387096774194,False,True,8,1
+Clade B (Galliformes - Distant Divergence),21,62,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.9838709677419355,False,False,0,1
+Clade B (Galliformes - Distant Divergence),22,29,Single Ref 1 (Primary Homology),1,False,0.7586206896551724,False,True,7,0
+Clade B (Galliformes - Distant Divergence),22,29,Single Ref 2 (Secondary Homology),1,False,0.8620689655172413,False,True,2,4
+Clade B (Galliformes - Distant Divergence),22,29,Multi-Reference Ancestral Consensus,2,False,0.8064516129032258,False,True,4,2
+Clade B (Galliformes - Distant Divergence),22,29,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,0.8709677419354839,False,True,2,2
+Clade B (Galliformes - Distant Divergence),23,38,Single Ref 1 (Primary Homology),1,False,0.8421052631578947,False,True,5,2
+Clade B (Galliformes - Distant Divergence),23,38,Single Ref 2 (Secondary Homology),1,False,0.9210526315789473,False,True,0,6
+Clade B (Galliformes - Distant Divergence),23,38,Multi-Reference Ancestral Consensus,2,False,0.9736842105263158,False,False,1,0
+Clade B (Galliformes - Distant Divergence),23,38,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),2,True,1.0,True,False,0,0
+Clade B (Galliformes - Distant Divergence),24,32,Single Ref 1 (Primary Homology),1,False,0.8125,False,True,4,4
+Clade B (Galliformes - Distant Divergence),24,32,Single Ref 2 (Secondary Homology),1,False,0.6875,False,True,3,14
+Clade B (Galliformes - Distant Divergence),24,32,Multi-Reference Ancestral Consensus,1,False,0.7837837837837838,False,True,2,7
+Clade B (Galliformes - Distant Divergence),24,32,Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),1,True,0.0,False,False,0,32

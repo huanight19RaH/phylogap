@@ -1,0 +1,49 @@
+tier,feature_type,read_scenario,method,closure_rate,mean_accuracy,exact_match_rate,false_closure_rate
+Tier 3: Same Order (~46.2 Mya),coding_exon,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.8666666666666667,0.8006944444444444,0.0,0.5333333333333333
+Tier 3: Same Order (~46.2 Mya),coding_exon,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.8666666666666667,0.8006944444444444,0.0,0.5333333333333333
+Tier 3: Same Order (~46.2 Mya),coding_exon,sparse_reads_1x,Raw Single Homology,1.0,0.9104166666666667,0.0,0.6666666666666666
+Tier 3: Same Order (~46.2 Mya),coding_exon,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),coding_exon,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),coding_exon,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),coding_exon,zero_reads,Raw Single Homology,1.0,0.9104166666666667,0.0,0.6666666666666666
+Tier 3: Same Order (~46.2 Mya),coding_exon,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),intron,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.5333333333333333,0.43680555555555556,0.0,0.5333333333333333
+Tier 3: Same Order (~46.2 Mya),intron,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.5333333333333333,0.43680555555555556,0.0,0.5333333333333333
+Tier 3: Same Order (~46.2 Mya),intron,sparse_reads_1x,Raw Single Homology,1.0,0.798611111111111,0.0,1.0
+Tier 3: Same Order (~46.2 Mya),intron,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),intron,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),intron,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),intron,zero_reads,Raw Single Homology,1.0,0.798611111111111,0.0,1.0
+Tier 3: Same Order (~46.2 Mya),intron,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,sparse_reads_1x,Raw Single Homology,1.0,0.7415807560137456,0.0,1.0
+Tier 3: Same Order (~46.2 Mya),repeat,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 3: Same Order (~46.2 Mya),repeat,zero_reads,Raw Single Homology,1.0,0.7415807560137456,0.0,1.0
+Tier 3: Same Order (~46.2 Mya),repeat,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.6666666666666666,0.5673611111111111,0.0,0.5333333333333333
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.6666666666666666,0.5673611111111111,0.0,0.5333333333333333
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,sparse_reads_1x,Raw Single Homology,1.0,0.825,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,zero_reads,Raw Single Homology,1.0,0.825,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),coding_exon,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),intron,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.4666666666666667,0.31736111111111115,0.0,0.4666666666666667
+Tier 4: Distant Orders (~88.0 Mya),intron,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.4666666666666667,0.31736111111111115,0.0,0.4666666666666667
+Tier 4: Distant Orders (~88.0 Mya),intron,sparse_reads_1x,Raw Single Homology,1.0,0.663888888888889,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),intron,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),intron,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),intron,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),intron,zero_reads,Raw Single Homology,1.0,0.663888888888889,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),intron,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,sparse_reads_1x,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,sparse_reads_1x,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,sparse_reads_1x,Raw Single Homology,1.0,0.5738831615120275,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,sparse_reads_1x,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,zero_reads,Adaptive PhyloGap (Locus-Specific),0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,zero_reads,Multi-Reference Adaptive PhyloGap,0.0,0.0,0.0,0.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,zero_reads,Raw Single Homology,1.0,0.5738831615120275,0.0,1.0
+Tier 4: Distant Orders (~88.0 Mya),repeat,zero_reads,Standard PhyloGap (Static Cutoff),0.0,0.0,0.0,0.0

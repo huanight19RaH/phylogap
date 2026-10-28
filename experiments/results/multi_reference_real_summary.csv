@@ -1,0 +1,9 @@
+clade,method,mean_accuracy,exact_match_rate,false_closure_rate,mean_substitutions,mean_indels
+Clade A (Estrildidae - Medium Divergence),Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),0.9379457981001288,0.56,0.08,0.12,2.52
+Clade A (Estrildidae - Medium Divergence),Multi-Reference Ancestral Consensus,0.938105222103232,0.12,0.24,1.96,1.16
+Clade A (Estrildidae - Medium Divergence),Single Ref 1 (Primary Homology),0.9386695601828882,0.16,0.36,1.96,1.92
+Clade A (Estrildidae - Medium Divergence),Single Ref 2 (Secondary Homology),0.9137426629595958,0.08,0.32,2.72,2.56
+Clade B (Galliformes - Distant Divergence),Multi-Ref + Sparse Reads + K80 (PhyloGap v1.2),0.6202365337743984,0.04,0.28,1.04,18.16
+Clade B (Galliformes - Distant Divergence),Multi-Reference Ancestral Consensus,0.8196828538144892,0.0,0.88,5.8,3.4
+Clade B (Galliformes - Distant Divergence),Single Ref 1 (Primary Homology),0.7872782881195222,0.0,0.96,7.68,5.36
+Clade B (Galliformes - Distant Divergence),Single Ref 2 (Secondary Homology),0.8188914920506906,0.0,0.96,5.8,5.12
