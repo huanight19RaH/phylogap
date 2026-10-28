@@ -1,13 +1,17 @@
 /**
- * PhyloMorph 3D Studio - Evolutionary Genomic Synthesis & Particle Morphing Engine.
+ * PhyloMorph 3D Studio - High-Luminescence Particle Morphing Engine.
  * Features:
- * 1. Two-Way 3D Particle Morphing: Phenotype (Avian Mesh) <-> Genotype (DNA Double Helix).
- * 2. Parametric DNA Helix with nucleotide base-pair color mapping (A: Crimson, T: Gold, G: Emerald, C: Cyan).
- * 3. Five Procedural Avian Phenotypes: Hummingbird, Finch, Junglefowl, Dodo, Archaeopteryx.
- * 4. Cross-Species In-Silico Hybridization & Ancestral Sequence Prediction.
- * 5. Interactive 3D Gap Healing Simulator with dynamic donor particle injection.
+ * 1. Ultra-Vivid Bio-Luminescent Particle Shader (White-hot core + Emerald/Cyan aura).
+ * 2. 10,000 Particles with GPU-Accelerated Vortex Morphing.
+ * 3. Sculpted 3D Models:
+ *    - Avian (Calypte anna - Hummingbird with aerodynamic body, needle bill, swept wings)
+ *    - Mammalia (Quadruped Vertebrate with spine, 4 limbs, head, paws, tail)
+ *    - Viridiplantae (Arabidopsis thaliana - Rosette leaves with venation and flower stalk)
+ *    - Finch (Taeniopygia guttata - Compact songbird)
+ *    - DNA Double Helix (Parametric dual strands + 48 nucleotide rungs in A, T, G, C)
+ * 4. HeroDnaBackground: Lightweight autonomous floating 3D DNA helix for the landing page hero.
+ * 5. Interactive Gap Injection & Healing simulation with streaming repair particles.
  *
- * Technology: Three.js WebGL Particle Shaders with GPU-accelerated vortex morphing.
  * Author: PhyloGap Research & Product Team
  * Date: 2026-10-28
  */
@@ -17,19 +21,42 @@ class PhyloMorphEngine {
     this.container = document.getElementById(containerId);
     if (!this.container) return;
 
-    this.particleCount = 6400;
+    this.particleCount = 9600;
     this.currentSpecies = 'c_anna';
-    this.morphProgress = 0.0; // 0.0 = Phenotype, 1.0 = Double Helix
+    this.morphProgress = 0.0; // 0.0 = Organism Phenotype, 1.0 = DNA Helix
     this.targetMorphProgress = 0.0;
     this.isGapActive = false;
     this.isHealing = false;
 
     this.speciesProfiles = {
-      c_anna: { name: "Calypte anna", common: "Anna's Hummingbird", morph: "hummingbird", color: [0.0, 0.9, 0.9] },
-      t_guttata: { name: "Taeniopygia guttata", common: "Zebra Finch", morph: "finch", color: [1.0, 0.6, 0.2] },
-      g_gallus: { name: "Gallus gallus", common: "Red Junglefowl", morph: "fowl", color: [1.0, 0.2, 0.2] },
-      r_cucullatus: { name: "Raphus cucullatus", common: "Dodo (Extinct)", morph: "dodo", color: [0.3, 0.8, 0.4] },
-      archaeopteryx: { name: "Archaeopteryx lithographica", common: "Urvogel", morph: "archaeopteryx", color: [0.8, 0.3, 0.9] }
+      c_anna: {
+        name: "Calypte anna",
+        common: "Anna's Hummingbird (Chim Ruồi)",
+        morph: "hummingbird",
+        color: [0.0, 1.0, 0.65], // Bio Emerald
+        secondaryColor: [0.1, 0.85, 1.0]
+      },
+      mammal: {
+        name: "Mammalia (Thú)",
+        common: "Vertebrate Model (Động Vật Có Vú)",
+        morph: "mammal",
+        color: [0.2, 0.9, 0.5], // Electric Mint
+        secondaryColor: [0.0, 0.7, 0.9]
+      },
+      plant: {
+        name: "Arabidopsis thaliana",
+        common: "Thale Cress (Thực Vật)",
+        morph: "plant",
+        color: [0.3, 1.0, 0.4], // Neon Botanical Green
+        secondaryColor: [0.1, 0.9, 0.7]
+      },
+      t_guttata: {
+        name: "Taeniopygia guttata",
+        common: "Zebra Finch (Chim Sẻ)",
+        morph: "finch",
+        color: [0.05, 0.95, 0.8], // Cyan-Emerald
+        secondaryColor: [0.2, 1.0, 0.5]
+      }
     };
 
     this.initScene();
@@ -41,15 +68,15 @@ class PhyloMorphEngine {
 
   initScene() {
     const width = this.container.clientWidth || 800;
-    const height = this.container.clientHeight || 550;
+    const height = this.container.clientHeight || 560;
 
     this.scene = new THREE.Scene();
-    this.scene.fog = new THREE.FogExp2(0x060913, 0.015);
+    this.scene.fog = new THREE.FogExp2(0x030303, 0.012);
 
     this.camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    this.camera.position.set(0, 5, 28);
+    this.camera.position.set(0, 4, 30);
 
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
     this.renderer.setSize(width, height);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.container.appendChild(this.renderer.domElement);
@@ -59,100 +86,117 @@ class PhyloMorphEngine {
       this.controls.enableDamping = true;
       this.controls.dampingFactor = 0.05;
       this.controls.autoRotate = true;
-      this.controls.autoRotateSpeed = 0.8;
-      this.controls.maxDistance = 60;
-      this.controls.minDistance = 5;
+      this.controls.autoRotateSpeed = 0.9;
+      this.controls.maxDistance = 65;
+      this.controls.minDistance = 6;
     }
 
     this.clock = new THREE.Clock();
   }
 
-  createSoftGlowTexture() {
+  createHighIntensityGlowTexture() {
     const canvas = document.createElement('canvas');
-    canvas.width = 64;
-    canvas.height = 64;
+    canvas.width = 128;
+    canvas.height = 128;
     const ctx = canvas.getContext('2d');
-    const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
-    grad.addColorStop(0, 'rgba(255, 255, 255, 1)');
-    grad.addColorStop(0.3, 'rgba(255, 255, 255, 0.8)');
-    grad.addColorStop(0.7, 'rgba(255, 255, 255, 0.15)');
-    grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+
+    const grad = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
+    grad.addColorStop(0, 'rgba(255, 255, 255, 1.0)');     // Brilliant white-hot nucleus
+    grad.addColorStop(0.18, 'rgba(255, 255, 255, 0.95)');
+    grad.addColorStop(0.45, 'rgba(16, 185, 129, 0.55)');   // Bio-emerald halo
+    grad.addColorStop(0.75, 'rgba(6, 182, 212, 0.20)');    // Cyan outer aura
+    grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
     ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, 64, 64);
-    return new THREE.CanvasTexture(canvas);
+    ctx.fillRect(0, 0, 128, 128);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.needsUpdate = true;
+    return texture;
   }
 
   generateDnaPositions(count) {
     const pos = new Float32Array(count * 3);
     const colors = new Float32Array(count * 3);
-    const heightSpan = 22.0;
-    const radius = 3.5;
-    const turns = 4.5;
+    const heightSpan = 24.0;
+    const radius = 4.2;
+    const turns = 5.0;
 
-    // Nucleotide Palette: A: Crimson, T: Gold, G: Emerald, C: Cyan, N: Pulsing Red
+    // Vibrant Base Colors:
+    // A: Crimson/Rose, T: Gold/Amber, G: Emerald Green, C: Neon Cyan
     const basePalette = [
-      [1.0, 0.2, 0.4], // A (Crimson)
-      [1.0, 0.8, 0.1], // T (Gold)
-      [0.0, 0.95, 0.55], // G (Emerald)
-      [0.0, 0.8, 1.0]  // C (Cyan)
+      [1.0, 0.2, 0.45],  // A (Rose-Crimson)
+      [1.0, 0.85, 0.15], // T (Gold-Amber)
+      [0.0, 1.0, 0.55],  // G (Emerald Green)
+      [0.0, 0.85, 1.0]   // C (Cyber Cyan)
     ];
 
-    const backboneCount = Math.floor(count * 0.45);
+    const backboneCount = Math.floor(count * 0.48);
     const rungsCount = count - backboneCount;
 
-    // 1. Double Helix Backbones
+    // 1. Double Helix Backbones (Thick, luminous double strands)
     for (let i = 0; i < backboneCount; i++) {
-      const t = (i / backboneCount) * Math.PI * 2 * turns;
+      const frac = (i / backboneCount);
+      const theta = frac * Math.PI * 2 * turns;
       const strand = (i % 2 === 0) ? 1.0 : -1.0;
-      const y = ((i / backboneCount) - 0.5) * heightSpan;
-      const x = Math.cos(t) * radius * strand;
-      const z = Math.sin(t) * radius * strand;
+      const y = (frac - 0.5) * heightSpan;
+
+      // Slight thickness jitter
+      const rJitter = radius + (Math.sin(i * 12.0) * 0.15);
+      const x = Math.cos(theta) * rJitter * strand;
+      const z = Math.sin(theta) * rJitter * strand;
 
       const idx = i * 3;
       pos[idx] = x;
       pos[idx + 1] = y;
       pos[idx + 2] = z;
 
-      // Backbone electric cyan/magenta
+      // Bio-emerald & Cyber-cyan backbones
       if (strand > 0) {
-        colors[idx] = 0.0; colors[idx + 1] = 0.85; colors[idx + 2] = 1.0;
+        colors[idx] = 0.0; colors[idx + 1] = 1.0; colors[idx + 2] = 0.7; // Emerald
       } else {
-        colors[idx] = 0.95; colors[idx + 1] = 0.2; colors[idx + 2] = 0.85;
+        colors[idx] = 0.0; colors[idx + 1] = 0.85; colors[idx + 2] = 1.0; // Cyan
       }
     }
 
-    // 2. Base-Pair Rungs
+    // 2. Base-Pair Cross Rungs
     const offset = backboneCount * 3;
-    const basePairSteps = 36;
-    for (let i = 0; i < rungsCount; i++) {
-      const stepIdx = Math.floor((i / rungsCount) * basePairSteps);
-      const frac = (stepIdx / basePairSteps);
+    const baseSteps = 48; // 48 paired rungs along the helix
+    const particlesPerRung = Math.floor(rungsCount / baseSteps);
+
+    for (let s = 0; s < baseSteps; s++) {
+      const frac = s / baseSteps;
       const theta = frac * Math.PI * 2 * turns;
       const y = (frac - 0.5) * heightSpan;
 
       const p1 = new THREE.Vector3(Math.cos(theta) * radius, y, Math.sin(theta) * radius);
       const p2 = new THREE.Vector3(Math.cos(theta + Math.PI) * radius, y, Math.sin(theta + Math.PI) * radius);
 
-      // Lerp position along rung
-      const rungAlpha = (i % (rungsCount / basePairSteps)) / (rungsCount / basePairSteps);
-      const pt = new THREE.Vector3().lerpVectors(p1, p2, rungAlpha);
+      const colLeft = basePalette[(s * 2) % 4];
+      const colRight = basePalette[(s * 2 + 1) % 4];
 
-      const idx = offset + i * 3;
-      pos[idx] = pt.x;
-      pos[idx + 1] = pt.y;
-      pos[idx + 2] = pt.z;
+      for (let j = 0; j < particlesPerRung; j++) {
+        const rungIdx = s * particlesPerRung + j;
+        if (rungIdx >= rungsCount) break;
 
-      // Base color assignment
-      const baseCol = basePalette[(stepIdx * 3 + (rungAlpha > 0.5 ? 1 : 0)) % 4];
-      colors[idx] = baseCol[0];
-      colors[idx + 1] = baseCol[1];
-      colors[idx + 2] = baseCol[2];
+        const alpha = j / particlesPerRung;
+        const pt = new THREE.Vector3().lerpVectors(p1, p2, alpha);
+
+        const idx = offset + rungIdx * 3;
+        pos[idx] = pt.x + (Math.random() - 0.5) * 0.1;
+        pos[idx + 1] = pt.y + (Math.random() - 0.5) * 0.1;
+        pos[idx + 2] = pt.z + (Math.random() - 0.5) * 0.1;
+
+        const c = alpha < 0.5 ? colLeft : colRight;
+        colors[idx] = c[0];
+        colors[idx + 1] = c[1];
+        colors[idx + 2] = c[2];
+      }
     }
 
     return { positions: pos, colors: colors };
   }
 
-  generateAvianMorphPositions(morphType, count) {
+  generateOrganismPositions(morphType, count) {
     const pos = new Float32Array(count * 3);
     const rng = Math.random;
 
@@ -161,124 +205,160 @@ class PhyloMorphEngine {
       const p = rng();
 
       if (morphType === 'hummingbird') {
-        // Slender torpedo body + needle bill + swept back wings
-        if (p < 0.35) { // Torpedo body
+        // Anatomical Hummingbird (Calypte anna):
+        // Slender aerodynamic fuselage, spherical head, needle-thin straight beak, swept wings, fanned tail
+        if (p < 0.30) {
+          // Torpedo Torso & Breast
           const u = rng() * Math.PI * 2;
           const v = (rng() - 0.5) * Math.PI;
-          const r = 2.0;
+          const r = 2.4;
           x = r * 0.7 * Math.cos(v) * Math.cos(u);
-          y = (r * 1.5 * Math.sin(v)) - 0.5;
-          z = r * 0.7 * Math.cos(v) * Math.sin(u);
-        } else if (p < 0.50) { // Long needle bill
-          const len = rng() * 4.5;
-          x = (rng() - 0.5) * 0.15;
-          y = 1.8 + len * 0.6;
-          z = 0.8 + len * 0.8;
-        } else if (p < 0.85) { // Swept-back wings
+          y = (r * 1.6 * Math.sin(v)) - 0.6;
+          z = r * 0.75 * Math.cos(v) * Math.sin(u);
+        } else if (p < 0.44) {
+          // Cranial Head Dome + Needle Beak
+          if (rng() < 0.4) {
+            // Head sphere
+            const u = rng() * Math.PI * 2;
+            const v = (rng() - 0.5) * Math.PI;
+            x = 0.9 * Math.cos(v) * Math.cos(u);
+            y = 2.2 + 0.9 * Math.sin(v);
+            z = 1.0 + 0.9 * Math.cos(v) * Math.sin(u);
+          } else {
+            // Needle-thin long bill
+            const bL = rng() * 4.8;
+            x = (rng() - 0.5) * 0.12;
+            y = 2.1 + bL * 0.45;
+            z = 1.8 + bL * 0.9;
+          }
+        } else if (p < 0.82) {
+          // Swept-back articulated wings with primary feathers
           const side = rng() > 0.5 ? 1 : -1;
-          const wingSpan = rng() * 8.0;
-          x = side * (1.2 + wingSpan);
-          y = 0.5 - (wingSpan * 0.3) + (rng() - 0.5) * 0.4;
-          z = -1.0 - (wingSpan * 0.7) + (rng() - 0.5) * 0.4;
-        } else { // Tail feathers
-          const tailL = rng() * 4.0;
-          x = (rng() - 0.5) * (1.0 + tailL * 0.3);
-          y = -2.0 - tailL;
-          z = -1.5 - tailL * 0.4;
+          const span = rng(); // 0 to 1
+          const wingL = span * 8.5;
+          const chord = (1.0 - span * 0.65) * 2.2 * (rng() - 0.5);
+
+          x = side * (1.2 + wingL);
+          y = 0.6 - (span * 2.2) + chord * 0.3;
+          z = -0.5 - (span * 4.5) + chord;
+        } else {
+          // Split fork tail
+          const side = rng() > 0.5 ? 1 : -1;
+          const tL = rng() * 4.5;
+          x = side * (tL * 0.35) + (rng() - 0.5) * 0.3;
+          y = -2.6 - tL * 0.9;
+          z = -1.6 - tL * 0.6;
         }
-      } else if (morphType === 'finch') {
-        // Plump rounded body + short conical bill + perching wings
-        if (p < 0.55) { // Plump round body
+      } else if (morphType === 'mammal') {
+        // Anatomical Mammalia (Vertebrate Quadruped):
+        // Arched spine, thoracic ribcage, 4 articulated legs, skull with ears, tail
+        if (p < 0.32) {
+          // Arched Spine & Ribcage
+          const sT = (rng() - 0.5) * 8.0; // -4 to +4 along z
+          const arch = Math.cos((sT / 4.0) * (Math.PI / 2.5)) * 1.5;
+          const ribR = 2.0 * Math.sin(rng() * Math.PI);
+          const ribA = rng() * Math.PI * 2;
+          x = Math.cos(ribA) * ribR * 0.8;
+          y = arch + Math.sin(ribA) * ribR * 0.85;
+          z = sT;
+        } else if (p < 0.48) {
+          // Cranial Head, Muzzle, and Ears
+          const hP = rng();
+          if (hP < 0.5) {
+            // Skull
+            const u = rng() * Math.PI * 2;
+            const v = (rng() - 0.5) * Math.PI;
+            x = 1.1 * Math.cos(v) * Math.cos(u);
+            y = 1.8 + 1.1 * Math.sin(v);
+            z = 4.2 + 1.1 * Math.cos(v) * Math.sin(u);
+          } else if (hP < 0.8) {
+            // Muzzle
+            x = (rng() - 0.5) * 0.8;
+            y = 1.4 + (rng() - 0.5) * 0.6;
+            z = 5.2 + rng() * 1.2;
+          } else {
+            // Triangular Ears
+            const side = rng() > 0.5 ? 1 : -1;
+            const eH = rng() * 1.2;
+            x = side * (0.8 + eH * 0.3);
+            y = 2.6 + eH;
+            z = 4.0 - eH * 0.2;
+          }
+        } else if (p < 0.84) {
+          // 4 Articulated Limbs
+          const isFront = rng() > 0.5;
+          const side = rng() > 0.5 ? 1 : -1;
+          const legFrac = rng();
+          const legH = legFrac * 5.2;
+
+          x = side * (1.6 + Math.sin(legFrac * Math.PI) * 0.3);
+          y = 0.5 - legH;
+          z = isFront ? (2.8 - legFrac * 0.6) : (-3.0 + legFrac * 0.8);
+        } else {
+          // Graceful Curved Tail
+          const tL = rng() * 5.5;
+          x = Math.sin(tL * 0.8) * 0.8;
+          y = -0.2 + Math.sin(tL * 0.6) * 1.8;
+          z = -4.0 - tL * 0.9;
+        }
+      } else if (morphType === 'plant') {
+        // Anatomical Viridiplantae (Arabidopsis thaliana):
+        // Central botanical stem, 8 radiating elliptical rosette leaves with central veins, apical inflorescence
+        if (p < 0.20) {
+          // Central Vertical Stem
+          const sH = (rng() - 0.5) * 12.0;
+          const r = 0.35 + (rng() - 0.5) * 0.1;
+          const a = rng() * Math.PI * 2;
+          x = Math.cos(a) * r;
+          y = sH;
+          z = Math.sin(a) * r;
+        } else if (p < 0.75) {
+          // 8 Rosette Leaves radiating symmetrically
+          const leafIdx = Math.floor(rng() * 8);
+          const leafAngle = (leafIdx / 8.0) * Math.PI * 2 + (rng() - 0.5) * 0.2;
+          const leafLen = rng(); // 0 to 1 along leaf axis
+          const dist = 1.0 + leafLen * 6.5;
+          const leafWidth = Math.sin(leafLen * Math.PI) * 1.8 * (rng() - 0.5);
+
+          // Horizontal leaf blade with gentle downward arch
+          const lx = Math.cos(leafAngle) * dist - Math.sin(leafAngle) * leafWidth;
+          const lz = Math.sin(leafAngle) * dist + Math.cos(leafAngle) * leafWidth;
+          const ly = -2.5 - Math.pow(leafLen, 1.8) * 1.2 + (rng() - 0.5) * 0.2;
+
+          x = lx;
+          y = ly;
+          z = lz;
+        } else {
+          // Apical Flower Inflorescence (Top cluster of petals and buds)
+          const fAngle = rng() * Math.PI * 2;
+          const fDist = rng() * 2.2;
+          x = Math.cos(fAngle) * fDist;
+          y = 5.2 + (rng() - 0.5) * 1.8;
+          z = Math.sin(fAngle) * fDist;
+        }
+      } else {
+        // Finch (Taeniopygia guttata):
+        // Plump, round compact songbird
+        if (p < 0.55) {
           const u = rng() * Math.PI * 2;
           const v = (rng() - 0.5) * Math.PI;
-          const r = 2.8;
-          x = r * 1.0 * Math.cos(v) * Math.cos(u);
-          y = r * 1.1 * Math.sin(v);
+          const r = 2.9;
+          x = r * 0.95 * Math.cos(v) * Math.cos(u);
+          y = r * 1.1 * Math.sin(v) - 0.2;
           z = r * 0.9 * Math.cos(v) * Math.sin(u);
-        } else if (p < 0.65) { // Short conical seed beak
-          const len = rng() * 1.6;
-          x = (rng() - 0.5) * (1.2 - len * 0.6);
-          y = 1.5 + len * 0.5;
-          z = 2.0 + len * 0.9;
-        } else if (p < 0.88) { // Folded compact wings
+        } else if (p < 0.70) {
+          // Short conical seed beak
+          const bL = rng() * 1.8;
+          x = (rng() - 0.5) * (1.1 - bL * 0.5);
+          y = 1.8 + bL * 0.4;
+          z = 2.2 + bL * 0.8;
+        } else {
+          // Folded Perching Wings & Short Tail
           const side = rng() > 0.5 ? 1 : -1;
-          const w = rng() * 3.5;
-          x = side * (2.2 + w * 0.4);
-          y = 0.5 - w * 0.8;
-          z = -0.5 - w * 0.6;
-        } else { // Short tail
-          const tL = rng() * 2.5;
-          x = (rng() - 0.5) * 0.8;
-          y = -2.5 - tL * 0.8;
-          z = -1.8 - tL * 0.6;
-        }
-      } else if (morphType === 'fowl') {
-        // Proud upright rooster body + arched tail + head comb
-        if (p < 0.45) { // Heavy chest and body
-          const u = rng() * Math.PI * 2;
-          const v = (rng() - 0.5) * Math.PI;
-          const r = 3.2;
-          x = r * 0.85 * Math.cos(v) * Math.cos(u);
-          y = r * 1.3 * Math.sin(v) - 0.5;
-          z = r * 0.85 * Math.cos(v) * Math.sin(u);
-        } else if (p < 0.58) { // Head comb and wattles
-          const cH = rng() * 2.2;
-          x = (rng() - 0.5) * 0.35;
-          y = 3.2 + cH;
-          z = 0.8 + Math.sin(cH * 3.0) * 0.8;
-        } else if (p < 0.85) { // High arching sickle tail
-          const tArc = rng() * Math.PI * 0.7;
-          x = (rng() - 0.5) * 1.5;
-          y = 0.5 + Math.sin(tArc) * 5.0;
-          z = -2.0 - Math.cos(tArc) * 4.5;
-        } else { // Legs and spurs
-          const side = rng() > 0.5 ? 1 : -1;
-          const lH = rng() * 3.5;
-          x = side * 1.2;
-          y = -3.5 - lH;
-          z = (rng() - 0.5) * 0.5;
-        }
-      } else if (morphType === 'dodo') {
-        // Giant rotund body + heavy hooked beak + tiny vestigial wings
-        if (p < 0.65) { // Rotund heavy torso
-          const u = rng() * Math.PI * 2;
-          const v = (rng() - 0.5) * Math.PI;
-          const r = 4.0;
-          x = r * 1.1 * Math.cos(v) * Math.cos(u);
-          y = r * 1.0 * Math.sin(v) - 0.5;
-          z = r * 1.1 * Math.cos(v) * Math.sin(u);
-        } else if (p < 0.80) { // Large bulbous hooked beak
-          const bL = rng() * 3.5;
-          x = (rng() - 0.5) * 1.0;
-          y = 2.0 - Math.pow(bL / 3.5, 2) * 1.8;
-          z = 2.5 + bL * 1.2;
-        } else { // Stubby wings
-          const side = rng() > 0.5 ? 1 : -1;
-          const wL = rng() * 1.8;
-          x = side * (3.5 + wL * 0.3);
-          y = -wL * 0.5;
-          z = -wL * 0.4;
-        }
-      } else { // Archaeopteryx
-        // Long reptilian feathered tail + wing claws + toothed jaw
-        if (p < 0.35) { // Sleek dinosaurian body
-          const u = rng() * Math.PI * 2;
-          const v = (rng() - 0.5) * Math.PI;
-          const r = 2.2;
-          x = r * 0.7 * Math.cos(v) * Math.cos(u);
-          y = r * 1.1 * Math.sin(v);
-          z = r * 0.7 * Math.cos(v) * Math.sin(u);
-        } else if (p < 0.65) { // Long multi-vertebrae feathered tail
-          const tailLen = rng() * 8.5;
-          x = (rng() - 0.5) * (0.4 + Math.sin(tailLen * 0.8) * 1.2);
-          y = -1.5 - tailLen * 0.7;
-          z = -1.8 - tailLen * 1.1;
-        } else { // Broad feathered wings with claws
-          const side = rng() > 0.5 ? 1 : -1;
-          const w = rng() * 6.5;
-          x = side * (1.5 + w);
-          y = 0.8 - w * 0.2;
-          z = -w * 0.5;
+          const wL = rng() * 4.2;
+          x = side * (2.2 + wL * 0.35);
+          y = 0.2 - wL * 0.8;
+          z = -0.8 - wL * 0.6;
         }
       }
 
@@ -293,21 +373,22 @@ class PhyloMorphEngine {
 
   generateParticleAttributes() {
     this.dnaData = this.generateDnaPositions(this.particleCount);
-    this.organismPos = this.generateAvianMorphPositions(this.speciesProfiles[this.currentSpecies].morph, this.particleCount);
+    this.organismPos = this.generateOrganismPositions(this.speciesProfiles[this.currentSpecies].morph, this.particleCount);
 
     this.geometry = new THREE.BufferGeometry();
     this.geometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(this.organismPos), 3));
     this.geometry.setAttribute('aDnaPosition', new THREE.BufferAttribute(this.dnaData.positions, 3));
     this.geometry.setAttribute('aDnaColor', new THREE.BufferAttribute(this.dnaData.colors, 3));
 
-    // Base organism colors (iridescent cyan/amber)
+    // Bio-Emerald & Cyan Organism Coloring
     const orgColors = new Float32Array(this.particleCount * 3);
-    const spCol = this.speciesProfiles[this.currentSpecies].color;
+    const sp = this.speciesProfiles[this.currentSpecies];
     for (let i = 0; i < this.particleCount; i++) {
       const idx = i * 3;
-      orgColors[idx] = spCol[0] + (Math.random() - 0.5) * 0.15;
-      orgColors[idx + 1] = spCol[1] + (Math.random() - 0.5) * 0.15;
-      orgColors[idx + 2] = spCol[2] + (Math.random() - 0.5) * 0.15;
+      const alpha = Math.random();
+      orgColors[idx] = THREE.MathUtils.lerp(sp.color[0], sp.secondaryColor[0], alpha);
+      orgColors[idx + 1] = THREE.MathUtils.lerp(sp.color[1], sp.secondaryColor[1], alpha);
+      orgColors[idx + 2] = THREE.MathUtils.lerp(sp.color[2], sp.secondaryColor[2], alpha);
     }
     this.geometry.setAttribute('aOrgColor', new THREE.BufferAttribute(orgColors, 3));
 
@@ -321,7 +402,6 @@ class PhyloMorphEngine {
     const vertexShader = `
       uniform float uProgress;
       uniform float uTime;
-      uniform float uNoise;
       uniform float uGapAlarm;
       uniform float uHealing;
       
@@ -334,47 +414,47 @@ class PhyloMorphEngine {
       varying float vAlpha;
       
       void main() {
-        // Organic vortex interpolation
+        // High-order smoothstep for organic morphing
         float p = smoothstep(0.0, 1.0, uProgress);
         
-        // Swirling particle vortex during morphing
-        float vortex = sin(p * 3.14159) * 2.8;
-        float angle = uTime * 1.5 + aDnaPosition.y * 0.4;
-        vec3 vortexOffset = vec3(sin(angle) * vortex, 0.0, cos(angle) * vortex);
+        // Helical particle vortex wave during transition
+        float vortex = sin(p * 3.14159) * 3.4;
+        float angle = uTime * 2.0 + aDnaPosition.y * 0.45;
+        vec3 vortexOffset = vec3(sin(angle) * vortex, sin(p * 3.14159) * 0.8, cos(angle) * vortex);
         
         vec3 mixedPos = mix(position, aDnaPosition, p) + vortexOffset;
         
-        // Idle breathing wave
-        mixedPos.y += sin(uTime * 2.0 + aPhase) * 0.08;
-        mixedPos.x += cos(uTime * 1.5 + aPhase) * 0.05;
+        // Gentle bio-luminescent breathing wave
+        mixedPos.y += sin(uTime * 2.2 + aPhase) * 0.09;
+        mixedPos.x += cos(uTime * 1.8 + aPhase) * 0.06;
         
-        // Color transition
+        // Color blending
         vec3 col = mix(aOrgColor, aDnaColor, p);
         
-        // Gap Alarm (Pulsing Red Break at middle locus)
-        if (p > 0.4 && uGapAlarm > 0.1) {
-          if (abs(aDnaPosition.y) < 2.5) {
-            float pulse = 0.5 + 0.5 * sin(uTime * 10.0);
-            col = mix(col, vec3(1.0, 0.05, 0.1), pulse * uGapAlarm);
-            mixedPos.x += (sin(uTime * 20.0 + aPhase) * 0.4) * uGapAlarm;
+        // Broken Gap Alarm: Pulsing Neon Red at middle locus
+        if (p > 0.35 && uGapAlarm > 0.05) {
+          if (abs(aDnaPosition.y) < 2.8) {
+            float pulse = 0.6 + 0.4 * sin(uTime * 12.0);
+            col = mix(col, vec3(1.0, 0.05, 0.15), pulse * uGapAlarm);
+            mixedPos.x += (sin(uTime * 25.0 + aPhase) * 0.5) * uGapAlarm;
           }
         }
         
-        // Healing green stream
-        if (uHealing > 0.1) {
-          if (abs(aDnaPosition.y) < 3.0) {
-            col = mix(col, vec3(0.0, 1.0, 0.6), uHealing);
+        // Healing Stream: Emerald/Cyan restoration wave
+        if (uHealing > 0.05) {
+          if (abs(aDnaPosition.y) < 3.2) {
+            col = mix(col, vec3(0.1, 1.0, 0.65), uHealing);
           }
         }
         
         vColor = col;
-        vAlpha = 0.85;
+        vAlpha = 0.95;
         
         vec4 mvPosition = modelViewMatrix * vec4(mixedPos, 1.0);
         gl_Position = projectionMatrix * mvPosition;
         
-        // Perspective particle sizing
-        gl_PointSize = (18.0 / -mvPosition.z) * (1.0 + sin(aPhase + uTime) * 0.2);
+        // High-impact point sizing with perspective scaling
+        gl_PointSize = (32.0 / -mvPosition.z) * (1.0 + sin(aPhase + uTime * 2.0) * 0.25);
       }
     `;
 
@@ -385,8 +465,15 @@ class PhyloMorphEngine {
       
       void main() {
         vec4 tex = texture2D(uTexture, gl_PointCoord);
-        if (tex.a < 0.05) discard;
-        gl_FragColor = vec4(vColor, vAlpha * tex.a);
+        if (tex.a < 0.02) discard;
+        
+        // White-hot core + intense bio-luminescent aura
+        float dist = length(gl_PointCoord - vec2(0.5));
+        float glow = pow(max(0.0, 1.0 - dist * 2.0), 1.6);
+        float core = pow(max(0.0, 1.0 - dist * 2.0), 4.5) * 1.6;
+        
+        vec3 finalColor = vColor * glow + vec3(1.0) * core;
+        gl_FragColor = vec4(finalColor, vAlpha * glow);
       }
     `;
 
@@ -396,10 +483,9 @@ class PhyloMorphEngine {
       uniforms: {
         uProgress: { value: 0.0 },
         uTime: { value: 0.0 },
-        uNoise: { value: 1.0 },
         uGapAlarm: { value: 0.0 },
         uHealing: { value: 0.0 },
-        uTexture: { value: this.createSoftGlowTexture() }
+        uTexture: { value: this.createHighIntensityGlowTexture() }
       },
       transparent: true,
       depthWrite: false,
@@ -417,29 +503,32 @@ class PhyloMorphEngine {
   setSpecies(speciesId) {
     if (!this.speciesProfiles[speciesId]) return;
     this.currentSpecies = speciesId;
-    const morphType = this.speciesProfiles[speciesId].morph;
+    const sp = this.speciesProfiles[speciesId];
 
     // Recalculate organism positions
-    const newPositions = this.generateAvianMorphPositions(morphType, this.particleCount);
+    const newPositions = this.generateOrganismPositions(sp.morph, this.particleCount);
     const posAttr = this.geometry.attributes.position;
     posAttr.copyArray(newPositions);
     posAttr.needsUpdate = true;
 
-    // Update base organism color
-    const spCol = this.speciesProfiles[speciesId].color;
+    // Recalculate vibrant colors
     const orgColorAttr = this.geometry.attributes.aOrgColor;
     for (let i = 0; i < this.particleCount; i++) {
       const idx = i * 3;
-      orgColorAttr.array[idx] = spCol[0] + (Math.random() - 0.5) * 0.15;
-      orgColorAttr.array[idx + 1] = spCol[1] + (Math.random() - 0.5) * 0.15;
-      orgColorAttr.array[idx + 2] = spCol[2] + (Math.random() - 0.5) * 0.15;
+      const alpha = Math.random();
+      orgColorAttr.array[idx] = THREE.MathUtils.lerp(sp.color[0], sp.secondaryColor[0], alpha);
+      orgColorAttr.array[idx + 1] = THREE.MathUtils.lerp(sp.color[1], sp.secondaryColor[1], alpha);
+      orgColorAttr.array[idx + 2] = THREE.MathUtils.lerp(sp.color[2], sp.secondaryColor[2], alpha);
     }
     orgColorAttr.needsUpdate = true;
   }
 
   setHybridMorph(speciesA, speciesB, ratioB) {
-    const morphA = this.generateAvianMorphPositions(this.speciesProfiles[speciesA].morph, this.particleCount);
-    const morphB = this.generateAvianMorphPositions(this.speciesProfiles[speciesB].morph, this.particleCount);
+    const spA = this.speciesProfiles[speciesA] || this.speciesProfiles.c_anna;
+    const spB = this.speciesProfiles[speciesB] || this.speciesProfiles.mammal;
+
+    const morphA = this.generateOrganismPositions(spA.morph, this.particleCount);
+    const morphB = this.generateOrganismPositions(spB.morph, this.particleCount);
 
     const posAttr = this.geometry.attributes.position;
     for (let i = 0; i < this.particleCount * 3; i++) {
@@ -448,14 +537,12 @@ class PhyloMorphEngine {
     posAttr.needsUpdate = true;
 
     // Blend Colors
-    const colA = this.speciesProfiles[speciesA].color;
-    const colB = this.speciesProfiles[speciesB].color;
     const orgColorAttr = this.geometry.attributes.aOrgColor;
     for (let i = 0; i < this.particleCount; i++) {
       const idx = i * 3;
-      orgColorAttr.array[idx] = THREE.MathUtils.lerp(colA[0], colB[0], ratioB);
-      orgColorAttr.array[idx + 1] = THREE.MathUtils.lerp(colA[1], colB[1], ratioB);
-      orgColorAttr.array[idx + 2] = THREE.MathUtils.lerp(colA[2], colB[2], ratioB);
+      orgColorAttr.array[idx] = THREE.MathUtils.lerp(spA.color[0], spB.color[0], ratioB);
+      orgColorAttr.array[idx + 1] = THREE.MathUtils.lerp(spA.color[1], spB.color[1], ratioB);
+      orgColorAttr.array[idx + 2] = THREE.MathUtils.lerp(spA.color[2], spB.color[2], ratioB);
     }
     orgColorAttr.needsUpdate = true;
   }
@@ -507,5 +594,110 @@ class PhyloMorphEngine {
   }
 }
 
-// Global hook
+/**
+ * Lightweight Autonomous 3D Floating DNA Helix for Landing Page Hero
+ */
+class HeroDnaBackground {
+  constructor(canvasContainerId) {
+    this.container = document.getElementById(canvasContainerId);
+    if (!this.container) return;
+
+    const width = this.container.clientWidth || 480;
+    const height = this.container.clientHeight || 480;
+
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
+    this.camera.position.set(0, 0, 22);
+
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    this.renderer.setSize(width, height);
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.container.appendChild(this.renderer.domElement);
+
+    this.buildHelix();
+    this.clock = new THREE.Clock();
+    this.animate();
+
+    window.addEventListener('resize', () => {
+      if (!this.container) return;
+      const w = this.container.clientWidth;
+      const h = this.container.clientHeight;
+      if (w === 0 || h === 0) return;
+      this.camera.aspect = w / h;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(w, h);
+    });
+  }
+
+  buildHelix() {
+    const particleCount = 2800;
+    const geometry = new THREE.BufferGeometry();
+    const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+
+    const heightSpan = 18.0;
+    const radius = 3.6;
+    const turns = 4.0;
+
+    for (let i = 0; i < particleCount; i++) {
+      const frac = i / particleCount;
+      const theta = frac * Math.PI * 2 * turns;
+      const strand = (i % 2 === 0) ? 1.0 : -1.0;
+      const y = (frac - 0.5) * heightSpan;
+
+      const idx = i * 3;
+      if (i % 3 === 0) {
+        // Cross rung particle
+        const alpha = (i % 30) / 30.0;
+        const p1 = new THREE.Vector3(Math.cos(theta) * radius, y, Math.sin(theta) * radius);
+        const p2 = new THREE.Vector3(Math.cos(theta + Math.PI) * radius, y, Math.sin(theta + Math.PI) * radius);
+        const pt = new THREE.Vector3().lerpVectors(p1, p2, alpha);
+        positions[idx] = pt.x;
+        positions[idx + 1] = pt.y;
+        positions[idx + 2] = pt.z;
+
+        // Base pairs
+        colors[idx] = 0.06; colors[idx + 1] = 0.85; colors[idx + 2] = 0.95; // Cyan
+      } else {
+        // Strand particle
+        positions[idx] = Math.cos(theta) * radius * strand;
+        positions[idx + 1] = y;
+        positions[idx + 2] = Math.sin(theta) * radius * strand;
+
+        // Emerald strand
+        colors[idx] = 0.05; colors[idx + 1] = 0.95; colors[idx + 2] = 0.55;
+      }
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+    const material = new THREE.PointsMaterial({
+      size: 0.16,
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.9,
+      blending: THREE.AdditiveBlending
+    });
+
+    this.helixMesh = new THREE.Points(geometry, material);
+    this.scene.add(this.helixMesh);
+  }
+
+  animate() {
+    requestAnimationFrame(() => this.animate());
+    const elapsedTime = this.clock.getElapsedTime();
+
+    if (this.helixMesh) {
+      this.helixMesh.rotation.y = elapsedTime * 0.45;
+      this.helixMesh.rotation.z = Math.sin(elapsedTime * 0.3) * 0.12;
+      this.helixMesh.position.y = Math.sin(elapsedTime * 0.8) * 0.4;
+    }
+
+    this.renderer.render(this.scene, this.camera);
+  }
+}
+
+// Global hooks
 window.PhyloMorphEngine = PhyloMorphEngine;
+window.HeroDnaBackground = HeroDnaBackground;
