@@ -61,4 +61,8 @@ kaggle_runner_ui/*.log
 *.token
 kaggle.json
 .kaggle/
-
+# External baseline repositories (third-party repos)
+external_baselines/GapPredict/
+external_baselines/dentist/
+external_baselines/LR_Gapcloser/
+external_baselines/**/test_output/
