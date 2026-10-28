@@ -182,6 +182,196 @@ def calculate_evolutionary_risk(mya: float, lang: str = "en"):
         "lang": lang
     }
 
+GENETIC_CODE = {
+    'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
+    'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
+    'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
+    'AGC':'S', 'AGT':'S', 'AGA':'R', 'AGG':'R',
+    'CTA':'L', 'CTC':'L', 'CTG':'L', 'CTT':'L',
+    'CCA':'P', 'CCC':'P', 'CCG':'P', 'CCT':'P',
+    'CAC':'H', 'CAT':'H', 'CAA':'Q', 'CAG':'Q',
+    'CGA':'R', 'CGC':'R', 'CGG':'R', 'CGT':'R',
+    'GTA':'V', 'GTC':'V', 'GTG':'V', 'GTT':'V',
+    'GCA':'A', 'GCC':'A', 'GCG':'A', 'GCT':'A',
+    'GAC':'D', 'GAT':'D', 'GAA':'E', 'GAG':'E',
+    'GGA':'G', 'GGC':'G', 'GGG':'G', 'GGT':'G',
+    'TCA':'S', 'TCC':'S', 'TCG':'S', 'TCT':'S',
+    'TTC':'F', 'TTT':'F', 'TTA':'L', 'TTG':'L',
+    'TAC':'Y', 'TAT':'Y', 'TAA':'*', 'TAG':'*',
+    'TGC':'C', 'TGT':'C', 'TGA':'*', 'TGG':'W',
+}
+
+SPECIES_CATALOG = [
+    {
+        "id": "c_anna",
+        "name": "Calypte anna",
+        "common_name": "Anna's Hummingbird",
+        "clade": "Aves (Apodiformes)",
+        "divergence_mya": 0.0,
+        "genome_size_gb": 1.06,
+        "gc_percent": 41.5,
+        "morphology_type": "hummingbird",
+        "sample_sequence": "ATGGGTCGCAAGCTGGACCTGCGCGAGTACGACCAGATCCTGGAGCGCATCGAGGAGATGCTGCAGCGCAAGGAGCTG",
+        "description": "High metabolic rate, wing hovering kinematics, rapid nucleotide substitution."
+    },
+    {
+        "id": "t_guttata",
+        "name": "Taeniopygia guttata",
+        "common_name": "Zebra Finch",
+        "clade": "Aves (Passeriformes / Estrildidae)",
+        "divergence_mya": 11.5,
+        "genome_size_gb": 1.05,
+        "gc_percent": 42.0,
+        "morphology_type": "finch",
+        "sample_sequence": "ATGGGTCGCAAGCTGGACCTGCGCGAGTATGACCAGATTCTGGAGCGCATCGAGGAGATGCTCCAGCGCAAGGAGCTG",
+        "description": "Avian model organism for vocal learning, compact genome, high synteny."
+    },
+    {
+        "id": "g_gallus",
+        "name": "Gallus gallus",
+        "common_name": "Red Junglefowl / Chicken",
+        "clade": "Aves (Galliformes)",
+        "divergence_mya": 88.0,
+        "genome_size_gb": 1.05,
+        "gc_percent": 42.0,
+        "morphology_type": "fowl",
+        "sample_sequence": "ATGGGTCGTAAGCTGGATCTGCGCGAGTACGACCAGATCCTGGAGCGCATCGAGGAGATGCTTCAGCGCAAGGAGCTG",
+        "description": "Galloanserae reference anchor, microchromosome architecture, high recombination."
+    },
+    {
+        "id": "r_cucullatus",
+        "name": "Raphus cucullatus",
+        "common_name": "Dodo (Extinct ~1662)",
+        "clade": "Aves (Columbiformes - Extinct)",
+        "divergence_mya": 23.4,
+        "genome_size_gb": 1.15,
+        "gc_percent": 41.8,
+        "morphology_type": "dodo",
+        "sample_sequence": "ATGGGTCGCAAGCTGGACCTGCGCGAGTATGATCAGATCCTCGAGCGCATTGAGGAGATGCTGCAGCGTAAGGAGCTG",
+        "description": "Flightless pigeon relative from Mauritius, de-extinction candidate."
+    },
+    {
+        "id": "archaeopteryx",
+        "name": "Archaeopteryx lithographica",
+        "common_name": "Urvogel (Prehistoric ~150 Mya)",
+        "clade": "Avialae (Jurassic Transition - Extinct)",
+        "divergence_mya": 150.0,
+        "genome_size_gb": 1.40,
+        "gc_percent": 40.5,
+        "morphology_type": "archaeopteryx",
+        "sample_sequence": "ATGGGTCGGAAGCTGGACCTGCGGGAGTACGACCAGATCCTGGAGCGCATCGAGGAGATGCTGCAGCGCAAGGAGCTG",
+        "description": "Transitional fossil between non-avian feathered dinosaurs and modern birds."
+    }
+]
+
+class HybridizationRequest(BaseModel):
+    species_a_id: str
+    species_b_id: str
+    hybrid_ratio: float = 0.5 # 0.0 = 100% A, 1.0 = 100% B
+    divergence_mya: Optional[float] = 20.0
+    custom_seq_a: Optional[str] = None
+    custom_seq_b: Optional[str] = None
+
+@app.get("/api/species-catalog")
+def get_species_catalog():
+    return {"catalog": SPECIES_CATALOG}
+
+@app.post("/api/hybridize")
+def hybridize_species(req: HybridizationRequest):
+    """
+    Simulates in-silico hybridization and ancestral genomic reconstruction (ASR).
+    Synthesizes intermediate hybrid DNA and evaluates reading frame preservation & viability.
+    """
+    # Find species
+    sp_a = next((s for s in SPECIES_CATALOG if s["id"] == req.species_a_id), SPECIES_CATALOG[0])
+    sp_b = next((s for s in SPECIES_CATALOG if s["id"] == req.species_b_id), SPECIES_CATALOG[1])
+
+    seq_a = req.custom_seq_a or sp_a["sample_sequence"]
+    seq_b = req.custom_seq_b or sp_b["sample_sequence"]
+
+    n = max(len(seq_a), len(seq_b))
+    # Pad to equal length
+    seq_a_pad = seq_a.ljust(n, 'N')
+    seq_b_pad = seq_b.ljust(n, 'N')
+
+    # Synthesize Hybrid Sequence using weighted probabilistic interpolation
+    hybrid_chars = []
+    ancestral_chars = []
+    diff_count = 0
+
+    ratio_b = max(0.0, min(1.0, float(req.hybrid_ratio)))
+    ratio_a = 1.0 - ratio_b
+
+    for i in range(n):
+        b_a = seq_a_pad[i].upper()
+        b_b = seq_b_pad[i].upper()
+
+        if b_a != b_b and b_a != 'N' and b_b != 'N':
+            diff_count += 1
+            # Weighted hybrid selection
+            chosen = b_b if (i % 100) / 100.0 < ratio_b else b_a
+            # Ancestral consensus (MRCA) favors transition over transversion
+            purines = {'A', 'G'}
+            pyrimidines = {'C', 'T'}
+            if (b_a in purines and b_b in purines) or (b_a in pyrimidines and b_b in pyrimidines):
+                anc_chosen = b_a # Transition drift
+            else:
+                anc_chosen = b_a if ratio_a >= 0.5 else b_b
+        else:
+            chosen = b_a if b_a != 'N' else b_b
+            anc_chosen = chosen
+
+        hybrid_chars.append(chosen)
+        ancestral_chars.append(anc_chosen)
+
+    hybrid_seq = "".join(hybrid_chars)
+    ancestral_seq = "".join(ancestral_chars)
+
+    # Calculate GC content
+    gc_count = sum(1 for c in hybrid_seq if c in ['G', 'C'])
+    gc_pct = (gc_count / len(hybrid_seq) * 100.0) if hybrid_seq else 0.0
+
+    # Translation to amino acids
+    aa_list = []
+    has_premature_stop = False
+    for i in range(0, len(hybrid_seq) - 2, 3):
+        codon = hybrid_seq[i:i+3]
+        aa = GENETIC_CODE.get(codon, 'X')
+        if aa == '*' and (i < len(hybrid_seq) - 6):
+            has_premature_stop = True
+        aa_list.append(aa)
+
+    protein_seq = "".join(aa_list)
+
+    # Compute biological viability score (0 - 100%)
+    genetic_dist_pct = (diff_count / n * 100.0) if n > 0 else 0.0
+    viability = 98.0 - (genetic_dist_pct * 0.4)
+    if has_premature_stop:
+        viability -= 35.0
+    if not hybrid_seq.startswith("ATG"):
+        viability -= 15.0
+    viability_score = max(5.0, min(100.0, round(viability, 1)))
+
+    return {
+        "species_a": sp_a,
+        "species_b": sp_b,
+        "hybrid_ratio_a": round(ratio_a, 2),
+        "hybrid_ratio_b": round(ratio_b, 2),
+        "hybrid_sequence": hybrid_seq,
+        "ancestral_mrca_sequence": ancestral_seq,
+        "protein_translation": protein_seq,
+        "length_bp": n,
+        "genetic_distance_pct": round(genetic_dist_pct, 2),
+        "gc_content_pct": round(gc_pct, 1),
+        "viability_score": viability_score,
+        "has_premature_stop": has_premature_stop,
+        "morphology_mix": {
+            "primary_morph": sp_a["morphology_type"] if ratio_a >= 0.5 else sp_b["morphology_type"],
+            "secondary_morph": sp_b["morphology_type"] if ratio_a >= 0.5 else sp_a["morphology_type"],
+            "blend_factor": ratio_b
+        }
+    }
+
 # Mount static files
 os.makedirs(STATIC_DIR, exist_ok=True)
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")

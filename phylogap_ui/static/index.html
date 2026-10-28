@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
 
@@ -66,6 +68,14 @@
             <line x1="15" y1="3" x2="15" y2="21"></line>
           </svg>
           <span id="i18n-tab-matrix">Ma Trận Đối Chứng</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-phylomorph" onclick="switchTab('phylomorph')">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span id="i18n-tab-phylomorph">PhyloMorph 3D Studio</span>
         </button>
       </nav>
 
@@ -535,8 +545,195 @@
       </div>
     </section>
 
+    <!-- ================================================================= -->
+    <!-- TAB 4: PHYLOMORPH 3D STUDIO (PHENOTYPE <-> GENOTYPE & HYBRID LAB) -->
+    <!-- ================================================================= -->
+    <section id="tab-phylomorph" class="tab-pane">
+      <div class="phylomorph-container">
+        
+        <!-- 3D WebGL Canvas Viewport -->
+        <div class="phylomorph-viewport" id="phylomorph-3d-viewport">
+          <div class="viewport-hud-overlay">
+            <div class="hud-chip">
+              <span class="hud-dot"></span>
+              <span id="hud-status-text">WebGL 3D Engine: 6,400 Hạt Sinh Học Active</span>
+            </div>
+            <div class="hud-chip" id="hud-mode-chip">
+              Chế Độ: <strong id="hud-current-mode-label">Hình Thái Sinh Vật (Phenotype)</strong>
+            </div>
+            <div class="hud-controls-tip">
+              Xoay chuột trái để quan sát 360° | Cuộn chuột để Phóng to/Thu nhỏ
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Controls Grid -->
+        <div class="phylomorph-controls-grid">
+          
+          <!-- Card 1: 3D Morphing Controller -->
+          <div class="morph-control-card glass-panel">
+            <div class="card-header-styled">
+              <div class="header-icon-circle icon-dna">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 15c6.667-6 13.333 0 20-6"></path><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"></path><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"></path></svg>
+              </div>
+              <div>
+                <h3 class="panel-heading-title">Biến Hình 3D (Morphing Studio)</h3>
+                <p class="panel-heading-sub">Chuyển đổi hai chiều giữa Hình Thái Sinh Vật và Chuỗi Xoắn Kép ADN</p>
+              </div>
+            </div>
+
+            <!-- Species Dropdown -->
+            <div class="control-row">
+              <label class="control-label">Chọn Loài Mục Tiêu:</label>
+              <select class="select-styled" id="morph-species-select" onchange="onSelectMorphSpecies(this.value)">
+                <option value="c_anna">Calypte anna (Anna's Hummingbird - Chim Ruồi)</option>
+                <option value="t_guttata">Taeniopygia guttata (Zebra Finch - Chim Sẻ)</option>
+                <option value="g_gallus">Gallus gallus (Red Junglefowl - Gà Rừng)</option>
+                <option value="r_cucullatus">Raphus cucullatus (Dodo - Tuyệt Chủng 1662)</option>
+                <option value="archaeopteryx">Archaeopteryx lithographica (Chim Cổ Đại 150 Tr.Năm)</option>
+              </select>
+            </div>
+
+            <!-- Morph Slider -->
+            <div class="control-row">
+              <div class="slider-header-flex">
+                <span class="control-label">Tiến Trình Biến Hình 3D:</span>
+                <span class="slider-val-badge" id="morph-progress-badge">0% (Sinh Vật)</span>
+              </div>
+              <input type="range" class="range-styled" id="morph-progress-slider" min="0" max="100" value="0" oninput="onMorphSliderChange(this.value)">
+              <div class="slider-extremes">
+                <span>0% Hình Thái 3D</span>
+                <span>50% Hạt Lốc Xoáy</span>
+                <span>100% Xoắn Kép ADN</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="btn-group-flex">
+              <button class="btn-action btn-secondary" onclick="quickMorph(0.0)">
+                Mô Hình Sinh Vật
+              </button>
+              <button class="btn-action btn-primary" onclick="quickMorph(1.0)">
+                Xoắn Kép ADN
+              </button>
+            </div>
+
+            <!-- Gap Simulation Controller -->
+            <div class="gap-simulator-box">
+              <h4 class="sub-section-title">Mô Phỏng Chữa Lành Đứt Gãy ADN</h4>
+              <p class="small-text">Tạo đột biến đứt gãy locus (NNNN) trên chuỗi xoắn kép và kích hoạt PhyloGap để tự động tái tạo liên kết.</p>
+              <div class="btn-group-flex">
+                <button class="btn-action btn-danger" onclick="triggerGapInjection()">
+                  Tạo Đứt Gãy Locus (NNNN)
+                </button>
+                <button class="btn-action btn-success" onclick="triggerGapHealing()">
+                  Lấp Gap Bằng PhyloGap
+                </button>
+              </div>
+              <div class="gap-status-pill" id="gap-status-pill">Trạng Thái: Chuỗi ADN Nguyên Vẹn</div>
+            </div>
+          </div>
+
+          <!-- Card 2: PhyloSynthesizer (Cross-Species Hybridizer & Ancestral Predictor) -->
+          <div class="morph-control-card glass-panel">
+            <div class="card-header-styled">
+              <div class="header-icon-circle icon-hybrid">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              </div>
+              <div>
+                <h3 class="panel-heading-title">PhyloSynthesizer (Lai Tạo & ADN Tổ Tiên)</h3>
+                <p class="panel-heading-sub">Dự đoán bộ gen loài tổ tiên (ASR) và mô phỏng sinh vật lai tạo in-silico</p>
+              </div>
+            </div>
+
+            <div class="hybrid-species-selectors">
+              <div class="control-row">
+                <label class="control-label">Loài Nguồn A:</label>
+                <select class="select-styled" id="hybrid-sp-a" onchange="runHybridization()">
+                  <option value="c_anna">Calypte anna (Chim Ruồi)</option>
+                  <option value="t_guttata">Taeniopygia guttata (Chim Sẻ)</option>
+                  <option value="g_gallus">Gallus gallus (Gà Rừng)</option>
+                  <option value="r_cucullatus">Raphus cucullatus (Dodo)</option>
+                  <option value="archaeopteryx">Archaeopteryx (Chim Cổ)</option>
+                </select>
+              </div>
+
+              <div class="control-row">
+                <label class="control-label">Loài Nguồn B:</label>
+                <select class="select-styled" id="hybrid-sp-b" onchange="runHybridization()">
+                  <option value="t_guttata" selected>Taeniopygia guttata (Chim Sẻ)</option>
+                  <option value="c_anna">Calypte anna (Chim Ruồi)</option>
+                  <option value="g_gallus">Gallus gallus (Gà Rừng)</option>
+                  <option value="r_cucullatus">Raphus cucullatus (Dodo)</option>
+                  <option value="archaeopteryx">Archaeopteryx (Chim Cổ)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Hybrid Ratio Slider -->
+            <div class="control-row">
+              <div class="slider-header-flex">
+                <span class="control-label">Tỷ Lệ Lai Tạo (Hybrid Ratio):</span>
+                <span class="slider-val-badge" id="hybrid-ratio-badge">50% A - 50% B</span>
+              </div>
+              <input type="range" class="range-styled" id="hybrid-ratio-slider" min="0" max="100" value="50" oninput="onHybridSliderChange(this.value)">
+              <div class="slider-extremes">
+                <span id="label-hybrid-100a">100% Loài A</span>
+                <span>Lai Tạo Cân Bằng</span>
+                <span id="label-hybrid-100b">100% Loài B</span>
+              </div>
+            </div>
+
+            <!-- Live Biological Metrics -->
+            <div class="metrics-grid-mini">
+              <div class="metric-cell-mini">
+                <span class="m-label">Độ Sống Sót (Viability):</span>
+                <strong class="m-val text-green" id="hybrid-viability-val">96.5%</strong>
+              </div>
+              <div class="metric-cell-mini">
+                <span class="m-label">Khoảng Cách Di Truyền:</span>
+                <strong class="m-val" id="hybrid-dist-val">3.85%</strong>
+              </div>
+              <div class="metric-cell-mini">
+                <span class="m-label">Hàm Lượng GC:</span>
+                <strong class="m-val" id="hybrid-gc-val">41.8%</strong>
+              </div>
+              <div class="metric-cell-mini">
+                <span class="m-label">Khung Đọc Codon:</span>
+                <strong class="m-val text-cyan" id="hybrid-codon-val">Bảo Toàn</strong>
+              </div>
+            </div>
+
+            <!-- Sequence Display -->
+            <div class="sequence-mini-box">
+              <div class="seq-label-flex">
+                <span>Trình Tự ADN Lai Tạo Dự Đoán:</span>
+                <button class="btn-copy-small" onclick="copyHybridSeq()">Sao Chép</button>
+              </div>
+              <div class="seq-code-display" id="hybrid-seq-display">
+                ATGGGTCGCAAGCTGGACCTGCGCGAGTATGACCAGATTCTGGAGCGCATCGAGGAGATGCTCCAGCGCAAGGAGCTG
+              </div>
+            </div>
+
+            <div class="sequence-mini-box">
+              <div class="seq-label-flex">
+                <span>Trình Tự Tổ Tiên Chung (MRCA - Tái Dựng ASR):</span>
+              </div>
+              <div class="seq-code-display text-emerald" id="ancestral-seq-display">
+                ATGGGTCGCAAGCTGGACCTGCGCGAGTACGACCAGATCCTGGAGCGCATCGAGGAGATGCTGCAGCGCAAGGAGCTG
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
+  <script src="/static/dna_morph_view.js"></script>
   <script src="/static/app.js"></script>
 </body>
 </html>

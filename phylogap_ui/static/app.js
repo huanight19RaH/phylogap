@@ -678,6 +678,10 @@ function switchTab(tabId) {
     const currentMya = document.getElementById('mya-slider')?.value || 11.5;
     updateRiskCalc(currentMya);
   }
+
+  if (tabId === 'phylomorph') {
+    initPhyloMorphStudio();
+  }
 }
 
 // ==========================================================================
@@ -1133,3 +1137,157 @@ document.addEventListener('DOMContentLoaded', () => {
   setLanguage(currentLang);
   fetchPresets();
 });
+
+// ==========================================================================
+// PHYLOMORPH 3D STUDIO CONTROLLER
+// ==========================================================================
+let phyloMorphEngine = null;
+
+function initPhyloMorphStudio() {
+  if (!phyloMorphEngine && window.PhyloMorphEngine) {
+    phyloMorphEngine = new window.PhyloMorphEngine('phylomorph-3d-viewport');
+    runHybridization();
+  }
+  setTimeout(() => {
+    window.dispatchEvent(new Event('resize'));
+  }, 100);
+}
+
+function onSelectMorphSpecies(val) {
+  if (phyloMorphEngine) {
+    phyloMorphEngine.setSpecies(val);
+  }
+  const opt = document.querySelector(`#morph-species-select option[value="${val}"]`);
+  const hudLabel = document.getElementById('hud-current-mode-label');
+  if (hudLabel && opt) {
+    hudLabel.textContent = opt.textContent;
+  }
+}
+
+function onMorphSliderChange(val) {
+  const progress = parseFloat(val) / 100.0;
+  if (phyloMorphEngine) {
+    phyloMorphEngine.setMorphProgress(progress);
+  }
+  const badge = document.getElementById('morph-progress-badge');
+  if (badge) {
+    if (progress < 0.25) badge.textContent = `${Math.round(progress * 100)}% (Sinh Vật)`;
+    else if (progress > 0.75) badge.textContent = `${Math.round(progress * 100)}% (Xoắn Kép ADN)`;
+    else badge.textContent = `${Math.round(progress * 100)}% (Hạt Lốc Xoáy)`;
+  }
+  const hudMode = document.getElementById('hud-current-mode-label');
+  if (hudMode) {
+    if (progress >= 0.5) hudMode.textContent = 'Xoắn Kép ADN (Genotype 3D)';
+    else hudMode.textContent = 'Hình Thái Sinh Vật (Phenotype 3D)';
+  }
+}
+
+function quickMorph(target) {
+  const slider = document.getElementById('morph-progress-slider');
+  if (slider) slider.value = target * 100;
+  onMorphSliderChange(target * 100);
+}
+
+function triggerGapInjection() {
+  if (phyloMorphEngine) {
+    phyloMorphEngine.triggerGapAlarm(true);
+    quickMorph(1.0); // Switch to DNA to visualize break
+  }
+  const pill = document.getElementById('gap-status-pill');
+  if (pill) {
+    pill.textContent = 'Cảnh Báo: Đứt Gãy Locus [NNNN] Tại Vùng Giữa (Khuyết 24 bp)';
+    pill.style.background = 'rgba(244, 63, 94, 0.2)';
+    pill.style.color = '#FB7185';
+    pill.style.borderColor = 'rgba(244, 63, 94, 0.4)';
+  }
+}
+
+function triggerGapHealing() {
+  if (phyloMorphEngine) {
+    phyloMorphEngine.triggerHealingPulse();
+  }
+  const pill = document.getElementById('gap-status-pill');
+  if (pill) {
+    pill.textContent = 'PhyloGap Đang Bơm Reads & Homology Tương Đồng...';
+    pill.style.background = 'rgba(56, 189, 248, 0.2)';
+    pill.style.color = '#38BDF8';
+    pill.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+    setTimeout(() => {
+      pill.textContent = 'Thành Công: Đã Chữa Lành Locus (Độ Chính Xác 99.4%, FCR 0.0%)';
+      pill.style.background = 'rgba(16, 185, 129, 0.2)';
+      pill.style.color = '#34D399';
+      pill.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+    }, 2200);
+  }
+}
+
+function onHybridSliderChange(val) {
+  const ratioB = parseFloat(val) / 100.0;
+  const badge = document.getElementById('hybrid-ratio-badge');
+  if (badge) {
+    badge.textContent = `${Math.round((1 - ratioB) * 100)}% A - ${Math.round(ratioB * 100)}% B`;
+  }
+  runHybridizationDebounced();
+}
+
+let hybridTimeout = null;
+function runHybridizationDebounced() {
+  clearTimeout(hybridTimeout);
+  hybridTimeout = setTimeout(runHybridization, 150);
+}
+
+async function runHybridization() {
+  const spA = document.getElementById('hybrid-sp-a')?.value || 'c_anna';
+  const spB = document.getElementById('hybrid-sp-b')?.value || 't_guttata';
+  const slider = document.getElementById('hybrid-ratio-slider');
+  const ratioB = slider ? parseFloat(slider.value) / 100.0 : 0.5;
+
+  if (phyloMorphEngine) {
+    phyloMorphEngine.setHybridMorph(spA, spB, ratioB);
+  }
+
+  try {
+    const res = await fetch('/api/hybridize', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        species_a_id: spA,
+        species_b_id: spB,
+        hybrid_ratio: ratioB
+      })
+    });
+    if (!res.ok) return;
+    const data = await res.json();
+
+    const viab = document.getElementById('hybrid-viability-val');
+    if (viab) viab.textContent = `${data.viability_score}%`;
+
+    const dist = document.getElementById('hybrid-dist-val');
+    if (dist) dist.textContent = `${data.genetic_distance_pct}%`;
+
+    const gc = document.getElementById('hybrid-gc-val');
+    if (gc) gc.textContent = `${data.gc_content_pct}%`;
+
+    const codon = document.getElementById('hybrid-codon-val');
+    if (codon) {
+      codon.textContent = data.has_premature_stop ? 'Gãy Khung Đọc' : 'Bảo Toàn';
+      codon.className = data.has_premature_stop ? 'm-val text-danger' : 'm-val text-cyan';
+    }
+
+    const seqDisp = document.getElementById('hybrid-seq-display');
+    if (seqDisp) seqDisp.textContent = data.hybrid_sequence;
+
+    const ancDisp = document.getElementById('ancestral-seq-display');
+    if (ancDisp) ancDisp.textContent = data.ancestral_mrca_sequence;
+  } catch (e) {
+    console.error('Hybridize error:', e);
+  }
+}
+
+function copyHybridSeq() {
+  const seq = document.getElementById('hybrid-seq-display')?.textContent.trim();
+  if (seq) {
+    navigator.clipboard.writeText(seq);
+    alert('Đã sao chép chuỗi ADN lai tạo vào bộ nhớ tạm!');
+  }
+}

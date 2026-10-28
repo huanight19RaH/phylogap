@@ -133,3 +133,34 @@ def test_api_reconstruct_endpoint():
     assert len(data["provenance"]) > 0
     assert "is_accepted" in data
     assert data["is_accepted"] is True
+
+
+def test_api_species_catalog():
+    """Verify /api/species-catalog returns curated avian and prehistoric species."""
+    resp = client.get("/api/species-catalog")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert "catalog" in data
+    assert len(data["catalog"]) >= 5
+    sp_ids = [s["id"] for s in data["catalog"]]
+    assert "c_anna" in sp_ids
+    assert "t_guttata" in sp_ids
+    assert "r_cucullatus" in sp_ids
+
+
+def test_api_hybridize():
+    """Verify /api/hybridize simulates in-silico hybridization and viability scoring."""
+    payload = {
+        "species_a_id": "c_anna",
+        "species_b_id": "t_guttata",
+        "hybrid_ratio": 0.5
+    }
+    resp = client.post("/api/hybridize", json=payload)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert "hybrid_sequence" in data
+    assert "ancestral_mrca_sequence" in data
+    assert "viability_score" in data
+    assert data["viability_score"] > 80.0
+    assert "protein_translation" in data
+    assert data["protein_translation"].startswith("M")
